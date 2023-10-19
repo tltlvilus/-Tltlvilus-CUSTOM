@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Teenage Mutant Ninja Turtles are a fictional superhero quartet that appear in a self-titled franchise consisting of comic books, animated children's cartoons, feature films, and other products. The characters were created with the name of Italian Renaissance artists.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Teenage Mutant Ninja Turtles são um quarteto de ninjas tartarugas que consiste em histórias em quadrinhos, desenhos animados infantis, filmes de longa-metragem e outros produtos. Os personagens foram criados com o nome de artistas da Renascença italiana.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Teenage Mutant Ninja Turtles are a fictional superhero quartet that appear in a self-titled franchise consisting of comic books, animated children's cartoons, feature films, and other products. The characters were created with the name of Italian Renaissance artists.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Teenage Mutant Ninja Turtles son un cuarteto de superhéroes que aparecen en una franquicia homónima que consta de cómics, dibujos animados animados, largometrajes y otros productos. Los personajes fueron creados con el nombre de artistas del Renacimiento italiano.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Teenage Mutant Ninja Turtles sont un quatuor de super-héros fictifs qui apparaissent dans une franchise éponyme composée de bandes dessinées, de dessins animés, de longs métrages et d'autres produits. Les personnages ont été créés avec le nom d'artistes de la Renaissance italienne.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Teenage Mutant Ninja Turtles sind ein fiktives Superhelden-Quartett, das in einem selbstbetitelten Franchise auftritt, das aus Comics, Zeichentrickfilmen für Kinder, Spielfilmen und anderen Produkten besteht. Die Charaktere wurden mit dem Namen italienischer Renaissance-Künstler geschaffen.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>TMNT</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1984</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Kevin Eastman, Peter Laird</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>CREATED BY:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>CRIADO POR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>CREATED BY:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>CRIADO POR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>CRÉÉ PAR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ERSTELLT VON:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

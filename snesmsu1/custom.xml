@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>MSU-1 is a cartridge addon chip (similar to the SuperFx chip) that allows for many enhancements to SNES games including, but not limited to, full-motion video and CD quality sound by adding up to 4GB of storage for extra content.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O MSU-1 é um chip addon de cartucho (semelhante ao chip SuperFx) que permite muitos aprimoramentos nos jogos SNES, incluindo, entre outros, vídeo em movimento total e som com qualidade de CD, adicionando até 4 GB de armazenamento para conteúdo extra.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>MSU-1 is a cartridge addon chip (similar to the SuperFx chip) that allows for many enhancements to SNES games including, but not limited to, full-motion video and CD quality sound by adding up to 4GB of storage for extra content.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>MSU-1 es un chip complementario de cartucho (similar al chip SuperFx) que permite muchas mejoras en los juegos de SNES, incluidos, entre otros, video de movimiento completo y sonido de calidad de CD al agregar hasta 4 GB de almacenamiento para contenido extra.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>MSU-1 est une puce d'extension de cartouche qui permet de nombreuses améliorations aux jeux SNES, y compris, mais sans s'y limiter, la vidéo en mouvement et le son de qualité CD en ajoutant jusqu'à 4 Go (oui, 4 gigaoctets) de stockage pour du contenu supplémentaire.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>MSU-1 ist ein Cartridge-Zusatzchip (ähnlich dem SuperFx-Chip), der viele Verbesserungen an SNES-Spielen ermöglicht, einschließlich, aber nicht beschränkt auf, Full-Motion-Video und Sound in CD-Qualität, indem bis zu 4 GB zusätzlicher Speicherplatz hinzugefügt werden Inhalt.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>SNES MSU-1</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>
+		</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+			
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/snes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/snes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

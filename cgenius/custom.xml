@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Commander Genius aka Clone Keen Plus is a Commander Keen open source port to different platforms such as Linux, Windows, Mac OS and several handheld devices (GP2X, Wiz, Dingux, iPhone, Android). The project started as a continuation of CloneKeen.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Commander Genius aka Clone Keen Plus é uma porta de código aberto Commander Keen para diferentes plataformas, como Linux, Windows, Mac OS e vários dispositivos portáteis (GP2X, Wiz, Dingux, iPhone, Android). O projeto começou como uma continuação do CloneKeen.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Commander Genius aka Clone Keen Plus is a Commander Keen open source port to different platforms such as Linux, Windows, Mac OS and several handheld devices (GP2X, Wiz, Dingux, iPhone, Android). The project started as a continuation of CloneKeen.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Commander Genius, también conocido como Clone Keen Plus, es un puerto de código abierto de Commander Keen para diferentes plataformas como Linux, Windows, Mac OS y varios dispositivos portátiles (GP2X, Wiz, Dingux, iPhone, Android). El proyecto comenzó como una continuación de CloneKeen.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Commander Genius alias Clone Keen Plus est un port open source Commander Keen vers différentes plates-formes telles que Linux, Windows, Mac OS et plusieurs appareils portables (GP2X, Wiz, Dingux, iPhone, Android). Le projet a commencé comme une continuation de CloneKeen.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Commander Genius alias Clone Keen Plus ist eine Open-Source-Portierung von Commander Keen für verschiedene Plattformen wie Linux, Windows, Mac OS und mehrere Handheld-Geräte (GP2X, Wiz, Dingux, iPhone, Android). Das Projekt begann als Fortsetzung von CloneKeen.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Commander Genius</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2008</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>gerstrong</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

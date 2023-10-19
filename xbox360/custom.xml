@@ -1,0 +1,110 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Xbox 360 is a home video game console developed by Microsoft. It is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Xbox 360 é um console de videogame doméstico desenvolvido pela Microsoft. É o segundo console da série Xbox. Competiu com o PlayStation 3 da Sony e o Wii da Nintendo como parte da sétima geração de consoles de videogame.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Xbox 360 is a home video game console developed by Microsoft. It is the second console in the Xbox series. It competed with Sony's PlayStation 3 and Nintendo's Wii as part of the seventh generation of video game consoles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Xbox 360 es una consola de videojuegos para el hogar desarrollada por Microsoft. Es la segunda consola de la serie Xbox. Compitió con PlayStation 3 de Sony y Wii de Nintendo como parte de la séptima generación de consolas de videojuegos.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>La Xbox 360 est une console de jeu vidéo domestique développée par Microsoft. C'est la deuxième console de la série Xbox. Il était en concurrence avec la PS3 et la Wii dans le cadre de la septième génération de consoles de jeux vidéo.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Xbox 360 ist eine von Microsoft entwickelte Heimvideospielkonsole. Es ist die zweite Konsole der Xbox-Serie. Es konkurrierte mit Sonys PlayStation 3 und Nintendos Wii als Teil der siebten Generation von Videospielkonsolen.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>Xbox360是微软开发的家用视频游戏机。它是Xbox系列中的第二款游戏机。作为第七代视频游戏机的一部分，它与索尼的PlayStation3和任天堂的Wii竞争。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>Xbox360是微軟開發的家用視頻遊戲機。它是Xbox系列中的第二款遊戲機。作為第七代視頻遊戲機的一部分，它與索尼的PlayStation3和任天堂的Wii競爭。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Xbox 360</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ZH">
+			<text>微软Xbox360</text>
+		</text>
+
+		<text name="info2" extra="true" lang="TW">
+			<text>微軟Xbox360</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>微软</text>
+		</text> 
+
+		<text name="info4" extra="true" lang="TW">
+			<text>微軟</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.200 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.48</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.327 0.892</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

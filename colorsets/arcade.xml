@@ -1,0 +1,20 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+<customView name="TLTL-HCoinSpin">
+	<image name="artc" extra="true">
+		<path>./../assets/coinops/coinops_original.png</path>
+		<size>1 1</size>
+		<zIndex>7</zIndex>
+	</image>
+</customView>
+
+<customView name="TLTL-CoinOps">
+	<image name="artc" extra="true">
+		<path>./../assets/coinops/coinops_original.png</path>
+		<size>1 1</size>
+		<zIndex>7</zIndex>
+	</image>
+</customView>
+
+</theme>

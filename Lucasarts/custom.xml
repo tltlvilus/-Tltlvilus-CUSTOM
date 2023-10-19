@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>LucasArts became known for its line of adventure games based on its SCUMM engine in the 1990s, including Maniac Mansion, the Monkey Island series, and several Indiana Jones titles. A number of influential game developers were alumni of LucasArts from this period.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>A LucasArts ficou conhecida por sua linha de jogos de aventura baseados em seu motor SCUMM na década de 1990, incluindo Maniac Mansion, a série Monkey Island e vários títulos de Indiana Jones. Vários desenvolvedores de jogos influentes foram ex-alunos da LucasArts nesse período.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>LucasArts became known for its line of adventure games based on its SCUMM engine in the 1990s, including Maniac Mansion, the Monkey Island series, and several Indiana Jones titles. A number of influential game developers were alumni of LucasArts from this period.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>LucasArts se hizo conocido por su línea de juegos de aventuras basados ​​en su motor SCUMM en la década de 1990, incluidos Maniac Mansion, la serie Monkey Island y varios títulos de Indiana Jones. Varios desarrolladores de juegos influyentes fueron alumnos de LucasArts de este período.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>LucasArts s'est fait connaître pour sa gamme de jeux d'aventure basés sur son moteur SCUMM dans les années 1990, notamment Maniac Mansion, la série Monkey Island et plusieurs titres d'Indiana Jones. Un certain nombre de développeurs de jeux influents étaient d'anciens élèves de LucasArts de cette période.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>LucasArts wurde in den 1990er Jahren für seine Reihe von Abenteuerspielen bekannt, die auf seiner SCUMM-Engine basieren, darunter Maniac Mansion, die Monkey Island-Serie und mehrere Indiana Jones-Titel. Eine Reihe einflussreicher Spieleentwickler waren Absolventen von LucasArts aus dieser Zeit.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>LucasArts</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>George Lucas</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

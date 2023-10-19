@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+
+<customView name="TLTL-NO-FANART">
+      <image name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+         <path>./verticalfine.png</path>
+         <tile>true</tile>
+         <zIndex>10</zIndex>
+	  </image>
+</customView>  
+
+<customView name="TLTL-CUSTOM">
+      <image name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+         <path>./verticalfine.png</path>
+         <tile>true</tile>
+         <zIndex>10</zIndex>
+	  </image>
+</customView>  
+ 
+ <customView name="TLTL-COLOR">
+      <image name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+         <path>./verticalfine.png</path>
+         <tile>true</tile>
+         <zIndex>10</zIndex>
+	  </image>
+</customView> 
+
+  <customView name="TLTL-HCoinSpin">
+      <image name="tv_effect" extra="true">
+         <pos>0.106 0.30</pos>
+         <size>0.365 0.48</size>
+         <path>./verticalfine.png</path>
+         <tile>true</tile>
+         <zIndex>6.1</zIndex>
+	  </image>
+  </customView>
+  
+<customView name="TLTL-CoinOps">
+      <image name="tv_effect" extra="true">
+         <pos>0.106 0.30</pos>
+         <size>0.365 0.48</size>
+         <path>./verticalfine.png</path>
+         <tile>true</tile>
+         <zIndex>6.1</zIndex>
+	  </image>
+</customView>  
+  
+  
+</theme>

@@ -1,0 +1,119 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>It is a 16-bit video game console from Sega that competed directly with the SNES. The console was very successful in the 1990s, losing ground after the emergence and popularization of the new generation of consoles.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um console de video game de 16 bits da Sega que concorria diretamente com o SNES. O console fez grande sucesso na década de 1990, perdendo espaço após o surgimento e popularização da nova geração de consoles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>It is a 16-bit video game console from Sega that competed directly with the SNES. The console was very successful in the 1990s, losing ground after the emergence and popularization of the new generation of consoles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una consola de videojuego de 16 bits de Sega que compitió directamente con el SNES. La consola tuvo gran éxito en la década de 1990, perdiendo espacio después del surgimiento y popularización de la nueva generación de consolas.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Il s’agit d’une console de jeux vidéo 16 bits de Sega qui est en concurrence directe avec la SNES. La console a connu un grand succès dans les années 90, perdant du terrain après l’émergence et la popularisation de la nouvelle génération de consoles.</text>
+		</text>
+
+        <text name="info1" extra="true" lang="DE">
+            <text>Es ist eine 16-Bit-Videospielkonsole von Sega, die direkt mit dem SNES konkurrierte. Die Konsole war in den 1990er Jahren sehr erfolgreich und verlor nach dem Aufkommen und der Popularisierung der neuen Konsolengeneration an Boden.</text>
+        </text>
+
+		<text name="info2" extra="true">
+			<text>Mega Drive Japan</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA Corporation</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.200 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.34</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+  <view name="grid">
+      <image name="art4" extra="true"  lang="EN">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./assets/arts/genesis.jpg</path>
+         <zIndex>5</zIndex>
+      </image>
+
+      <image name="logo4" lang="EN">
+		<path>./assets/logos/genesis.png</path>
+         <pos>0.02 0.12</pos>
+         <maxSize>0.34 0.16</maxSize>
+         <origin>0 0</origin>
+         <zIndex>5</zIndex>
+      </image>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.893</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.705</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

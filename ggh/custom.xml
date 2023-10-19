@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is an 8-bit fourth generation handheld game console released by Sega on October 6, 1990 in Japan, in April 1991 throughout North America and Europe, and during 1992 in Australia.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um console de videogame portátil, de 8 bits, desenvolvido e produzido pela Sega. Fazia parte da denominada 4ª geração de consolas e surgiu em resposta ao portátil da Nintendo, o Game Boy.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is an 8-bit fourth generation handheld game console released by Sega on October 6, 1990 in Japan, in April 1991 throughout North America and Europe, and during 1992 in Australia.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una videoconsola portátil creada por Sega en respuesta a la Game Boy de Nintendo. Es la tercera consola portátil con pantalla en color de la historia, después de la Atari Lynx y la Turbo Express.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>La Game Gear (ゲームギア, Gēmu gia?) est une console de jeux vidéo portable en couleur, sortie en 1990 et produite par Sega afin de concurrencer la Game Boy de Nintendo apparue une année plus tôt.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine 8-Bit-Handheld-Spielekonsole der vierten Generation, die von Sega am 6. Oktober 1990 in Japan, im April 1991 in ganz Nordamerika und Europa und 1992 in Australien veröffentlicht wurde.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Game Gear Hacks</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA Corporation</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/gamegear.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/gamegear.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

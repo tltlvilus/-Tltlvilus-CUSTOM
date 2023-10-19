@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Ocean Software Ltd was a British software development company that became one of the biggest European video game developers and publishers of the 1980s and 1990s. Ocean developed dozens of games for a variety of systems  and video game consoles.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>A Ocean Software Ltd foi uma empresa britânica de desenvolvimento de software que se tornou uma das maiores desenvolvedoras e editoras de videogames da Europa nas décadas de 1980 e 1990. Ocean desenvolveu dezenas de jogos para uma variedade de sistemas e consoles de videogame.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Ocean Software Ltd was a British software development company that became one of the biggest European video game developers and publishers of the 1980s and 1990s. Ocean developed dozens of games for a variety of systems  and video game consoles.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Ocean Software Ltd fue una empresa británica de desarrollo de software que se convirtió en uno de los desarrolladores y editores de videojuegos más grandes de Europa en las décadas de 1980 y 1990. Ocean desarrolló docenas de juegos para una variedad de sistemas y consolas de videojuegos.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>Ocean Software Ltd était une société britannique de développement de logiciels qui est devenue l'un des plus grands développeurs et éditeurs de jeux vidéo européens des années 1980 et 1990. Ocean a développé des dizaines de jeux pour une variété de systèmes et de consoles de jeux vidéo.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ocean Software Ltd war ein britisches Softwareentwicklungsunternehmen, das in den 1980er und 1990er Jahren zu einem der größten europäischen Entwickler und Herausgeber von Videospielen wurde. Ocean hat Dutzende von Spielen für eine Vielzahl von Systemen und Videospielkonsolen entwickelt.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Ocean</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>David Ward, Jon Woods</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

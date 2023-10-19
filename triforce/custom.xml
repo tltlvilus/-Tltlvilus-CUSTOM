@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Triforce is an arcade card developed jointly by Nintendo, Namco and Sega, announced on February 19, 2002. The name is a reference to the Zelda game series and symbolizes the involvement of the three companies in the project. The system is based on the GameCube.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Triforce é uma placa de arcade desenvolvida em conjunto pela Nintendo, Namco e Sega, anunciado em 19 de fevereiro de 2002. O nome é uma referência à série de jogos Zelda e simboliza o envolvimento das três companhias no projeto. O sistema é baseado no GameCube.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Triforce is an arcade card developed jointly by Nintendo, Namco and Sega, announced on February 19, 2002. The name is a reference to the Zelda game series and symbolizes the involvement of the three companies in the project. The system is based on the GameCube.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Triforce es una tarjeta arcade desarrollada conjuntamente por Nintendo, Namco y Sega, anunciada el 19 de febrero de 2002. El nombre es una referencia a la serie de juegos Zelda y simboliza la participación de las tres compañías en el proyecto. El sistema está basado en GameCube.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Triforce est une carte d'arcade développée conjointement par Nintendo, Namco et Sega, annoncée le 19 février 2002. Le nom fait référence à la série de jeux Zelda et symbolise l'implication des trois sociétés dans le projet. Le système est basé sur le GameCube.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Triforce ist eine Arcade-Karte, die gemeinsam von Nintendo, Namco und Sega entwickelt und am 19. Februar 2002 angekündigt wurde. Der Name ist eine Anspielung auf die Zelda-Spieleserie und symbolisiert die Beteiligung der drei Unternehmen an dem Projekt. Das System basiert auf dem GameCube.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Triforce</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Nintendo, Namco e Sega</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.36</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.870</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

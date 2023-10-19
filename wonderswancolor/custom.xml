@@ -1,0 +1,101 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>WonderSwan Color and SwanCrystal were officially supported until being discontinued by Bandai in 2003. During its lifespan, no variation of the WonderSwan was released outside of Japan.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Além de tela colorida, ele possui uma memória de 512kbit, que permite a criação de jogos mais complexos. A Bandai conseguiu uma parceria com a Square, que lançou títulos como os remakes de Final Fantasy I, II e IV.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>WonderSwan Color and SwanCrystal were officially supported until being discontinued by Bandai in 2003. During its lifespan, no variation of the WonderSwan was released outside of Japan.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>WonderSwan Color (ワンダースワンカラー Wandāsuwan Karā?) es una videoconsola portátil diseñada por Bandai. Fue lanzada en Japón el 30 de diciembre de 1999, teniendo un éxito moderado.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Elle est une amélioration de la WonderSwan originale. Elle sort le 30/12/2000 au Japon et rencontre un assez grand succès, prenant jusqu'à 8 % du marché japonais, dominé par Nintendo et ses différentes Game Boy.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>WonderSwan Color und SwanCrystal wurden offiziell unterstützt, bis sie 2003 von Bandai eingestellt wurden. Während seiner Lebensdauer wurde keine Variante des WonderSwan außerhalb Japans veröffentlicht.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>WonderSwan Color和SwanCrystal一直受到官方支持，直到2003年被万代停产。在其生命週期内，WonderSwan的任何变体都没有在日本以外地区发布。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="ZW">
+			<text>WonderSwan Color和SwanCrystal一直受到官方支持，直到2003年被萬代停產。在其生命週期內，WonderSwan的任何變體都沒有在日本以外地區發布。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>WonderSwan Color</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>2000</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Bandai</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>万代</text>
+		</text>
+
+		<text name="info4" extra="true" lang="ZW">
+			<text>萬代</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.36</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.879</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.705</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>LowRes NX was inspired by real 8- and 16-bit systems and simulates chips for graphics, sound, and I/O that actually work like real hardware. It supports hardware sprites as well as hardware parallax scrolling, and even features vertical white and frame breaks to create authentic retro effects.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>O LowRes NX foi inspirado em sistemas reais de 8 e 16 bits e simula chips para gráficos, som e E/S que realmente funcionam como hardware real. Ele suporta sprites de hardware, bem como rolagem de paralaxe de hardware, e ainda apresenta branco vertical e quebras de quadro para criar efeitos retrô autênticos.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>LowRes NX was inspired by real 8- and 16-bit systems and simulates chips for graphics, sound, and I/O that actually work like real hardware. It supports hardware sprites as well as hardware parallax scrolling, and even features vertical white and frame breaks to create authentic retro effects.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>LowRes NX se inspiró en sistemas reales de 8 y 16 bits y simula chips para gráficos, sonido y E/S que en realidad funcionan como hardware real. Admite sprites de hardware, así como desplazamiento de paralaje de hardware, e incluso presenta saltos de marco y blanco vertical para crear auténticos efectos retro.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>LowRes NX a été inspiré par de vrais systèmes 8 et 16 bits et simule des puces pour les graphiques, le son et les E/S qui fonctionnent réellement comme du vrai matériel. Il prend en charge les sprites matériels ainsi que le défilement de parallaxe matérielle, et propose même des blancs verticaux et des sauts de cadre pour créer des effets rétro authentiques.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>LowRes NX wurde von echten 8- und 16-Bit-Systemen inspiriert und simuliert Chips für Grafik, Sound und E/A, die tatsächlich wie echte Hardware funktionieren. Es unterstützt Hardware-Sprites sowie Hardware-Parallax-Scrolling und verfügt sogar über vertikale Weiß- und Frame-Breaks, um authentische Retro-Effekte zu erzeugen.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>LowRes NX</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Timo Kloss</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

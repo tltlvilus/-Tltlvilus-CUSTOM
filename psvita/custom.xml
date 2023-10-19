@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a handheld video game console developed by Sony Interactive Entertainment. The console is the successor to the PSP, and a part of the PlayStation brand of gaming devices; as part of the eighth generation of video game consoles, it primarily competed with the Nintendo 3DS.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É um console de videogame portátil desenvolvido pela Sony Interactive Entertainment. O console é o sucessor do PSP e faz parte da marca PlayStation de dispositivos de jogos; como parte da oitava geração de consoles de videogame, competiu principalmente com o Nintendo 3DS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a handheld video game console developed by Sony Interactive Entertainment. The console is the successor to the PSP, and a part of the PlayStation brand of gaming devices; as part of the eighth generation of video game consoles, it primarily competed with the Nintendo 3DS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una consola de videojuegos portátil desarrollada por Sony Interactive Entertainment. La consola es la sucesora de la PSP y forma parte de la marca de dispositivos de juego PlayStation; como parte de la octava generación de consolas de videojuegos, compitió principalmente con Nintendo 3DS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une console de jeu vidéo portable développée par Sony Interactive Entertainment. La console est le successeur de la PSP et fait partie de la marque d'appareils de jeu PlayStation ; faisant partie de la huitième génération de consoles de jeux vidéo, elle concurrençait principalement la Nintendo 3DS.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Ist eine tragbare Videospielkonsole, die von Sony Interactive Entertainment entwickelt wurde. Die Konsole ist der Nachfolger der PSP und ein Teil der PlayStation-Marke von Spielgeräten; Als Teil der achten Generation von Videospielkonsolen konkurrierte es hauptsächlich mit dem Nintendo 3DS.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>PS Vita</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2011</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Sony Interactive Entertainment</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.175 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.32</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.907</pos><origin>0.5 0.5</origin><maxSize>0.14 .14</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.035 0.685</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

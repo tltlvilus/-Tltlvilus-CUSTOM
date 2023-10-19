@@ -1,0 +1,187 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+<view name="system">
+
+	<image name="art" extra="true">
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<origin>0 0</origin>
+	</image>
+<!--
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.185 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.32</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+-->
+	<image name="logo">
+		<path>./../assets/logos/$system.png</path>
+	</image>
+
+	<image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./../assets/overlay1222.png</path>
+         <zIndex>41</zIndex>
+    </image>
+
+	<video name="md_video" extra="true" ifSubset="randomvid:yes">
+		<path>{random}</path>
+		<pos>0.025 0.62</pos>
+		<maxSize>0.30 0.30</maxSize>
+		<origin>0 0</origin>
+		<delay>0.2</delay>
+		<showSnapshotNoVideo>false</showSnapshotNoVideo>
+		<showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>50</zIndex>
+    </video>
+
+	<!-- Description -->
+	<text name="info1" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Book.ttf</fontPath>
+		<color>FFFFFF</color>
+		<alignment>left</alignment>
+		<fontSize>0.020</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size>0.35 0.100</size>
+		<pos>0.025 0.405</pos>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+		<zIndex>42</zIndex>
+	 </text>
+
+	<!-- Title -->
+	<text name="info2" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+		<color>FFFFFF</color>
+		<alignment>left</alignment>
+ 		<fontSize>0.09</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size>0.36 0.35</size>
+		<pos>0.025 0.1</pos>
+		<glowColor>00000090</glowColor>
+		<glowOffset>2</glowOffset>
+		<glowSize>4</glowSize>
+		<zIndex>42</zIndex>
+     </text>
+
+	<!-- Release Date -->
+	<text name="info3" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+		<color>FFFFFF</color>
+		<alignment>left</alignment>
+		<fontSize>0.023</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size>0.35 0</size>
+		<pos>0.025 0.378</pos>
+		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
+		<glowSize>2</glowSize>
+		<zIndex>42</zIndex>
+      </text>
+
+	<!-- Manufacturer Name -->
+	<text name="info4" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Book.ttf</fontPath>
+		<color>a8a8a8</color>
+		<alignment>left</alignment>
+		<fontSize>0.023</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size ifSubset="langui:English">0.35 0</size>
+		<size ifSubset="langui:Português Brasileiro">0.35 0</size>
+		<pos ifSubset="langui:English">0.178 0.380</pos>
+		<pos ifSubset="langui:Português Brasileiro">0.152 0.379</pos>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+		<zIndex>42</zIndex>
+      </text>
+
+	<carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>FFFFFFAA</color>
+		<logoScale>1.3</logoScale>
+		<logoSize>0.2 0.2</logoSize>
+		<logoAlignment>right</logoAlignment>
+		<maxLogoCount>5</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>
+		<scrollSound ifSubset="InterfaceSound:Type1">./assets/sounds/scroll01.wav</scrollSound>
+		<scrollSound ifSubset="InterfaceSound:Type2">./assets/sounds/scroll01.wav</scrollSound>
+		<zIndex>50</zIndex>
+	</carousel>
+
+	<!-- Number of Games -->
+	<text name="systemInfo">
+		<pos>-0.282 0.512</pos>
+         <alignment>center</alignment>
+         <fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+	     <fontSize>0.0380</fontSize>
+		 <glowColor>00000080</glowColor>
+		 <glowSize>2</glowSize>
+	     <color>FFFFFF</color>
+    </text>
+	
+		<text name="info5" extra="true">
+			<text>FABRICANTE:</text>
+		</text>
+
+		<text name="info5" extra="true" lang="PT">
+			<text>FABRICANTE:</text>
+		</text>
+
+		<text name="info5" extra="true" lang="EN">
+			<text>MANUFACTURER:</text>
+		</text>
+
+	<!-- Manufacturer -->
+	<text name="info5" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+		<color>FFFFFF</color>
+		<alignment>left</alignment>
+		<fontSize>0.023</fontSize>
+		<lineSpacing>1</lineSpacing>
+		<size>0.35 0</size>
+		<pos>0.065 0.379</pos>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+		<zIndex>42</zIndex>
+      </text>
+
+	<text name="playbutton" extra="true">
+		<text>PLAY NOW</text>
+	</text>
+
+	<text name="playbutton" extra="true" lang="PT">
+		<text>JOGAR AGORA</text>
+	</text>
+
+	<text name="playbutton" extra="true" lang="EN">
+		<text>PLAY NOW</text>
+	</text>
+
+	<text name="playbutton" extra="true">
+		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+		<color>FFFFFF</color>
+		<alignment>center</alignment>
+	     <fontSize>0.0142</fontSize>
+		<size>0.35 0</size>
+		<pos>-0.113 0.5315</pos>
+		<glowColor>00000020</glowColor>
+		<glowSize>1.8</glowSize>
+		<zIndex>42</zIndex>
+	</text>
+
+</view>
+
+
+</theme>

@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Dance Dance Revolution, or DDR (also called Dancing Stage in Europe), is a music video game franchise produced by Konami and initially launched for arcades in September 1998 in Japan, after being shown at the Tokyo Game Show earlier in the year.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Dance Dance Revolution, ou DDR (também chamado de Dancing Stage na Europa), é uma franquia de videogames musicais produzida pela Konami e lançado inicialmente para arcades em setembro de 1998 no Japão, após ser exibida na Tokyo Game Show no início do ano.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Dance Dance Revolution, or DDR (also called Dancing Stage in Europe), is a music video game franchise produced by Konami and initially launched for arcades in September 1998 in Japan, after being shown at the Tokyo Game Show earlier in the year.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Dance Dance Revolution, o DDR (también llamado Dancing Stage en Europa), es una franquicia de videojuegos musicales producida por Konami e inicialmente lanzada para salas de juego en septiembre de 1998 en Japón, después de mostrarse en el Tokyo Game Show a principios de este año.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Dance Dance Revolution, ou DDR (également appelé Dancing Stage en Europe), est une franchise de jeux vidéo musicaux produite par Konami et initialement lancée pour les arcades en septembre 1998 au Japon, après avoir été présentée au Tokyo Game Show plus tôt cette année.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Dance Dance Revolution oder DDR (in Europa auch Dancing Stage genannt) ist eine Musikvideospiel-Franchise, die von Konami produziert und im September 1998 in Japan zunächst für Spielhallen eingeführt wurde, nachdem sie Anfang des Jahres auf der Tokyo Game Show gezeigt worden war .</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Dance Dance Revolution</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Konami</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

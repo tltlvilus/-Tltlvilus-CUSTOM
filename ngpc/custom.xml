@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Neo Geo Pocket Color (also stylized as NEOGEOPOCKET COLOR, often abbreviated NGPC), is a 16-bit color handheld video game console manufactured by SNK. It is a successor to SNK's monochrome Neo Geo Pocket.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Tecnicamente, o Neo Geo Pocket Color é igual ao Neo Geo Pocket tradicional, sendo as únicas diferenças o ecrã, as cores e a possibilidade de ser ligado ao Dreamcast, da Sega. O console foi descontinuado em 2001.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The Neo Geo Pocket Color (also stylized as NEOGEOPOCKET COLOR, often abbreviated NGPC), is a 16-bit color handheld video game console manufactured by SNK. It is a successor to SNK's monochrome Neo Geo Pocket.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Neo Geo Pocket Color (también conocida por su abreviatura NGPC) es la sucesora de la Neo Geo Pocket. Esta videoconsola portátil fue lanzada por SNK en el año 1999 en Japón, Estados Unidos y Europa.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Neo-Geo Pocket Color (ou NGPC) est une console portable 16 bits conçue par SNK. La console sort le 16 mars 1999 au Japon, le 6 août 1999 en Amérique du Nord, et le 1er octobre 1999 dans certains pays d’Europe.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Die Neo Geo Pocket Color (auch als NEOGEOPOCKET COLOR stilisiert, oft als NGPC abgekürzt) ist eine tragbare 16-Bit-Farb-Videospielkonsole, die von SNK hergestellt wird. Es ist ein Nachfolger des einfarbigen Neo Geo Pocket von SNK.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Neo Geo Pocket Color</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1999</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SNK Corporation</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.36</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.093 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

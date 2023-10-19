@@ -1,0 +1,91 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a dedicated home video game console released by Nintendo, which emulates the Super NES. The console, a successor to the NES Classic Edition, comes with twenty-one Super NES titles pre-installed, including the first official release of Star Fox 2.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um console de videogame doméstico lançado pela Nintendo, que emula o Super NES. O console, sucessor da NES Classic Edition, vem com 21 títulos Super NES pré-instalados, incluindo o primeiro lançamento oficial de Star Fox 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a dedicated home video game console released by Nintendo, which emulates the Super NES. The console, a successor to the NES Classic Edition, comes with twenty-one Super NES titles pre-installed, including the first official release of Star Fox 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una consola de videojuegos lanzada por Nintendo, que emula el Super NES. La consola, sucesora de la NES Classic Edition, viene con veintiún títulos Super NES preinstalados, incluido el primer lanzamiento oficial de Star Fox 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une console de jeu vidéo dédiée à la maison publiée par Nintendo, qui émule le Super NES. La console, successeur de la NES Classic Edition, est livrée avec 21 titres Super NES préinstallés, dont la première version officielle de Star Fox 2.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine spezielle Heimvideospielkonsole von Nintendo, die das Super NES emuliert. Die Konsole, ein Nachfolger der NES Classic Edition, wird mit einundzwanzig vorinstallierten Super NES-Titeln geliefert, einschließlich der ersten offiziellen Veröffentlichung von Star Fox 2.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Super NES Mini</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2017</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/snes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/snes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

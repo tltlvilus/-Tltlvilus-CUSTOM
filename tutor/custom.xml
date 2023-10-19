@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Originally sold in Japan as the Pyūta (ぴゅう太) and in the UK as the Grandstand Tutor, is a home computer produced by the Japanese toymaker Tomy. It was architecturally similar, but not identical, to the Texas Instruments TI-99/4A.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Originalmente vendido no Japão como Pyūta (ぴゅう太) e no Reino Unido como Grandstand Tutor, é um computador doméstico produzido pelo fabricante de brinquedos japonês Tomy. Era arquitetonicamente semelhante, mas não idêntico, ao Texas Instruments TI-99/4A.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Originally sold in Japan as the Pyūta (ぴゅう太) and in the UK as the Grandstand Tutor, is a home computer produced by the Japanese toymaker Tomy. It was architecturally similar, but not identical, to the Texas Instruments TI-99/4A.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Vendido originalmente en Japón como Pyūta (ぴゅう太) y en el Reino Unido como Grandstand Tutor, es un ordenador doméstico producido por el fabricante de juguetes japonés Tomy. Era arquitectónicamente similar, pero no idéntico, al Texas Instruments TI-99/4A.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Vendu à l'origine au Japon sous le nom de Pyūta (ぴ ゅ う 太) et au Royaume-Uni sous le nom de Grandstand Tutor , est un ordinateur domestique produit par le fabricant de jouets japonais Tomy . Il était architecturalement similaire, mais pas identique, au Texas Instruments TI-99 / 4A.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Ursprünglich in Japan als Pyūta (ぴゅう太) und in Großbritannien als Grandstand Tutor verkauft, ist ein Heimcomputer des japanischen Spielzeugherstellers Tomy. Es war architektonisch ähnlich, aber nicht identisch mit dem Texas Instruments TI-99/4A.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Tomy Tutor</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Tomy, Matsushita</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.215 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.34</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.890</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

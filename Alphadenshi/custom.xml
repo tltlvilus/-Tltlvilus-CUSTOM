@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Began as a developer of arcade games and is best known for their library of Neo Geo titles, produced in partnership with SNK. Most notable among these are their fighting games and, in particular, the World Heroes series.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Começou como desenvolvedora de jogos de arcade e é mais conhecida por sua biblioteca de títulos Neo Geo, produzida em parceria com a SNK. O mais notável entre eles são seus jogos de luta e, em particular, a série World Heroes.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Began as a developer of arcade games and is best known for their library of Neo Geo titles, produced in partnership with SNK. Most notable among these are their fighting games and, in particular, the World Heroes series.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Comenzó como desarrollador de juegos de arcade y es mejor conocido por su biblioteca de títulos de Neo Geo, producidos en asociación con SNK. Entre ellos, los más notables son sus juegos de lucha y, en particular, la serie World Heroes.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>A commencé en tant que développeur de jeux d'arcade et est surtout connu pour sa bibliothèque de titres Neo Geo, produite en partenariat avec SNK. Les plus notables d'entre eux sont leurs jeux de combat et, en particulier, la série World Heroes.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Begann als Entwickler von Arcade-Spielen und ist vor allem für seine Bibliothek von Neo Geo-Titeln bekannt, die in Zusammenarbeit mit SNK produziert wurden. Am bemerkenswertesten unter diesen sind ihre Kampfspiele und insbesondere die World Heroes-Reihe.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Alpha Denshi</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1980</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>ADK Corporation</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,111 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800. The series was successively upgraded to Atari 1200XL , Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE, and Atari XEGS, the last discontinued in 1992. </text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É uma série de computadores domésticos de 8 bits introduzidos pela Atari, Inc. em 1979 como Atari 400 e Atari 800. A série foi sucessivamente atualizada para Atari 1200XL, Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE e Atari XEGS, o último descontinuado em 1992.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a series of 8-bit home computers introduced by Atari, Inc. in 1979 as the Atari 400 and Atari 800. The series was successively upgraded to Atari 1200XL , Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE, and Atari XEGS, the last discontinued in 1992. </text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una serie de computadoras domésticas de 8 bits presentada por Atari, Inc. en 1979 como Atari 400 y Atari 800. La serie se actualizó sucesivamente a Atari 1200XL, Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE y Atari XEGS, el último descontinuado en 1992.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une série d'ordinateurs domestiques 8 bits introduits par Atari, Inc. en 1979 sous le nom d'Atari 400 et Atari 800. La série a été successivement mise à niveau vers Atari 1200XL, Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE et Atari XEGS, le dernier arrêté en 1992.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine Serie von 8-Bit-Heimcomputern, die 1979 von Atari, Inc. als Atari 400 und Atari 800 eingeführt wurde. Die Serie wurde sukzessive auf Atari 1200XL, Atari 600XL, Atari 800XL, Atari 65XE, Atari 130XE, Atari 800XE und Atari XEGS, das letzte wurde 1992 eingestellt.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Atari 800</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Atari, Inc.</text>
+		</text>
+
+		<image name="art" extra="true" ifSubset="colorset:Full HD 1080p">
+		<path>./../assets/arts/atari800.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:HD 720p">
+		<path>./../assets/arts/720/atari800.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:Lite 540p">
+		<path>./../assets/arts/540/atari800.jpg</path>
+		</image>
+		
+		<image name="logo, sublogo">
+		<path>./../assets/logos/atari800.png</path>
+		</image>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/atari800.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/atari800.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

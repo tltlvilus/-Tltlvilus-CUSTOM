@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The GX4000 is a video game console that was manufactured by Amstrad. It was the company's short-lived attempt to enter the games console market. The console was released in Europe in 1990.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O GX4000 é um console de videogame fabricado pela Amstrad. Foi a tentativa de curta duração da empresa para entrar no mercado de consoles de jogos. O console foi lançado na Europa em 1990.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The GX4000 is a video game console that was manufactured by Amstrad. It was the company's short-lived attempt to enter the games console market. The console was released in Europe in 1990.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>La GX4000 es una consola de videojuegos fabricada por Amstrad. Fue un intento efímero de la compañía para ingresar al mercado de consolas de juegos. La consola fue lanzada en Europa en 1990.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>La GX4000 est une console de jeu vidéo fabriquée par Amstrad. C'était la tentative de courte durée de la société d'entrer sur le marché des consoles de jeux. La console est sortie en Europe en 1990.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Das GX4000 ist eine Videospielkonsole, die von Amstrad hergestellt wurde. Es war der kurzlebige Versuch des Unternehmens, in den Spielekonsolenmarkt einzusteigen. Die Konsole wurde 1990 in Europa veröffentlicht.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Amstrad GX4000</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Amstrad</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinopstv.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinopstv.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.885</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

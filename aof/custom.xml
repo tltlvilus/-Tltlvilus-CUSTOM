@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Art of Fighting is a fighting video game trilogy that were released for the Neo Geo platform in the early 1990s. It was the second fighting game franchise created by SNK, following the Fatal Fury series and is set in the same fictional universe as a prequel.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Art of Fighting é uma trilogia de videogame de luta lançada para a plataforma Neo Geo no início dos anos 90. Foi a segunda franquia de jogos de luta criada pela SNK, seguindo a série Fatal Fury e é ambientada no mesmo universo fictício de um prequel.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Art of Fighting is a fighting video game trilogy that were released for the Neo Geo platform in the early 1990s. It was the second fighting game franchise created by SNK, following the Fatal Fury series and is set in the same fictional universe as a prequel.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Art of Fighting es una trilogía de videojuegos de lucha. Fue la segunda franquicia de juegos de lucha creada por SNK, después de la serie Fatal Fury y está ambientada en el mismo universo ficticio que una precuela.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Art of Fighting est une trilogie de jeux vidéo de combat sortie pour la plateforme Neo Geo au début des années 1990. C'était la deuxième franchise de jeux de combat créée par SNK, après la série Fatal Fury et se déroule dans le même univers fictif qu'une préquelle.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Art of Fighting ist eine Kampf-Videospiel-Trilogie, die in den frühen 1990er Jahren für die Neo Geo-Plattform veröffentlicht wurde. Es war das zweite Kampfspiel-Franchise von SNK nach der Fatal Fury-Serie und spielt im selben fiktiven Universum wie ein Prequel.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Art of Fighting</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Hiroshi Matsumoto</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/neogeo.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/neogeo.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

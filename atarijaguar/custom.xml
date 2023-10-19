@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Atari Jaguar was a video game console released by Atari in 1993. It was developed to outperform Mega Drive and Super Nintendo in processing power.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Atari Jaguar foi um console de videogame lançado pela Atari em 1993. Ele foi desenvolvido para superar o Mega Drive e o Super Nintendo em poder de processamento.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Atari Jaguar was a video game console released by Atari in 1993. It was developed to outperform Mega Drive and Super Nintendo in processing power.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Atari Jaguar fue una consola de videojuego lanzada por Atari en 1993. Fue desarrollado para superar el Mega Drive y el Super Nintendo en poder de procesamiento.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Atari Jaguar était une console de jeux vidéo lancée par Atari en 1993. Elle a été développée pour surpasser Mega Drive et Super Nintendo en termes de puissance de traitement.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Atari Jaguar war eine Videospielkonsole, die 1993 von Atari herausgebracht wurde. Sie wurde entwickelt, um Mega Drive und Super Nintendo an Rechenleistung zu übertreffen.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Atari Jaguar</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Atari Corporation</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.195 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.35</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.895</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

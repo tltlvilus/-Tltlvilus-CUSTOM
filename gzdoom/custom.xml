@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>GZDoom is a fork of the ZDoom source port created by Christoph Oelckers (Graf Zahl), who still oversees its development. First released in 2005, it has versions for Windows, Linux, and MacOS.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>GZDoom é uma bifurcação da porta de origem ZDoom criada por Christoph Oelckers (Graf Zahl), que ainda supervisiona seu desenvolvimento. Lançado pela primeira vez em 2005, possui versões para Windows, Linux e MacOS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>GZDoom is a fork of the ZDoom source port created by Christoph Oelckers (Graf Zahl), who still oversees its development. First released in 2005, it has versions for Windows, Linux, and MacOS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>GZDoom es una bifurcación del puerto de origen ZDoom creado por Christoph Oelckers (Graf Zahl), quien aún supervisa su desarrollo. Lanzado por primera vez en 2005, tiene versiones para Windows, Linux y MacOS.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>GZDoom est un fork du port source ZDoom créé par Christoph Oelckers (Graf Zahl), qui supervise toujours son développement. Sorti pour la première fois en 2005, il a des versions pour Windows, Linux et MacOS.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>GZDoom ist ein Fork des ZDoom-Quellports, der von Christoph Oelckers (Graf Zahl) erstellt wurde, der seine Entwicklung immer noch überwacht. Es wurde erstmals 2005 veröffentlicht und hat Versionen für Windows, Linux und MacOS.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>GZDoom</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Graf Zahl</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/ports.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/ports.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

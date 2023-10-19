@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega Hikaru is a successor of the Sega NAOMI and Sega Model 3 arcade systems that was developed in 1998 and debuted in 1999. The Hikaru was used for a handful of deluxe dedicated-cabinet games, beginning with 1999's Brave Fire Fighters.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Sega Hikaru é uma sucessora dos sistemas de arcade Sega NAOMI e Sega Model 3 que foram desenvolvidos em 1998 e estreou em 1999. O Hikaru foi usado para vários jogos de gabinete dedicados de luxo, começando com o Brave Fire Fighters, de 1999.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Sega Hikaru is a successor of the Sega NAOMI and Sega Model 3 arcade systems that was developed in 1998 and debuted in 1999. The Hikaru was used for a handful of deluxe dedicated-cabinet games, beginning with 1999's Brave Fire Fighters.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Sega Hikaru es un sucesor de los sistemas de arcade Sega NAOMI y Sega Model 3 que se desarrolló en 1998 y se estrenó en 1999. El Hikaru se utilizó para un puñado de juegos de gabinete de lujo, comenzando con Brave Fire Fighters de 1999.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Sega Hikaru est un successeur des systèmes d'arcade Sega NAOMI et Sega Model 3 qui ont été développés en 1998 et ont fait leurs débuts en 1999. Le Hikaru a été utilisé pour une poignée de jeux d'armoires dédiés de luxe, à commencer par Brave Fire Fighters de 1999.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega Hikaru ist ein Nachfolger der Arcade-Systeme Sega NAOMI und Sega Model 3, die 1998 entwickelt und 1999 debütiert wurden. Hikaru wurde für eine Handvoll Deluxe-Spiele für dedizierte Gehäuse verwendet, beginnend mit Brave Fire Fighters von 1999.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Sega Hikaru</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1998</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.160 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.40</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,112 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Plug It In & Play TV Games interactive products are a series of game devices produced by Jakks Pacific. When connected to a television set via RCA connector cables, the user is able to play a pre-defined selection of video games.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Os produtos interativos Plug It In & Play TV Games são uma série de dispositivos produzidos pela Jakks Pacific. Quando conectado a uma televisão através de cabos conectores RCA, o usuário pode jogar uma seleção pré-definida de videogames.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Plug It In & Play TV Games interactive products are a series of game devices produced by Jakks Pacific. When connected to a television set via RCA connector cables, the user is able to play a pre-defined selection of video games.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Los productos interactivos Plug It In & Play TV Games son una serie de dispositivos de juego producidos por Jakks Pacific. Cuando se conecta a un televisor a través de cables con conector RCA, el usuario puede jugar una selección predefinida de videojuegos.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Les produits interactifs Plug It In & Play TV Games sont une série d'appareils de jeu produits par Jakks Pacific. Lorsqu'il est connecté à un téléviseur via des câbles de connexion RCA, l'utilisateur peut jouer à une sélection prédéfinie de jeux vidéo.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Plug It In & Play Interaktive TV-Spiele sind eine Reihe von Spielgeräten, die von Jakks Pacific hergestellt werden. Bei Anschluss an ein Fernsehgerät über RCA-Verbindungskabel kann der Benutzer eine vordefinierte Auswahl an Videospielen spielen.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Plug'n'Play TV</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Jakks Pacific</text>
+		</text>		
+
+		<image name="art" extra="true" ifSubset="colorset:Full HD 1080p">
+		<path>./../assets/arts/tvgames.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:HD 720p">
+		<path>./../assets/arts/720/tvgames.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:Lite 540p">
+		<path>./../assets/arts/540/tvgames.jpg</path>
+		</image>
+		
+		<image name="logo, sublogo">
+		<path>./../assets/logos/tvgames.png</path>
+		</image>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+				<text name="info1" extra="true">
+			<text>Amiga 500, also known as the A500, is the first low-end Commodore Amiga 16/32-bit multimedia home/personal computer. It was announced at the winter Consumer Electronics Show and competed directly against the Atari 520ST.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="PT">
+			<text>Amiga 500, também conhecido como A500, é o primeiro computador doméstico / pessoal multimídia de baixo custo do Commodore Amiga 16/32 bits. Foi anunciado no Consumer Electronics Show de inverno e competiu contra o Atari 520ST.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Amiga 500, also known as the A500, is the first low-end Commodore Amiga 16/32-bit multimedia home/personal computer. It was announced at the winter Consumer Electronics Show and competed directly against the Atari 520ST.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Amiga 500, también conocida como A500, es la primera computadora multimedia / hogar personal Commodore Amiga de 16/32 bits de gama baja. Fue anunciado en el Winter Consumer Show de invierno y compitió contra el Atari 520ST.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Amiga 500, également connu sous le nom d'A500, est le premier ordinateur domestique / personnel multimédia Commodore Amiga 16/32 bits bas de gamme. Il a été annoncé lors du Consumer Electronics Show d'hiver et a rivalisé avec l'Atari 520ST.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Der Amiga 500, auch als A500 bekannt, ist der erste Commodore Amiga 16/32-Bit-Multimedia-Heim-/Personalcomputer der unteren Preisklasse. Es wurde auf der Winter Consumer Electronics Show angekündigt und konkurrierte direkt mit dem Atari 520ST.</text>
+		</text>
+
+
+		<text name="info2" extra="true">
+			<text>Amiga 500</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,137 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Linux is a family of open source Unix-like operating systems based on the Linux kernel,an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Linux é um termo popularmente empregado para se referir a sistemas operacionais que utilizam o Kernel Linux. O kernel foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Linux is a family of open source Unix-like operating systems based on the Linux kernel,an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Linux es una familia de sistemas operativos de código abierto tipo Unix basados ​​en el núcleo de Linux, un núcleo del sistema operativo lanzado por Linus Torvalds. Linux generalmente está empaquetado en una distribución de Linux.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Linux est une famille de systèmes d'exploitation open source de type Unix basés sur le noyau Linux, un noyau de système d'exploitation publié pour Linus Torvalds. Linux est généralement conditionné dans une distribution Linux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Linux ist eine Familie von Unix-ähnlichen Open-Source-Betriebssystemen, die auf dem Linux-Kernel basieren, einem Betriebssystem-Kernel, der erstmals am 17. September 1991 von Linus Torvalds veröffentlicht wurde. Linux ist normalerweise in einer Linux-Distribution verpackt.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>Linux是一个基于Linux内核的开源类Unix操作系统家族，该操作系统内核由Linus Torvalds于1991年9月17日首次发布。 Linux通常打包在Linux发行版中。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>Linux是一個基於Linux內核的開源類Unix操作系統家族，該操作系統內核由Linus Torvalds於1991年9月17日首次發布。 Linux通常打包在Linux發行版中。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Linux Games</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ZH">
+			<text>Linux游戏</text>
+		</text>
+
+		<text name="info2" extra="true" lang="TW">
+			<text>Linux游戲</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Linus Torvalds</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+		<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+						<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ZH">
+			<text>  开发者:</text>
+		</text>
+						<text name="info5" extra="true" lang="TW">
+			<text>  開發者:</text>
+		</text>	
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinpc.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinpc.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

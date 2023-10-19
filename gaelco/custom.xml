@@ -1,0 +1,106 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Gabinete Electrónico Consultivo, better known as Gaelco, S.A., is a Spanish company that develops and publishes arcade games and video games. As of 2007, Gaelco develops electronic dart machines under the name of "Gaelco Darts".</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Gabinete Electrónico Consultivo, mais conhecida como Gaelco, S.A., é uma empresa espanhola que desenvolve e publica jogos de arcade e videogames. A partir de 2007, a Gaelco desenvolve máquinas eletrônicas de dardo sob o nome de "Gaelco Darts".</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Gabinete Electrónico Consultivo, better known as Gaelco, S.A., is a Spanish company that develops and publishes arcade games and video games. As of 2007, Gaelco develops electronic dart machines under the name of "Gaelco Darts".</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Gabinete Electrónico Consultivo, más conocido como Gaelco, S.A., es una empresa española que desarrolla y publica juegos de videojuegos y arcade. A partir de 2007, Gaelco desarrolla máquinas de dardos electrónicos bajo el nombre de "Gaelco Darts".</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Gabinete Electrónico Consultivo, plus connue sous le nom de Gaelco, S.A., est une société espagnole qui développe et publie des jeux d'arcade et des jeux vidéo. Depuis 2007, Gaelco développe des machines à fléchettes électroniques sous le nom de "Gaelco Darts".</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Gabinete Electrónico Consultivo, besser bekannt als Gaelco, S.A., ist ein spanisches Unternehmen, das Arcade- und Videospiele entwickelt und veröffentlicht. Ab 2007 entwickelt Gaelco elektronische Dartautomaten unter dem Namen "Gaelco Darts".</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Gaelco</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Luis Jonama</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.170 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.38</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.885</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

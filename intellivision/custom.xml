@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Intellivision I was the first console created by Mattel in 1980. At the time of its launch, it cost $ 300. In all, 125 games were released for the console between the years of 1979 and 1989.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Intellivision I foi o primeiro console criado pela Mattel em 1980. Na época do seu lançamento, ele custava US$300. Ao todo, foram lançados 125 jogos para o console entre os anos de 1979 e 1989.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Intellivision I was the first console created by Mattel in 1980. At the time of its launch, it cost $ 300. In all, 125 games were released for the console between the years of 1979 and 1989.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Intellivision I fue la primera consola creada por Mattel en 1980. En la época de su lanzamiento, él costaba 300 dólares. En total, se lanzaron 125 juegos para la consola entre los años 1979 y 1989.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Intellivision I était la première console créée par Mattel en 1980. Au moment de son lancement, elle coûtait 300 dollars. Au total, 125 jeux ont été lancés pour la console entre 1979 et 1989.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Intellivision I war die erste Konsole von Mattel im Jahr 1980. Zum Zeitpunkt ihrer Markteinführung kostete sie 300 US-Dollar. Insgesamt wurden zwischen 1979 und 1989 125 Spiele für die Konsole veröffentlicht.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Intellivision</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Mattel Electronics</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.198 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.32</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.884</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.705</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

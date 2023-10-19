@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text> Amiga 3000, or A3000, is a personal computer released by Commodore in June 1990. It features improved processing speed, improved graphics rendering, and a new revision of the operating system. It is the successor to the Amiga 2000.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Amiga 3000, ou A3000, é um computador pessoal lançado pela Commodore em junho de 1990. Possui velocidade de processamento aprimorada, renderização gráfica aprimorada e uma nova revisão do sistema operacional. É o sucessor do Amiga 2000.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text> Amiga 3000, or A3000, is a personal computer released by Commodore in June 1990. It features improved processing speed, improved graphics rendering, and a new revision of the operating system. It is the successor to the Amiga 2000.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Amiga 3000, o A3000, es una computadora personal lanzada por Commodore en junio de 1990. Cuenta con una velocidad de procesamiento mejorada, una representación gráfica mejorada y una nueva revisión del sistema operativo. Es el sucesor del Amiga 2000.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>L'Amiga 3000 est un ordinateur personnel commercialisé par Commodore en juin 1990. Il présente une vitesse de traitement améliorée, un rendu graphique amélioré et une nouvelle révision du système d'exploitation. Il est le successeur de l'Amiga 2000.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text> Amiga 3000, oder A3000, ist ein Personal Computer, der von Commodore im Juni 1990 herausgebracht wurde. Er zeichnet sich durch verbesserte Verarbeitungsgeschwindigkeit, verbessertes Grafik-Rendering und eine neue Überarbeitung des Betriebssystems aus. Es ist der Nachfolger des Amiga 2000.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Amiga 3000</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Commodore International</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

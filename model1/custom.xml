@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Sega Model 1 board Sega Model 1 was an arcade board released by Sega in 1992. During the system's development, Sega turned to General Electric Aerospace for assistance in creating the 3D rendering system. The first game for the system was Virtua Racing.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>A placa Sega Model 1 Sega Model 1 foi uma placa de arcade lançada pela Sega em 1992. Durante o desenvolvimento do sistema, a Sega foi à General Electric Aerospace em busca de auxílio para criar o sistema de renderização 3D. O primeiro jogo para o sistema foi o Virtua Racing.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The Sega Model 1 board Sega Model 1 was an arcade board released by Sega in 1992. During the system's development, Sega turned to General Electric Aerospace for assistance in creating the 3D rendering system. The first game for the system was Virtua Racing.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>La placa Sega Model 1 La Sega Model 1 fue una placa arcade lanzada por Sega en 1992. Durante el desarrollo del sistema, Sega recurrió a General Electric Aerospace en busca de ayuda para crear el sistema de renderizado 3D. El primer juego del sistema fue Virtua Racing.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>La carte Sega Model 1 Sega Model 1 était une carte d'arcade lancée par Sega en 1992. Au cours du développement du système, Sega s'est tourné vers General Electric Aerospace pour obtenir de l'aide dans la création du système de rendu 3D. Le premier jeu du système était Virtua Racing.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Das Sega Model 1-Board Sega Model 1 war ein Arcade-Board, das 1992 von Sega herausgebracht wurde. Während der Entwicklung des Systems wandte sich Sega an General Electric Aerospace, um Unterstützung bei der Erstellung des 3D-Rendering-Systems zu erhalten. Das erste Spiel für das System war Virtua Racing.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Sega Model 1</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.242 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.30</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.900</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>SNK Corporation  is a Japanese video game hardware and software company. It is the successor to the company Shin Nihon Kikaku and presently owns the SNK video game brand and the Neo Geo video game platform.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>A SNK Corporation é uma empresa japonesa de hardware e software de videogame. É o sucessor da empresa Shin Nihon Kikaku e atualmente possui a marca de videogames SNK e a plataforma de videogame Neo Geo.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>SNK Corporation  is a Japanese video game hardware and software company. It is the successor to the company Shin Nihon Kikaku and presently owns the SNK video game brand and the Neo Geo video game platform.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>SNK Corporation es una compañía japonesa de hardware y software de videojuegos. Es el sucesor de la compañía Shin Nihon Kikaku y actualmente posee la marca de videojuegos SNK y la plataforma de videojuegos Neo Geo.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>SNK Corporation est une société japonaise de matériel et de logiciels de jeux vidéo. Il succède à la société Shin Nihon Kikaku et détient actuellement la marque de jeux vidéo SNK et la plateforme de jeux vidéo Neo Geo.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>SNK Corporation ist ein japanisches Hardware- und Softwareunternehmen für Videospiele. Es ist der Nachfolger des Unternehmens Shin Nihon Kikaku und besitzt derzeit die Videospielmarke SNK und die Videospielplattform Neo Geo.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>SNK</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1978</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Eikichi Kawasaki</text>
+		</text>
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

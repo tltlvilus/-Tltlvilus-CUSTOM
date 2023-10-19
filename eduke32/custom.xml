@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>EDuke32 is an ongoing open source project and popular source port of Duke Nukem 3D. It was created by past and present employees of 3D Realms and Voidpoint, though it is not affiliated with either company.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Eduke32 é um projeto de código aberto em andamento e porta de origem popular de Duke Nukem 3D. Foi criado por funcionários antigos e atuais de 3D Realms e Voidpoint, embora não seja afiliado a nenhuma das empresas.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>EDuke32 is an ongoing open source project and popular source port of Duke Nukem 3D. It was created by past and present employees of 3D Realms and Voidpoint, though it is not affiliated with either company.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>EDuke32 es un proyecto de código abierto en curso y un puerto fuente popular de Duke Nukem 3D. Fue creado por empleados actuales y pasados ​​de 3D Realms y Voidpoint, aunque no está afiliado a ninguna de las dos compañías.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>EDuke32 est un projet open source en cours et un port source populaire de Duke Nukem 3D. Il a été créé par des employés passés et présents de 3D Realms et de Voidpoint, bien qu'il ne soit affilié à aucune des deux sociétés.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>EDuke32 ist ein laufendes Open-Source-Projekt und ein beliebter Source-Port von Duke Nukem 3D. Es wurde von früheren und gegenwärtigen Mitarbeitern von 3D Realms und Voidpoint erstellt, obwohl es mit keinem der beiden Unternehmen verbunden ist.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>EDuke32</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>TerminX, Plagman</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

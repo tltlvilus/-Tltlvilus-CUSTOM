@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Commodore Amiga 500 Plus (often A500 Plus or simply A500+) is an enhanced version of the original Amiga 500 computer. It was notable for introducing new versions of Kickstart and Workbench, and for some minor improvements in the custom chips.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="PT">
+			<text>Commodore Amiga 500 Plus é uma versão aprimorada do computador Amiga 500 original. Foi notável por apresentar novas versões do Kickstart e Workbench e por algumas pequenas melhorias nos chips personalizados.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Commodore Amiga 500 Plus (often A500 Plus or simply A500+) is an enhanced version of the original Amiga 500 computer. It was notable for introducing new versions of Kickstart and Workbench, and for some minor improvements in the custom chips.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Commodore Amiga 500 Plus es una versión mejorada de la computadora Amiga 500 original. Fue notable por la introducción de nuevas versiones de Kickstart y Workbench, y por algunas mejoras menores en los chips personalizados.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Le Commodore Amiga 500 Plus est une version améliorée de l'ordinateur Amiga 500 d'origine. Il était remarquable pour l'introduction de nouvelles versions de Kickstart et Workbench, et pour quelques améliorations mineures dans les puces personnalisées.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Commodore Amiga 500 Plus (häufig A500 Plus oder einfach A500+) ist eine erweiterte Version des ursprünglichen Amiga 500-Computers. Es war bemerkenswert für die Einführung neuer Versionen von Kickstart und Workbench und für einige kleinere Verbesserungen bei den benutzerdefinierten Chips.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Amiga 500</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1992</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Commodore</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/amiga.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

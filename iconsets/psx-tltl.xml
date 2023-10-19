@@ -1,0 +1,21 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<view name="menu, system, basic, detailed,carousel,gamecarousel,wheel">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./psx-tltl/updown.png</iconUpDown>
+			<iconLeftRight>./psx-tltl/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./psx-tltl/all.png</iconUpDownLeftRight>
+			<iconA>./psx-tltl/a.png</iconA>
+			<iconB>./psx-tltl/b.png</iconB>
+			<iconX>./psx-tltl/x.png</iconX>
+			<iconY>./psx-tltl/y.png</iconY>
+			<iconL>./psx-tltl/l.png</iconL>
+			<iconR>./psx-tltl/r.png</iconR>
+			<iconStart>./psx-tltl/start.png</iconStart>
+			<iconSelect>./psx-tltl/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

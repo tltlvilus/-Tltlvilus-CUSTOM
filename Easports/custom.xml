@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true" lang="EN">
+			<text>Is a division of Electronic Arts that develops and publishes sports video games. Formerly a marketing gimmick of EA, in which they tried to imitate real-life sports networks by calling themselves the "EA Sports Network" (EASN) with pictures or endorsements with real commentators such as John Madden.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É uma divisão da Electronic Arts que desenvolve e publica videogames esportivos. Anteriormente um truque de marketing da EA, no qual eles tentavam imitar as redes esportivas da vida real, chamando a si mesmos de "EA Sports Network" (EASN) com fotos ou endossos com comentaristas reais como John Madden.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a division of Electronic Arts that develops and publishes sports video games. Formerly a marketing gimmick of EA, in which they tried to imitate real-life sports networks by calling themselves the "EA Sports Network" (EASN) with pictures or endorsements with real commentators such as John Madden.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una división de Electronic Arts que desarrolla y publica videojuegos deportivos. Anteriormente, un truco de marketing de EA, en el que intentaban imitar las redes deportivas de la vida real llamándose a sí mismas "EA Sports Network" (EASN) con imágenes o patrocinios con comentaristas reales como John Madden.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>Est une division d'Electronic Arts qui développe et édite des jeux vidéo de sport. Anciennement un gadget marketing d'EA, dans lequel ils essayaient d'imiter les réseaux sportifs réels en se faisant appeler "EA Sports Network" (EASN) avec des images ou des mentions avec de vrais commentateurs tels que John Madden.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine Abteilung von Electronic Arts, die Sportvideospiele entwickelt und veröffentlicht. Früher ein Marketing-Gag von EA, bei dem sie versuchten, echte Sportnetzwerke zu imitieren, indem sie sich "EA Sports Network" (EASN) nannten, mit Bildern oder Empfehlungen mit echten Kommentatoren wie John Madden.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>EA Sports</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Electronic Arts</text>
+		</text>	
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

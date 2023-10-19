@@ -1,0 +1,122 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The NEC PC-8801 was a personal computer, manufactured by Nippon Electric Company and released in 1981, was based on the Zilog Z80 8-bit processor.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O NEC PC-8801 foi um computador pessoal, fabricado pela Nippon Electric Company e lançado em 1981, era baseado em no processador 8 bits Zilog Z80.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The NEC PC-8801 was a personal computer, manufactured by Nippon Electric Company and released in 1981, was based on the Zilog Z80 8-bit processor.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>El NEC PC-8801 era una computadora personal, fabricada por Nippon Electric Company y lanzada en 1981, basada en el procesador Zilog Z80 de 8 bits.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Le NEC PC-8801 était un ordinateur personnel, fabriqué par Nippon Electric Company et commercialisé en 1981, basé sur le processeur Zilog Z80 à 8 bits.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Der NEC PC-8801 war ein Personal Computer, der von der Nippon Electric Company hergestellt und 1981 auf den Markt gebracht wurde und auf dem Zilog Z80 8-Bit-Prozessor basierte.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>NEC PC-8801是一款个人计算机，由日本电气公司制造并于1981年发布，基于Zilog Z80 八位处理器。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>NEC PC-8801是一款個人計算機，由日本電氣公司製造並於1981年發布，基於Zilog Z80 八位處理器。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>NEC PC-88</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1981</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Nippon Electric NEC</text>
+		</text>		
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>日本电子公司(NEC)</text>
+		</text>    
+
+		<text name="info4" extra="true" lang="TW">
+			<text>日本電子公司(NEC)</text>
+		</text>	
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.34</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinpc.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinpc.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The SAM Coupé is an 8-bit British home computer that was first released in late 1989. It was designed to have compatibility with and is commonly considered a clone of the Sinclair ZX Spectrum computer.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>SAM Coupé é um computador doméstico britânico de 8 bits que foi lançado pela primeira vez no final de 1989. Ele foi projetado para ter compatibilidade e é comumente considerado um clone do computador Sinclair ZX Spectrum.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The SAM Coupé is an 8-bit British home computer that was first released in late 1989. It was designed to have compatibility with and is commonly considered a clone of the Sinclair ZX Spectrum computer.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>El SAM Coupé es una computadora doméstica británica de 8 bits, lanzada por primera vez a fines de 1989. Fue diseñada para ser compatible con y generalmente se considera un clon de la computadora Sinclair ZX Spectrum.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Le SAM Coupé est un ordinateur domestique britannique 8 bits, lancé pour la première fois à la fin de 1989. Il a été conçu pour être compatible avec et est généralement considéré comme un clone de l'ordinateur Sinclair ZX Spectrum.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Das SAM Coupé ist ein britischer 8-Bit-Heimcomputer, der erstmals Ende 1989 auf den Markt kam. Es wurde entwickelt, um mit dem Sinclair ZX Spectrum-Computer kompatibel zu sein, und wird allgemein als Klon des Sinclair ZX Spectrum-Computers angesehen.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>SAM Coupe</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Miles Gordon Technology</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.200 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.35</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.885</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

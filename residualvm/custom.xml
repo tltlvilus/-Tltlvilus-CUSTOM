@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>ResidualVM was originally designed to play LucasArts adventure games that use the GrimE game engine. On May 26, 2009, ResidualVM was adapted so that it could support multiple engines. The Sprint engine from Presto Studios is now recreated in ResidualVM as well.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O ResidualVM foi originalmente projetado para jogar jogos de aventura da LucasArts que usam o mecanismo de jogo GrimE. Em 26 de maio de 2009, o ResidualVM foi adaptado para suportar vários mecanismos. O mecanismo Sprint da Presto Studios agora também é recriado no ResidualVM.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>ResidualVM was originally designed to play LucasArts adventure games that use the GrimE game engine. On May 26, 2009, ResidualVM was adapted so that it could support multiple engines. The Sprint engine from Presto Studios is now recreated in ResidualVM as well.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>ResidualVM fue originalmente diseñado para jugar juegos de aventura LucasArts que usan el motor de juego GrimE. El 26 de mayo de 2009, ResidualVM se adaptó para que pudiera admitir múltiples motores. El motor Sprint de Presto Studios ahora también se recrea en ResidualVM.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>ResidualVM a été initialement conçu pour jouer aux jeux d'aventure LucasArts qui utilisent le moteur de jeu GrimE. Le 2009, ResidualVM a été adapté pour pouvoir prendre en charge plusieurs moteurs. Le moteur Sprint de Presto Studios est désormais également recréé dans.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>ResidualVM wurde ursprünglich entwickelt, um LucasArts-Abenteuerspiele zu spielen, die die GrimE-Game-Engine verwenden. Am 26. Mai 2009 wurde ResidualVM so angepasst, dass es mehrere Engines unterstützen konnte. Die Sprint-Engine von Presto Studios wird jetzt auch in ResidualVM nachgebildet.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>ResidualVM</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>James Brown</text>
+		</text>
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

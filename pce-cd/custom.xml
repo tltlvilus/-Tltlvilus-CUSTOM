@@ -1,0 +1,143 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The CD-ROM² System (シーディーロムロムシステム Shī Dī Romu Romu Shisutemu, pronounced "CD-ROM-ROM") is an add-on attachment for the TurboGrafx-16 that was released in Japan on December 4, 1988.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Possibilitado por um acessório era vendido separadamente, lançado como PC-Engine CD-ROM² no Japão em abril de 1988 e TurboGrafx-CD nos EUA, proporcionava músicas digitais, vozes e animações de melhor qualidade.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The CD-ROM² System (シーディーロムロムシステム Shī Dī Romu Romu Shisutemu, pronounced "CD-ROM-ROM") is an add-on attachment for the TurboGrafx-16 that was released in Japan on December 4, 1988.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Fue la primera consola que tenía la opción de un añadido de CD permitiendo obtener las mejoras por utilizar un sistema basado en CD: más memoria, costes más baratos y compatibilidad con Red Book.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Le CD-ROM² System a été lancé le 4 décembre 1988 au Japon (en 1990 en France7). Cette extension inclus un lecteur CD-ROM qui lit les jeux au format CD-ROM², les CD Audio et CD+G (karaoké).</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Es war die erste Konsole, die die Option eines CD-Add-ons hatte, wodurch Sie die Vorteile eines CD-basierten Systems nutzen konnten: mehr Speicher, niedrigere Kosten und Red Book-Kompatibilität.</text>
+		</text>
+
+ 		<text name="info1" extra="true" lang="ZH">
+			<text>The CD-ROM² System (シーディーロムロムシステム Shī Dī Romu Romu Shisutemu)是1988年12月4日在日本发布的PC Engine的附加组件。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>The CD-ROM² System (シーディーロムロムシステム Shī Dī Romu Romu Shisutemu)是1988年12月4日在日本發布的PC Engine的附加組件。</text>
+		</text> 
+
+				<text name="info2" extra="true">
+			<text>PC Engine CD</text>
+		</text>
+					<text name="info2" extra="true" lang="PT">
+			<text>PC Engine CD</text>
+		</text>
+
+				<text name="info2" extra="true" lang="EN">
+			<text>TurboGrafx-CD</text>
+		</text>
+						<text name="info2" extra="true" lang="ES">
+			<text>TurboGrafx-CD</text>
+		</text>
+						<text name="info2" extra="true" lang="FR">
+			<text>PC Engine CD</text>
+		</text>
+		<text name="info2" extra="true" lang="DE">
+			<text>TurboGrafx-CD</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1988</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>NEC Home Electronics</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>NEC家庭电子</text>
+		</text>
+
+		<text name="info4" extra="true" lang="TW">
+			<text>NEC家庭電子</text>
+		</text>
+
+	<image name="logo" lang="EN">
+		<path>./../assets/logos/tg-cd.png</path>
+	</image>
+
+		<image name="logo" lang="ES">
+		<path>./../assets/logos/tg-cd.png</path>
+	</image>
+
+
+		<image name="logo" lang="DE">
+			<path>./../assets/logos/tg-cd.png</path>
+		</image>
+
+				<image name="sublogo" lang="EN">
+		<path>./assets/logos/tg-cd.png</path>
+	</image>
+
+				<image name="sublogo" lang="ES">
+		<path>./assets/logos/tg-cd.png</path>
+	</image>
+	
+	<image name="sublogo" lang="DE">
+		<path>./assets/logos/tg-cd.png</path>
+	</image>
+	
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.185 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.40</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.885</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

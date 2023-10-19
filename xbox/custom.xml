@@ -1,0 +1,110 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Xbox is a home video game console and the first installment in the Xbox series of video game consoles manufactured by Microsoft. It is classified as a sixth generation console, competing with PS2 and GameCube.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O Xbox é um console de videogame doméstico e o primeiro da série fabricados pela Microsoft. É classificado como um console de sexta geração, competindo com o PlayStation 2 da Sony e o GameCube da Nintendo.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Xbox is a home video game console and the first installment in the Xbox series of video game consoles manufactured by Microsoft. It is classified as a sixth generation console, competing with PS2 and GameCube.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Xbox es una consola de videojuegos doméstica y la primera de la serie fabricada por Microsoft. Está clasificada como una consola de sexta generación, compitiendo con PlayStation 2 de Sony y GameCube de Nintendo.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Xbox es una consola de videojuegos doméstica y la primera de la serie fabricada por Microsoft. Está clasificada como una consola de sexta generación, compitiendo con PlayStation 2 de Sony y GameCube de Nintendo.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Xbox ist eine Videospielkonsole für den Heimgebrauch und die erste Folge der Xbox-Reihe von Videospielkonsolen, die von Microsoft hergestellt werden. Sie wird als Konsole der sechsten Generation eingestuft und konkurriert mit PS2 und GameCube.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>Xbox是一款家用视频游戏机，是微软生产的Xbox系列视频游戏机的第一款。它被归类为第六代游戏机，与PS2和GameCube竞争。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>Xbox是一款家用視頻遊戲機，是微軟生產的Xbox系列視頻遊戲機的第一款。它被歸類為第六代遊戲機，與PS2和GameCube競爭。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Xbox</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ZH">
+			<text>微软Xbox</text>
+		</text>
+
+		<text name="info2" extra="true" lang="TW">
+			<text>微軟Xbox</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>2001</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Microsoft</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>微软</text>
+		</text> 
+
+		<text name="info4" extra="true" lang="TW">
+			<text>微軟</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.216 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.44</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.910</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

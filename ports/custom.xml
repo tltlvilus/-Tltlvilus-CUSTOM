@@ -1,0 +1,119 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Several developers have released the source code to many of their legacy titles, allowing them to be run as native applications on many alternative platforms, including Linux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Vários desenvolvedores lançaram o código-fonte para muitos de seus títulos clássicos, permitindo que eles sejam nativos para muitas plataformas alternativas, incluindo o Linux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Several developers have released the source code to many of their legacy titles, allowing them to be run as native applications on many alternative platforms, including Linux.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Varios desarrollos han liberado el código fuente en muchos de sus títulos heredados, Permitir que se ejecuten aplicaciones nativas en varias alternativas de plataforma, incluyendo Linux.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Plusieurs développeurs ont publié le code source sur bon nombre de leurs anciens titres, leur permettant d’exécuter des applications natives sur de nombreuses plates-formes alternatives, y compris Linux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Mehrere Entwickler haben den Quellcode für viele ihrer Legacy-Titel veröffentlicht, sodass sie als native Anwendungen auf vielen alternativen Plattformen, einschließlich Linux, ausgeführt werden können.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="ZH">
+			<text>一些开发人员发布的旧作品的源代码，允许它们在包括Linux在内的许多替代平台上作为本机应用程序运行。</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>一些開發人員發表的舊作品的源代碼，允許它們在包括Linux在內的許多替代平台上作為本機應用程序運行。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Ports</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="ZH">
+			<text>移植游戏</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="TW">
+			<text>移植游戲</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>各种参与者</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="TW">
+			<text>各種參與者</text>
+		</text>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

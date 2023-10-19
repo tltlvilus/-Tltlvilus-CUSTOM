@@ -1,0 +1,136 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The 32X is an add-on for the Sega Genesis video game console. Codenamed "Project Mars", the 32X was designed to expand the power of the Genesis and serve as a transitional console into the 32-bit.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Sega 32x é um acessório para o console da Sega, o Mega Drive, Genesis Na América do Norte. O acessório deveria ser inserido na entrada de cartucho do Mega Drive, recebendo cartuchos próprios ou do Mega Drive.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The 32X is an add-on for the Sega Genesis video game console. Codenamed "Project Mars", the 32X was designed to expand the power of the Genesis and serve as a transitional console into the 32-bit.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Mega Drive 32X, también llamada Sega 32X (en América) o Super 32X (en Japón), es un periférico lanzado por Sega en 1994, que ofrecía una ampliación de 32 bits para la consola de 16 bits Sega Mega Drive.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une extension de la Mega Drive, console du constructeur japonais Sega. La 32X utilise indépendamment de la Mega Drive ses propres cartouches de jeu et dispose d'une ludothèque de quarante jeux vidéo.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Das 32X ist ein Add-on für die Videospielkonsole Sega Genesis. Das 32X mit dem Codenamen „Project Mars“ wurde entwickelt, um die Leistung des Genesis zu erweitern und als Übergangskonsole in die 32-Bit-Version zu dienen.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>32X是Sega Genesis视频游戏机的附加组件。代号为“Project Mars”的32X旨在扩展 Genesis 的功能并作为过渡到32位的终端。</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>32X是Sega Genesis視頻遊戲機的附加組件。代號為“Project Mars”的32X旨在擴展 Genesis 的功能並作為過渡到32位的終端。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Sega 32X</text>
+		</text>
+
+		<text name="info2" extra="true" lang="PT">
+			<text>Sega 32X</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="EN">
+			<text>Genesis 32X</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="ES">
+			<text>Mega Drive 32X</text>
+		</text>
+						<text name="info2" extra="true" lang="FR">
+			<text>Mega Drive 32X</text>
+		</text>
+		<text name="info2" extra="true" lang="DE">
+			<text>Mega Drive 32X</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="ZH">
+			<text>Mega Drive 32X</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="TW">
+			<text>Mega Drive 32X</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Sega Corporation</text>
+		</text>
+		
+		<text name="info4" extra="true"  lang="ZH">
+			<text>世嘉</text>
+		</text>
+		
+		<text name="info4" extra="true"  lang="TW">
+			<text>世嘉</text>
+		</text>
+
+		<image name="logo" lang="EN">
+		<path>./../assets/logos/sega32x4.png</path>
+	</image>
+
+		<image name="sublogo" lang="EN">
+		<path>./assets/logos/sega32x4.png</path>
+	</image>
+	
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.36</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.180 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.180 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.180 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.180 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.180 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.893</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.705</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

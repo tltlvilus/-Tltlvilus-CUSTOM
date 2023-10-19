@@ -1,0 +1,147 @@
+<theme>
+    <formatVersion>4</formatVersion>
+	
+	<include subset="langui" name="English"/>
+	<include subset="langui" name="Português Brasileiro"/>
+	
+	<include subset="colorset" name="Full HD 1080p">./colorsets/fullhd.xml</include>
+	<include subset="colorset" name="HD 720p">./colorsets/hd.xml</include>
+	<include subset="colorset" name="Lite 540p">./colorsets/lite.xml</include>
+	
+	<include subset="iconset" name="standard icons" displayName="${icondef}">./iconsets/default.xml</include>
+	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
+	<include subset="iconset" name="SNES ALT">./iconsets/snesalt.xml</include>
+	<include subset="iconset" name="XBox">./iconsets/xbox.xml</include>
+	<include subset="iconset" name="Default PSX">./iconsets/psx.xml</include>
+	<include subset="iconset" name="ARCADE">./iconsets/arcade.xml</include>
+	<include subset="iconset" name="PSX ALT">./iconsets/psx1.xml</include>
+	<include subset="iconset" name="Xbox One">./iconsets/xboxone.xml</include>
+	<include subset="iconset" name="Switch">./iconsets/switch.xml</include>
+	<include subset="iconset" name="TLTL-PSX">./iconsets/psx-tltl.xml</include>
+
+	<include subset="systemview" name="Default" displayName="TLTL-CUSTOM">./systemview/tltl_system.xml</include>
+
+   <include subset="MainBGColor" name="Default" displayName="${default}"/>
+   <include subset="MainBGColor" name="Gray" displayName="${huegray}">./colorsets/gray.xml</include>
+   <include subset="MainBGColor" name="Gray Dark" displayName="${huegrayd}">./colorsets/grayd.xml</include>
+   <include subset="MainBGColor" name="Red" displayName="${huered}">./colorsets/red.xml</include>
+   <include subset="MainBGColor" name="Pink" displayName="${huepink}">./colorsets/pink.xml</include>
+   <include subset="MainBGColor" name="Rose" displayName="${huerose}">./colorsets/rose.xml</include>
+   <include subset="MainBGColor" name="Green" displayName="${huegreen}">./colorsets/green.xml</include>
+   <include subset="MainBGColor" name="Lime" displayName="${huelime}">./colorsets/lime.xml</include>
+   <include subset="MainBGColor" name="Yellow" displayName="${hueyellow}">./colorsets/yellow.xml</include>
+   <include subset="MainBGColor" name="Blue" displayName="${hueblue}">./colorsets/blue.xml</include>
+   <include subset="MainBGColor" name="Blue Light" displayName="${huebluel}">./colorsets/bluel.xml</include>
+   <include subset="MainBGColor" name="Cyan" displayName="${huecyan}">./colorsets/cyan.xml</include>
+   <include subset="MainBGColor" name="Turquoise" displayName="${hueturquoise}">./colorsets/turquoise.xml</include>
+   <include subset="MainBGColor" name="Purple" displayName="${huepurple}">./colorsets/purple.xml</include>
+   <include subset="MainBGColor" name="Lilac" displayName="${huelilac}">./colorsets/lilac.xml</include>
+   
+   <include subset="InterfaceSound" name="Type1" displayName="${type1}"/>
+   <include subset="InterfaceSound" name="Type2" displayName="${type2}"/>
+   <include subset="InterfaceSound" name="Off" displayName="${off}"/>
+   
+   <include subset="shader" name="None" displayName="${none}"/>
+   <include subset="shader" name="ScanLines">./effects/scanlines.xml</include>
+   <include subset="shader" name="ScanLines 2x">./effects/scanlines2x.xml</include>
+   <include subset="shader" name="ScanLines 2.5x">./effects/scanlines2-5x.xml</include>
+   <include subset="shader" name="ScanLines 3x">./effects/scanlines3x.xml</include>
+   <include subset="shader" name="ScanLines 4x">./effects/scanlines4x.xml</include>
+   <include subset="shader" name="Crt">./effects/crtt.xml</include>
+   <include subset="shader" name="Phosphore">./effects/phosphore.xml</include>
+   <include subset="shader" name="Scanlines Alternative" displayName="${scanalt}">./effects/scanliness.xml</include>
+   <include subset="shader" name="Phosphore +">./effects/phosplus.xml</include>
+   <include subset="shader" name="Vertical Scanlines">./effects/scanvert.xml</include>
+   <include subset="shader" name="Vertical Fine">./effects/verticalfine.xml</include>
+   <include subset="shader" name="Crt Full Screen" displayName="${scrtfs}">./effects/crt.xml</include>
+   <include subset="shader" name="Crt Full Screen 2x" displayName="${scrtfs2}">./effects/crt.xml</include>
+   <include subset="shader" name="ScanLines Full Screen" displayName="${sclfs}">./effects/scanlines.xml</include>
+   <include subset="shader" name="VHS Glitch (Heavy)" displayName="${svhsgl}">./effects/vhs.xml</include>
+   <include subset="shader" name="CRT Glitch (Heavy)" displayName="${scrtgl}">./effects/crtvideo.xml</include>
+   
+   <include subset="animcarousel" name="Default" displayName="${default}"/>
+   <include subset="animcarousel" name="Animated Wheel" displayName="${animcarou}">./effects/animatedcarousel.xml</include>
+   <include subset="animcarousel" name="Animated Wheel Hide" displayName="${animwcarou}">./effects/animatedwcarousel.xml</include>
+   <include subset="animcarousel" name="Animated Wheel Hide Opacity" displayName="${animxcarou}">./effects/animatedxcarousel.xml</include>
+   <include subset="animcarousel" name="Wheel Hide" displayName="${animhcarou}">./effects/animatedhcarousel.xml</include>
+   <include subset="animcarousel" name="Wheel Hide Opacity" displayName="${animjcarou}">./effects/animatedjcarousel.xml</include>
+   
+   <include subset="animbg" name="Default" displayName="${default}"/>
+   <include subset="animbg" name="Animated Background" displayName="${animbg}">./effects/animatedbg.xml</include>
+   <include subset="animbg" name="Animated Background Repeat" displayName="${animbgx}">./effects/animatedbgx.xml</include>
+   <include subset="animbg" name="Animated Background 2" displayName="${animbg2}">./effects/animatedbg2.xml</include>
+   <include subset="animbg" name="Animated Background 2 Repeat" displayName="${animbg2x}">./effects/animatedbg2x.xml</include>
+	
+   <include subset="syscarousel" name="Wheel" displayName="${wheel}">./effects/carouselwheel.xml</include>
+   <include subset="syscarousel" name="Vertical">./effects/carouselvert.xml</include>
+   <include subset="syscarousel" name="Without Vertical Carousel" displayName="${snocarou}">./effects/wcarousel.xml</include>
+ 
+   <include subset="sysname" name="Text" displayName="${systex}">./colorsets/texttitle.xml</include>
+   <include subset="sysname" name="Logo" displayName="${syslog}">./colorsets/logotitle.xml</include>
+   <include subset="sysname" name="Without" displayName="${none}">./colorsets/wtitle.xml</include>
+   
+   <include subset="randomvid" name="yes" displayName="${yes}"/>
+   <include subset="randomvid" name="no" displayName="${no}"/> 
+   
+   <include subset="tveffect" name="None" displayName="${none}" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps"/>
+   <include subset="tveffect" name="ScanLines" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/scanlinescoin.xml</include>
+   <include subset="tveffect" name="ScanLines 2x" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/scanlinescoin2x.xml</include>
+   <include subset="tveffect" name="ScanLines 2.5x" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/scanlinescoin25x.xml</include>
+   <include subset="tveffect" name="Phosphore" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/phosphorecoin.xml</include>
+   <include subset="tveffect" name="Phosphore +" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/phospluscoin.xml</include>
+   <include subset="tveffect" name="ScanAlt" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps" displayName="${scanalt}">./effects/scanlinesscoin.xml</include>
+   <include subset="tveffect" name="Vertical Scanlines" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/scanvertcoin.xml</include>
+   <include subset="tveffect" name="Vertical Fine" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/verticalfinecoin.xml</include>
+   <include subset="tveffect" name="Glitch (Video)" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/vhscoin.xml</include>
+   <include subset="tveffect" name="CRT (Video)" appliesTo="TLTL-CUSTOM,TLTL-NO-FANART,TLTL-COLOR,TLTL-HCoinSpin,TLTL-CoinOps">./effects/crtcoin.xml</include>
+
+	<include subset="WheelBG" name="None" displayName="${none}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Transparency" displayName="${blackt}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Transparency Detail" displayName="${blacktd}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Transparency White Detail" displayName="${blacktw}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Black" displayName="${black}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="White" displayName="${white}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Gray" displayName="${gray}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Gray Dark" displayName="${gray}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Gray Light" displayName="${grayl}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Red" displayName="${red}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Blue" displayName="${blue}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Green" displayName="${green}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Yellow" displayName="${yellow}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Rose" displayName="${rose}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Pink" displayName="${pink}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Purple" displayName="${purple}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Lilac" displayName="${lilac}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Gray Dark With White" displayName="${graydw}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Black with Vignette" displayName="${blackv}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="White with Vignette" displayName="${whitev}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Star" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Dark" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="WheelBG" name="Light" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+
+	<include subset="VideoBG" name="Filme" displayName="${filme}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Black" displayName="${black}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Gray" displayName="${gray}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Gray Dark" displayName="${grayd}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Gray Light" displayName="${grayl}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="White" displayName="${white}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Red" displayName="${red}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Blue" displayName="${blue}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Green" displayName="${green}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Yellow" displayName="${yellow}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Rose" displayName="${rose}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Pink" displayName="${pink}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Purple" displayName="${purple}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	<include subset="VideoBG" name="Lilac" displayName="${lilac}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+
+	<include subset="Clock" name="Normal" displayName="${clocknormal}"/>
+	<include subset="Clock" name="Small" displayName="${clocksmall}"/>
+	<include subset="Clock" name="Off" displayName="${clockoff}"/>
+	
+	<include subset="CoinOpsDefault" name="Default" displayName="${default}" appliesTo="TLTL-HCoinSpin,TLTL-CoinOps">./colorsets/coinops.xml</include>
+	<include subset="CoinOpsDefault" name="TV Only" displayName="${copstv}" appliesTo="TLTL-HCoinSpin,TLTL-CoinOps">./colorsets/tv.xml</include>
+	<include subset="CoinOpsDefault" name="TV Only No Glass" displayName="${copstvn}" appliesTo="TLTL-HCoinSpin,TLTL-CoinOps">./colorsets/tv_nog.xml</include>
+	<include subset="CoinOpsDefault" name="Arcade Only" displayName="${copsarc}" appliesTo="TLTL-HCoinSpin,TLTL-CoinOps">./colorsets/arcade.xml</include>
+	<include subset="CoinOpsDefault" name="Arcade Only No Glass" displayName="${copsarcn}" appliesTo="TLTL-HCoinSpin,TLTL-CoinOps">./colorsets/arcade_nog.xml</include>
+
+</theme>

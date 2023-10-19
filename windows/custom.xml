@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Wine is a compatibility layer for UNIX operating systems that aims to implement the Microsoft Windows API. Thus, in theory, Wine allows the execution of applications developed for Windows on other operating systems.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Wine é uma camada de compatibilidade para sistemas operativos UNIX que tem como objetivo a execução de aplicações desenvolvidas para ambientes Windows nativamente em outros sistemas operacionais.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Wine is a compatibility layer for UNIX operating systems that aims to implement the Microsoft Windows API. Thus, in theory, Wine allows the execution of applications developed for Windows on other operating systems.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Wine es una capa de compatibilidad para sistemas operativos UNIX que tiene como objetivo implementar la API de Microsoft Windows. Wine permite la ejecución de aplicaciones para Windows en otros sistemas operativos.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Wine est une couche de compatibilité pour les systèmes d'exploitation UNIX qui vise à implémenter l'API Windows. Wine permet l'exécution d'applications développées pour Windows sur d'autres systèmes d'exploitation.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Wine ist eine Kompatibilitätsschicht für UNIX-Betriebssysteme, die darauf abzielt, die Microsoft Windows-API zu implementieren. Somit erlaubt Wine theoretisch die Ausführung von Anwendungen, die für Windows auf anderen Betriebssystemen entwickelt wurden.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Windows Games</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Alexandre Julliard</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

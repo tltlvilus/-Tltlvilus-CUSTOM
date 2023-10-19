@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Family Computer Disk System, abbreviated as the FDS or FCD, is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Este acessório era utilizado no Nintendo Entertainment System. A sua distribuição ocorreu somente no Japão, mas não foi bem sucedida devido aos problemas a que esse tipo de mídia (disquete) está sujeita.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The Family Computer Disk System, abbreviated as the FDS or FCD, is a peripheral for Nintendo's Family Computer home video game console, released only in Japan on February 21, 1986.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>The Family Computer Disk System, abreviado como FDS o FCD, es un periférico para la consola de videojuegos para el hogar de Nintendo's Family Computer, lanzado solo en Japón el 21 de febrero de 1986.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est un périphérique de la console de jeux vidéo Famicom. Vendu par Nintendo, il se place sous la console et utilise un format propriétaire de disquette permettant de stocker des jeux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Das Family Computer Disk System, abgekürzt als FDS oder FCD, ist ein Peripheriegerät für Nintendos Family Computer-Heimvideospielkonsole, das am 21. Februar 1986 nur in Japan veröffentlicht wurde.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Famicom Disk System</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1986</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.770</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.36</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.877</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.765</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

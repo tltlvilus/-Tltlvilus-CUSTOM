@@ -1,0 +1,101 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Also known as the C64 or the CBM 64, is an 8-bit home computer introduced in January 1982 by Commodore International (first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982).</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Foi um computador doméstico lançado pela Commodore em agosto de 1982 e produzido até abril de 1994. Estima-se que foram comercializados entre 17 a 22 milhões de unidades - recorde até os dias de hoje.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Also known as the C64 or the CBM 64, is an 8-bit home computer introduced in January 1982 by Commodore International (first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982).</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Commodore 64 (C64, CBM 64/CBM64, C=64,C-64, VIC-64.1​) es una computadora doméstica de 8 bits desarrollada por Commodore International en agosto de 1982 a un precio inicial de 595 dólares.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est un ordinateur personnel conçu par Commodore Business Machines Inc. Il fut la première machine vendue à plusieurs millions d'exemplaires (de 17 à 25 millions selon les estimations).</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Auch als C64 oder CBM 64 bekannt, ist ein 8-Bit-Heimcomputer, der im Januar 1982 von Commodore International eingeführt wurde (erstmals gezeigt auf der Consumer Electronics Show in Las Vegas, 7.–10. Januar 1982).</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>也称为C64或CBM 64，是Commodore International于1982年1月推出的8位家用计算机（首次亮相于1982年1月7日至10日在拉斯维加斯举行的消费电子展）。</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>也稱為C64或CBM 64，是Commodore International於1982年1月推出的8位家用計算機（首次亮相於1982年1月7日至10日在拉斯維加斯舉行的消費電子展）。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Commodore 64</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1982</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Commodore Business Machines</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>Commodore商业机器</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="TW">
+			<text>Commodore商業機器</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.195 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.32</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.885</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

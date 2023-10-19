@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Super Mario War is a fan-made multiplayer Super Mario Bros. style deathmatch game in which players try to beat one another in a variety of gameplay modes. You can play on teams, design your own levels, design your own worlds, and much more.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Super Mario War é um jogo de deathmatch multiplayer feito por fãs no estilo Super Mario Bros., no qual os jogadores tentam vencer uns aos outros em uma variedade de modos de jogo. Você pode jogar em equipes, projetar seus próprios níveis, projetar seus próprios mundos e muito mais.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Super Mario War is a fan-made multiplayer Super Mario Bros. style deathmatch game in which players try to beat one another in a variety of gameplay modes. You can play on teams, design your own levels, design your own worlds, and much more.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Super Mario War es un juego de combate a muerte multijugador al estilo de Super Mario Bros. hecho por fanáticos en el que los jugadores intentan vencerse unos a otros en una variedad de modos de juego. Puedes jugar en equipos, diseñar tus propios niveles, diseñar tus propios mundos y mucho más.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Super Mario War est un jeu de match à mort multijoueur de style Super Mario Bros. créé par des fans dans lequel les joueurs essaient de se battre dans une variété de modes de jeu. Vous pouvez jouer en équipe, concevoir vos propres niveaux, concevoir vos propres mondes et bien plus encore.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Super Mario War ist ein von Fans erstelltes Multiplayer-Deathmatch-Spiel im Stil von Super Mario Bros., in dem die Spieler versuchen, sich in verschiedenen Spielmodi gegenseitig zu schlagen. Sie können in Teams spielen, Ihre eigenen Level entwerfen, Ihre eigenen Welten entwerfen und vieles mehr.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Super Mario War</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2002</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Samuele Poletto</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>VIC-20 (in Germany, VC-20, in Japan, VIC-1001) is an 8-bit home computer that was sold by Commodore Business Machines. The VIC-20 was announced in 1980, roughly three years after Commodore's first personal computer, the PET.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O VIC-20 (na Alemanha, VC-20, no Japão, VIC-1001) é um computador doméstico de 8 bits que foi vendido pela Commodore Business Machines. O VIC-20 foi anunciado em 1980, aproximadamente três anos após o primeiro computador pessoal da Commodore, o PET.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>VIC-20 (in Germany, VC-20, in Japan, VIC-1001) is an 8-bit home computer that was sold by Commodore Business Machines. The VIC-20 was announced in 1980, roughly three years after Commodore's first personal computer, the PET.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>VIC-20 (en Alemania, VC-20, en Japón, VIC-1001) es una computadora doméstica de 8 bits que fue vendida por Commodore Business Machines. El VIC-20 se anunció en 1980, aproximadamente tres años después de la primera computadora personal de Commodore, el PET.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>VIC-20 (en Allemagne, VC-20, au Japon, VIC-1001) est un ordinateur domestique 8 bits vendu par Commodore Business Machines. Le VIC-20 a été annoncé en 1980, environ trois ans après le premier ordinateur personnel de Commodore, le PET.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>VIC-20 (in Deutschland VC-20, in Japan VIC-1001) ist ein 8-Bit-Heimcomputer, der von Commodore Business Machines verkauft wurde. Der VIC-20 wurde 1980 angekündigt, ungefähr drei Jahre nach Commodores erstem Personal Computer, dem PET.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Commodore VIC-20</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Commodore Business Machines</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.220 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.35</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

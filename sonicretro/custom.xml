@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Also known as the Star Engine, is a game engine created by "The Taxman". It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Também conhecido como Star Engine, é uma engine criada por "The Taxman" (Christian Whitehead). Ele foi projetado para fornecer recursos da era do console de 32 bits e abaixo, e se concentra em coisas como efeitos raster, manipulações de paleta, 'modo 7' e outros recursos de jogos retrô da época.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Also known as the Star Engine, is a game engine created by "The Taxman". It is designed to deliver features from the 32-bit console era and below, and focuses on things like raster effects, palette manipulations, 'mode 7', and other features of retro games from back then.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>También conocido como Star Engine, es un motor de juego creado por "The Taxman" (Christian Whitehead). Está diseñado para ofrecer características de la era de las consolas de 32 bits e inferiores, y se enfoca en cosas como efectos de trama, manipulaciones de paleta, 'modo 7' y otras características de los juegos retro de entonces.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Aussi connu sous le nom de Star Engine, est un moteur de jeu créé par "The Taxman". Il est conçu pour fournir des fonctionnalités de l'ère des consoles 32 bits et inférieures, et se concentre sur des éléments tels que les effets raster, les manipulations de palette, le «mode 7» et d'autres fonctionnalités des jeux rétro de l'époque.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Auch als Star Engine bekannt, ist eine Spiel-Engine, die von „The Taxman“ (Christian Whitehead) entwickelt wurde. Es wurde entwickelt, um Funktionen aus der 32-Bit-Konsolenära und darunter bereitzustellen, und konzentriert sich auf Dinge wie Rastereffekte, Palettenmanipulationen, "Modus 7" und andere Funktionen von Retro-Spielen von damals.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Sonic Retro</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2011</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Christian Whitehead</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

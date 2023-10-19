@@ -1,0 +1,12 @@
+<theme>
+<formatVersion>4</formatVersion>
+
+
+<view name="system">
+      <image name="art" extra="true">
+         <path>./../assets/arts/720/$system.jpg</path>
+      </image>   
+</view>
+
+  
+</theme>

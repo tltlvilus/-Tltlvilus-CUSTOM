@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Neo Geo Mini is a miniature arcade containing 40 company game titles. The device has a 3.5 inch screen, built-in control and HDMI output. In addition to your own control, you can use the Neo Geo CD controls, adapted for the miniature console.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Neo Geo Mini é um fliperama em miniatura contendo 40 títulos de jogos da empresa. O aparelho possui uma tela de 3.5 polegadas, controle embutido e saída HDMI. Além do controle próprio, pode-se usar os controles do Neo Geo CD adaptados.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Neo Geo Mini is a miniature arcade containing 40 company game titles. The device has a 3.5 inch screen, built-in control and HDMI output. In addition to your own control, you can use the Neo Geo CD controls, adapted for the miniature console.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Neo Geo Mini es un arcade en miniatura que contiene 40 títulos de juegos de la compañía. El dispositivo tiene una pantalla de 3.5 pulgadas, control incorporado y salida HDMI. Además de su propio control, puede usar los controles del Neo Geo CD.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Neo Geo Mini est une arcade miniature contenant 40 titres de jeux d'entreprise. L'appareil dispose d'un écran de 3,5 pouces, d'un contrôle intégré et d'une sortie HDMI. En plus de votre propre contrôle, vous pouvez utiliser les contrôles Neo Geo CD adaptés.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Neo Geo Mini ist eine Mini-Spielhalle mit 40 Firmenspieltiteln. Das Gerät verfügt über einen 3,5-Zoll-Bildschirm, eine integrierte Steuerung und einen HDMI-Ausgang. Zusätzlich zu Ihrer eigenen Steuerung können Sie die für die Miniaturkonsole angepasste Neo Geo CD-Steuerung verwenden.</text>
+		</text>
+
+
+		<text name="info2" extra="true">
+			<text>Neo Geo Mini</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2018</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SNK Corporation</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/neogeocd.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/neogeocd.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

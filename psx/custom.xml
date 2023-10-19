@@ -1,0 +1,112 @@
+<theme>
+
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+	
+		<text name="info1" extra="true">
+			<text>Is a home video game console developed by Sony Computer Entertainment. The console was the first of the PlayStation lineup of home video game consoles as part of the fifth generation of video game consoles.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Foi o primeiro console de vídeo game fabricado pela Sony, desde o seu lançamento vendeu mais de 100 milhões de unidades.  Considerado um marco para a indústria de games e um dos consoles mais importantes da história.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a home video game console developed by Sony Computer Entertainment. The console was the first of the PlayStation lineup of home video game consoles as part of the fifth generation of video game consoles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>PlayStation (プレイステーション Pureisuteshon, oficialmente abreviada como PS1) es una videoconsola de sobremesa de 32 bits lanzada por Sony Computer Entertainment el 3 de diciembre de 1994 en Japón.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>PlayStation (プレイステーション) est une console de jeux vidéo de cinquième génération, produite par Sony Computer Entertainment à partir de 1994. Fut la première machine de la gamme PlayStation.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine Heimvideospielkonsole, die von Sony Computer Entertainment entwickelt wurde. Die Konsole war die erste der PlayStation-Reihe von Heimvideospielkonsolen als Teil der fünften Generation von Videospielkonsolen.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>索尼电脑娱乐公司开发的家用视频游戏机。作为第五代视频游戏机的一部分，该游戏机是PlayStation家用视频游戏机系列中的第一款。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>索尼電腦娛樂公司開發的家用視頻遊戲機。作為第五代視頻遊戲機的一部分，該遊戲機是PlayStation家用視頻遊戲機系列中的第一款。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>PlayStation</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ZH">
+			<text>索尼PlayStation</text>
+		</text>
+
+		<text name="info2" extra="true" lang="TW">
+			<text>索尼PlayStation</text>
+		</text> 
+
+		<text name="info3" extra="true">
+			<text>1994</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Sony Computer Entertainment</text>
+		</text>
+
+		<text name="info4" extra="true" lang="ZH">
+			<text>索尼电脑娱乐</text>
+		</text> 
+
+		<text name="info4" extra="true" lang="TW">
+			<text>索尼電腦娛樂</text>
+		</text>
+
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.198 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.32</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.250 0.440</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.250 0.440</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.250 0.440</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.250 0.440</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.250 0.440</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.898</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.023 0.803</pos><size>0.110 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

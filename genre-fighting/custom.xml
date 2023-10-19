@@ -1,0 +1,151 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Fighting games are characterized by close combat between two fighters or groups of fighters of comparable strength, often broken into rounds. If multiple players are involved, players generally fight against each other.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="PT">
+			<text>Os jogos de luta são caracterizados por combates corpo-a-corpo entre dois lutadores ou grupos de lutadores de força comparável, geralmente divididos em rodadas. Se vários jogadores estiverem envolvidos, os jogadores geralmente lutam entre si.</text>
+		</text>		
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Fighting games are characterized by close combat between two fighters or groups of fighters of comparable strength, often broken into rounds. If multiple players are involved, players generally fight against each other.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ES">
+			<text>Los juegos de lucha se caracterizan por el combate cuerpo a cuerpo entre dos luchadores o grupos de luchadores de fuerza comparable, a menudo divididos en rondas. Si hay varios jugadores involucrados, los jugadores generalmente luchan entre sí.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="FR">
+			<text>Les jeux de combat se caractérisent par des combats rapprochés entre deux combattants ou groupes de combattants de force comparable, souvent divisés en rounds. Si plusieurs joueurs sont impliqués, les joueurs se battent généralement les uns contre les autres.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Kampfspiele zeichnen sich durch Nahkämpfe zwischen zwei Kämpfern oder Gruppen von Kämpfern vergleichbarer Stärke aus, die oft in Runden unterteilt sind. Wenn mehrere Spieler beteiligt sind, kämpfen die Spieler in der Regel gegeneinander.</text>
+		</text>	
+
+		
+		<text name="info2" extra="true">
+			<text>Fighting Games</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="PT">
+			<text>Jogos de Luta</text>
+		</text>		
+		
+		<text name="info2" extra="true" lang="EN">
+			<text>Fighting Games</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ES">
+			<text>Juegos de Lucha</text>
+		</text>
+
+		<text name="info2" extra="true" lang="FR">
+			<text>Jeux de Combat</text>
+		</text>		
+
+		<text name="info2" extra="true" lang="DE">
+			<text>Kampfspiele</text>
+		</text>	
+		
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>		
+		
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>						
+		</text>
+					<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+
+		<image name="art" extra="true" ifSubset="colorset:Full HD 1080p">
+		<path>./../assets/arts/auto-fight.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:HD 720p">
+		<path>./../assets/arts/720/auto-fight.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:Lite 540p">
+		<path>./../assets/arts/540/auto-fight.jpg</path>
+		</image>
+		
+		<image name="logo, sublogo">
+		<path>./../assets/logos/auto-fight.png</path>
+		</image>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

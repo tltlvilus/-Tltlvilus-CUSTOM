@@ -1,0 +1,125 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>OpenBOR (Open Beats of Rage) is an open source continuation of the Beats of Rage engine. Although Beats of Rage was intended to be a stand alone game, the modular design of in game elements and engine meant end users were able to replace assets.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>OpenBOR (Open Beats of Rage) é uma continuação de código aberto do mecanismo Beats of Rage. Embora o Beats of Rage pretendesse ser um jogo autônomo, o design modular dos elementos e do mecanismo dos jogos significava que os usuários finais podiam substituir assets.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>OpenBOR (Open Beats of Rage) is an open source continuation of the Beats of Rage engine. Although Beats of Rage was intended to be a stand alone game, the modular design of in game elements and engine meant end users were able to replace assets.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>OpenBOR es una continuación de código abierto del motor Beats of Rage. Aunque Beats of Rage estaba destinado a ser un juego independiente, el diseño modular de los elementos y el motor del juego significaba que los usuarios finales podían reemplazar los activos.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>OpenBOR (Open Beats of Rage) est une suite open source du moteur Beats of Rage. Bien que Beats of Rage ait été conçu pour être un jeu indépendant, la conception modulaire des éléments et du moteur de jeu a permis aux utilisateurs finaux de remplacer leurs actifs.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>OpenBOR (Open Beats of Rage) ist eine Open-Source-Fortsetzung der Beats of Rage-Engine. Obwohl Beats of Rage als eigenständiges Spiel gedacht war, bedeutete das modulare Design der Spielelemente und der Engine, dass Endbenutzer Assets ersetzen konnten.</text>
+		</text>   
+    
+    <text name="info1" extra="true" lang="ZH">
+			<text>OpenBOR（Open Beats of Rage）是Beats of Rage引擎的开源延续。尽管Beats of Rage旨在成为一款独立游戏，但游戏内元素和引擎的模块化设计意味着最终用户能够更换资产。</text>
+		</text>
+    
+    <text name="info1" extra="true" lang="TW">
+			<text>OpenBOR（Open Beats of Rage）是Beats of Rage引擎的開源延續。儘管Beats of Rage旨在成為一款獨立遊戲，但遊戲內元素和引擎的模塊化設計意味著最終用戶能夠更換資產。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Open BOR</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Senile Team</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+	  <text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+		<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>      
+		<text name="info5" extra="true" lang="ZH">
+			<text>开发者:</text>
+		</text>    
+		<text name="info5" extra="true" lang="TW">
+			<text>開發者:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/cps1.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/cps1.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

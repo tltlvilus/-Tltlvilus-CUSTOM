@@ -1,0 +1,75 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The N-Gage was a "handheld console" made in 2003 by Nokia and attempted to beat Nintendo's Game Boy Advance by being both a video game console and a mobile phone. It also had an MP3, Real Audio/Video playback and PDA features.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>O N-Gage era um "console portátil híbrido" feito em 2003 pela Nokia e tentou vencer o Game Boy Advance da Nintendo por ser um console de videogame e um telefone celular. Ele também tinha um MP3, reprodução de áudio/vídeo real e recursos de PDA.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>The N-Gage was a "handheld console" made in 2003 by Nokia and attempted to beat Nintendo's Game Boy Advance by being both a video game console and a mobile phone. It also had an MP3, Real Audio/Video playback and PDA features.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>La N-Gage era una "consola portátil" fabricada en 2003 por Nokia e intentó vencer a la Game Boy Advance de Nintendo al ser tanto una consola de videojuegos como un teléfono móvil. También tenía funciones de reproducción de MP3, Real Audio/Video y PDA.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>La N-Gage était une "console portable" fabriquée en 2003 par Nokia et tentait de battre la Game Boy Advance de Nintendo en étant à la fois une console de jeu vidéo et un téléphone mobile. Il avait également un MP3, une lecture Real Audio / Video et des fonctionnalités PDA.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Das N-Gage war eine „Handheld-Konsole“, die 2003 von Nokia hergestellt wurde und versuchte, Nintendos Game Boy Advance zu schlagen, indem es sowohl eine Videospielkonsole als auch ein Mobiltelefon war. Es hatte auch eine MP3-, Real Audio/Video-Wiedergabe und PDA-Funktionen.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>N-Gage</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Nokia</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

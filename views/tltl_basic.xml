@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+<view name="basic">	
+
+	<textlist name="gamelist">
+		<size>0.230 0.68</size>
+		<pos>0.015 0.218</pos>
+		<alignment>left</alignment> 
+		<fontPath>./_inc/fonts/8514fix.ttf</fontPath>
+		<fontSize>0.04</fontSize>
+		<color>ffffff</color>
+		<primaryColor>FFFFFF</primaryColor>
+		<glowColor>black</glowColor>
+		<glowSize>2</glowSize>
+		<lineSpacing>1.2</lineSpacing> 
+		<forceUppercase>false</forceUppercase>
+		<scrollSound ifSubset="InterfaceSound:Type1">./assets/sounds/scroll01.wav</scrollSound>
+		<scrollSound ifSubset="InterfaceSound:Type2">./assets/sounds/scroll.ogg</scrollSound>
+		<zIndex>5</zIndex>
+	</textlist>
+	 
+	<helpsystem name="help">
+		<textColor>FFFFFF</textColor>
+		<pos ifSubset="Clock:Normal">0.006 0.960</pos>
+		<pos ifSubset="Clock:Small">0.0039 0.976</pos>
+		<pos ifSubset="Clock:Off">0.0039 1.976</pos>
+		<fontSize ifSubset="Clock:Small">0.02</fontSize>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+	</helpsystem>
+	
+	<image name="logo">
+		<origin>0.5 0.5</origin> 
+		<pos>0.132 0.100</pos>
+		<maxSize>0.220 0.150</maxSize>
+		<path>./assets/logos/${system.theme}.png</path>
+		<linearSmooth>true</linearSmooth>
+		<zIndex>30</zIndex>
+	</image>
+
+	<image name="basic frames" extra="true">
+		<origin>0 0</origin>
+		<pos>0 0</pos>
+		<maxSize>1 1</maxSize>
+		<path>./assets/gamelist/basic frames.png</path>
+		<zIndex>2</zIndex> 
+	</image> 
+		
+	<image name="background" extra="true">
+		<origin>0 0</origin>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<path>./arts/${system.theme}.jpg</path>
+		<zIndex>1</zIndex> 
+		<color>A9A9A9</color>
+	</image> 
+  
+</view>
+
+</theme>

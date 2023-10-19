@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Xash3D FWGS is a fork of Xash3D Engine, which compatible with GoldSrc engine. Allows play Half-Life out-of-the-box and many Half-Life based modifications.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>O Xash3D FWGS é um fork do Xash3D Engine, compatível com o mecanismo GoldSrc. Permite jogar Half-Life pronto para uso e muitas modificações baseadas em Half-Life.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Xash3D FWGS is a fork of Xash3D Engine, which compatible with GoldSrc engine. Allows play Half-Life out-of-the-box and many Half-Life based modifications.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Xash3D FWGS es una bifurcación de Xash3D Engine, que es compatible con el motor GoldSrc. Permite jugar Half-Life listo para usar y muchas modificaciones basadas en Half-Life.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Xash3D FWGS est un fork du moteur Xash3D, compatible avec le moteur GoldSrc. Permet de jouer à Half-Life prêt à l'emploi et à de nombreuses modifications basées sur Half-Life.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Xash3D FWGS ist ein Fork der Xash3D Engine, die mit der GoldSrc-Engine kompatibel ist. Ermöglicht das sofortige Spielen von Half-Life und viele auf Half-Life basierende Modifikationen.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Xash3D FWGS</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Unkle Mike</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

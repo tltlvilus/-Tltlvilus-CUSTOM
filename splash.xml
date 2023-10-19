@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+	<view name="splash">
+
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+		
+		<image name="background">
+	    	<path>./assets/arts/splash.jpg</path>
+		</image>
+		
+		<text name="label">
+			<fontPath>./_inc/fonts/Circular Std Book.ttf</fontPath>
+			<color>FFFFFF</color>
+			<pos>0 0.848</pos>
+			<fontSize>0.033</fontSize>
+			<glowColor>00000016</glowColor>
+			<glowSize>2</glowSize>
+			<glowOffset>2</glowOffset>
+		</text>
+		
+	</view>	
+	
+</theme>

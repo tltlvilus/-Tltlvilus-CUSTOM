@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>It is a handheld console based on the open Arduino platform created by Kevin Bates released in 2016 for the price of US$39, initially as a project on the Kickstarter website having its name inspired by the Game Boy.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É um console portátil baseado na plataforma aberta Arduino criado por Kevin Bates lançado em 2016 pelo preço de US$39, inicialmente como um projeto no sítio Kickstarter tendo seu nome inspirado no Game Boy.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>It is a handheld console based on the open Arduino platform created by Kevin Bates released in 2016 for the price of US$39, initially as a project on the Kickstarter website having its name inspired by the Game Boy.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una consola portátil basada en la plataforma abierta Arduino creada por Kevin Bates lanzada en 2016 por un precio de US$39, inicialmente como un proyecto en el sitio web de Kickstarter cuyo nombre está inspirado en Game Boy.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Il s'agit d'une console portable basée sur la plate-forme ouverte Arduino créée par Kevin Bates et sortie en 2016 au prix de 39 $ US, initialement en tant que projet sur le site Web Kickstarter dont le nom s'inspire de la Game Boy.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Es handelt sich um eine Handheld-Konsole, die auf der von Kevin Bates erstellten offenen Arduino-Plattform basiert und 2016 zum Preis von 39 US-Dollar veröffentlicht wurde, zunächst als Projekt auf der Kickstarter-Website, deren Name vom Game Boy inspiriert wurde.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Arduboy</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2016</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Kevin Bates</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

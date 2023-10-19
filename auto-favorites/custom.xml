@@ -1,0 +1,185 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Find all your favorites games in a single system.
+Every time you mark a game as favorites in a system, you will find it here.
+Enjoy!</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Encontre todos os seus jogos favoritos em um único sistema.
+Toda vez que marcar um jogo como favorito em um sistema, você o encontrará aqui.
+Aproveite!</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Find all your favorites games in a single system.
+Every time you mark a game as favorites in a system, you will find it here.
+Enjoy!</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Encuentra todos tus juegos favoritos en un solo sistema.
+Cada vez que marques un juego como favorito en un sistema, lo encontrarás aquí.
+¡Disfruta!</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Trouvez tous vos jeux favoris dans un seul système.
+Chaque fois que vous marquez un jeu comme favori dans un système, vous le trouverez ici.
+Prendre plaisir !</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Finden Sie alle Ihre Lieblingsspiele in einem einzigen System.
+Jedes Mal, wenn Sie ein Spiel als Favorit in einem System markieren, finden Sie es hier.
+Viel Spaß!</text>
+		</text>
+    
+		<text name="info1" extra="true" lang="ZH">
+			<text>在一个系统中查找所有您最喜欢的游戏。
+每次您在系统中将游戏标记为收藏时，您都会在此处找到它。
+好好享受！</text>
+		</text>
+    
+		<text name="info1" extra="true" lang="TW">
+			<text>在一個系統中查找所有您最喜歡的遊戲。
+每次您在系統中將游戲標記為收藏時，您都會在此處找到它。
+好好享受！</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Favorites</text>
+		</text>
+
+				<text name="info2" extra="true"  lang="PT">
+			<text>Favoritos</text>
+		</text>
+						<text name="info2" extra="true" lang="EN">
+			<text>Favorites</text>
+		</text>
+						<text name="info2" extra="true" lang="ES">
+			<text>Favoritos</text>
+		</text>
+						<text name="info2" extra="true" lang="FR">
+			<text>Favoris</text>
+		</text>
+		<text name="info2" extra="true" lang="DE">
+			<text>Favoriten</text>
+		</text>
+						<text name="info2" extra="true" lang="ZH">
+			<text>收藏</text>
+		</text>
+						<text name="info2" extra="true" lang="TW">
+			<text>收藏</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+
+			<image name="logo" lang="PT">
+		<path>./assets/logos/auto-favorites-pt.png</path>
+	</image>
+
+				<image name="sublogo" lang="PT">
+		<path>./assets/logos/auto-favorites-pt.png</path>
+	</image>
+
+			<image name="logo" lang="EN">
+		<path>./assets/logos/auto-favorites-en.png</path>
+	</image>
+
+				<image name="sublogo" lang="EN">
+		<path>./assets/logos/auto-favorites-en.png</path>
+	</image>
+
+
+			<image name="logo" lang="ES">
+		<path>./assets/logos/auto-favorites-es.png</path>
+	</image>
+
+				<image name="sublogo" lang="ES">
+		<path>./assets/logos/auto-favorites-es.png</path>
+	</image>
+
+
+			<image name="logo" lang="FR">
+		<path>./assets/logos/auto-favorites-fr.png</path>
+	</image>
+
+				<image name="sublogo" lang="FR">
+		<path>./assets/logos/auto-favorites-fr.png</path>
+	</image>
+
+		<image name="logo" lang="DE">
+			<path>./assets/logos/auto-favorites-en.png</path>
+		</image>
+
+		<image name="sublogo" lang="DE">
+			<path>./assets/logos/auto-favorites-en.png</path>
+		</image>
+
+				<text name="info5" extra="true">
+			<text>ALEKFULL ARTFLIX</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

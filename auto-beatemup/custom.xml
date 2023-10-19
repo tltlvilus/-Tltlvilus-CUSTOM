@@ -1,0 +1,115 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Beat 'em ups (also brawlers) are electronic games based on hand-to-hand combat against multiple waves of enemies. Traditional games took shape in scenarios rendered in two dimensions with multiple planes of movement.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="PT">
+			<text>Beat 'em ups (também brawlers) são jogos eletrônicos baseados na luta corpo a corpo contra múltiplas ondas de inimigos. Os jogos tradicionais tomavam forma em cenários renderizados em duas dimensões com vários planos de movimentação.</text>
+		</text>		
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Beat 'em ups (also brawlers) are electronic games based on hand-to-hand combat against multiple waves of enemies. Traditional games took shape in scenarios rendered in two dimensions with multiple planes of movement.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ES">
+			<text>Los Beat 'em ups (también luchadores) son juegos electrónicos basados ​​en el combate cuerpo a cuerpo contra múltiples oleadas de enemigos. Los juegos tradicionales tomaron forma en escenarios renderizados en dos dimensiones con múltiples planos de movimiento.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="FR">
+			<text>Les beat 'em ups (également brawlers) sont des jeux électroniques basés sur le combat au corps à corps contre de multiples vagues d'ennemis. Les jeux traditionnels ont pris forme dans des scénarios rendus en deux dimensions avec de multiples plans de mouvement.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Beat 'em ups (auch Brawler) sind elektronische Spiele, die auf Nahkämpfen gegen mehrere Wellen von Feinden basieren. Traditionelle Spiele nahmen in Szenarien Gestalt an, die in zwei Dimensionen mit mehreren Bewegungsebenen gerendert wurden.</text>
+		</text>	
+
+		
+		<text name="info2" extra="true">
+			<text>Beat'em Up</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>		
+		
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>						
+		</text>
+					<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

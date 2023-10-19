@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Magnavox Odyssey², also known as Philips Odyssey² is a second generation home video game console released in 1978. It was sold in Europe as the Philips Videopac G7000, in Brazil as the Philips Odyssey.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O Philips Videopac+ G7400 é o sucessor do Philips Videopac G7000. Lançado em quantidades limitadas em 1983 e apenas na Europa.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="EN">
+			<text>The Philips Videopac+ G7400 is the successor to the Philips Videopac G7000.Released in limited quantities in 1983, and only in Europe.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ES">
+			<text>El Philips Videopac+ G7400 es el sucesor del Philips Videopac G7000. Lanzado en cantidades limitadas en 1983 y solo en Europa.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="FR">
+			<text>Le Philips Videopac+ G7400 est le successeur du Philips Videopac G7000. Sorti en quantité limitée en 1983, et uniquement en Europe.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Der Philips Videopac+ G7400 ist der Nachfolger des Philips Videopac G7000. 1983 in begrenzter Stückzahl und nur in Europa auf den Markt gebracht.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>飞利浦Videopac+ G7400是第三代家用视频游戏机，于1983年限量发售，仅在欧洲发售；计划在美国发布作为Odyssey³ Command Center的版本，但从未实现。G7400是飞利浦Videopac G7000的后继产品。</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>飛利浦Videopac+ G7400是第三代家用視頻遊戲機，於1983年限量發售，僅在歐洲發售；計劃在美國發布作為Odyssey³ Command Center的版本，但從未實現。G7400是飛利浦Videopac G7000的後繼產品。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Videopac+ G7400</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Philips</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.180 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.38</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

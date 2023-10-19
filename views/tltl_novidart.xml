@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustomnvf}">
+
+	<!-- Image Art -->
+	<image name="md_image">
+        <pos>0.023 0.590</pos>
+        <size>0.222 0.37</size>
+		<scale>0</scale>
+        <origin>0 0</origin>
+        <zIndex>0</zIndex>
+	</image>
+	<image name="md_boxback">
+        <pos>0.023 0.590</pos>
+        <size>0.222 0.37</size>
+        <origin>0 0</origin>
+        <zIndex>8</zIndex>
+	</image>
+
+</customView>
+
+</theme>

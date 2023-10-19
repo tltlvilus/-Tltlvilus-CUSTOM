@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Originally Meikyuujou Hydra, is a freeware Indie platformer developed by E. Hashimoto, a.k.a. Buster, and released on his website. The original game was entirely in Japanese, but saw a translation patch months after its original creation.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Originalmente Meikyuujou Hydra, é um jogo de plataforma independente desenvolvido por E. Hashimoto, também conhecido como Buster, e lançado em seu site. O jogo original estava inteiramente em japonês, mas teve um patch de tradução meses após sua criação original.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Originally Meikyuujou Hydra, is a freeware Indie platformer developed by E. Hashimoto, a.k.a. Buster, and released on his website. The original game was entirely in Japanese, but saw a translation patch months after its original creation.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Originalmente Meikyuujou Hydra, es un juego de plataformas Indie gratuito desarrollado por E. Hashimoto, también conocido como Buster, y publicado en su sitio web. El juego original estaba completamente en japonés, pero vio un parche de traducción meses después de su creación original.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>À l'origine Meikyuujou Hydra, est un jeu de plateforme indépendant gratuit développé par E. Hashimoto, alias Buster, et publié sur son site Web. Le jeu original était entièrement en japonais, mais a vu un patch de traduction des mois après sa création originale.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Ursprünglich Meikyuujou Hydra, ist ein Freeware-Indie-Plattformer, der von E. Hashimoto, auch bekannt als Buster, entwickelt und auf seiner Website veröffentlicht wurde. Das ursprüngliche Spiel war vollständig auf Japanisch, sah aber Monate nach seiner ursprünglichen Erstellung einen Übersetzungspatch.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Hydra Castle Labyrinth</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2011</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Nicalis</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The Uzebox is a retro-minimalist open source game console based on Atmel's ATmega644 microcontroller. The particularity of the system is that it's based on an interrupt driven kernel and has no frame buffer.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O Uzebox é um console retro-minimalista de jogos de código aberto baseado no microcontrolador ATmega644 da Atmel. A particularidade do sistema é que ele é baseado em um kernel acionado por interrupção e não possui buffer de quadro.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The Uzebox is a retro-minimalist open source game console based on Atmel's ATmega644 microcontroller. The particularity of the system is that it's based on an interrupt driven kernel and has no frame buffer.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>El Uzebox es una consola de juegos retro-minimalista de código abierto basada en el microcontrolador ATmega644 de Atmel. La particularidad del sistema es que se basa en un núcleo controlado por interrupción y no tiene búfer de trama.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>L'Uzebox est une console de jeu open source rétro-minimaliste basée sur le microcontrôleur ATmega644 d'Atmel. La particularité du système est qu'il est basé sur un noyau piloté par interruption et n'a pas de tampon de trame.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Die Uzebox ist eine retro-minimalistische Open-Source-Spielekonsole, die auf Atmels Mikrocontroller ATmega644 basiert. Die Besonderheit des Systems ist, dass es auf einem Interrupt-gesteuerten Kernel basiert und keinen Framebuffer hat.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Uzebox</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Uzebox Team</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

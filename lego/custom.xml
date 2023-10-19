@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Since 1995, various commercial video games based on Lego, the construction system produced by The Lego Group, have been released. Following the second game, Lego Island, developed and published by Mindscape, The Lego Group published games on its own with its Lego Media division.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Desde 1995, vários videogames comerciais baseados em Lego, o sistema de construção produzido pelo Grupo Lego, foram lançados. Após o segundo jogo, Lego Island, desenvolvido e publicado pela Mindscape, o The Lego Group publicou jogos por conta própria com sua divisão Lego Media.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Since 1995, various commercial video games based on Lego, the construction system produced by The Lego Group, have been released. Following the second game, Lego Island, developed and published by Mindscape, The Lego Group published games on its own with its Lego Media division.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Desde 1995, se han lanzado varios videojuegos comerciales basados ​​en Lego, el sistema de construcción producido por The Lego Group. Después del segundo juego, Lego Island, desarrollado y publicado por Mindscape, The Lego Group publicó juegos por su cuenta con su división Lego Media.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Depuis 1995, divers jeux vidéo commerciaux basés sur Lego, le système de construction produit par The Lego Group, ont vu le jour. Après le deuxième jeu, Lego Island, développé et édité par Mindscape, The Lego Group a publié ses propres jeux avec sa division Lego Media.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Seit 1995 wurden verschiedene kommerzielle Videospiele auf Basis von Lego, dem von The Lego Group produzierten Bausystem, veröffentlicht. Nach dem zweiten Spiel, Lego Island, das von Mindscape entwickelt und veröffentlicht wurde, veröffentlichte die Lego Group mit ihrer Abteilung Lego Media eigene Spiele.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>LEGO Games</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1995</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Lego Interactive</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

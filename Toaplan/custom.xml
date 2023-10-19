@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Several developers such as Tamsoft, Eighting, CAVE, Gazelle, and Takumi Corporation were formed prior to and after the closure of Toaplan, while former members later joined to other studios such as Namco, Capcom, Square Enix and Taito.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Vários desenvolvedores como Tamsoft, Eighting, CAVE, Gazelle e Takumi Corporation foram formados antes e após o fechamento da Toaplan, enquanto ex-membros mais tarde se juntaram a outros estúdios como Namco, Capcom, Square Enix e Taito.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Several developers such as Tamsoft, Eighting, CAVE, Gazelle, and Takumi Corporation were formed prior to and after the closure of Toaplan, while former members later joined to other studios such as Namco, Capcom, Square Enix and Taito.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Varios desarrolladores como Tamsoft, Eighting, CAVE, Gazelle y Takumi Corporation se formaron antes y después del cierre de Toaplan, mientras que los ex miembros se unieron más tarde a otros estudios como Namco, Capcom, Square Enix y Taito.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>Plusieurs développeurs tels que Tamsoft, Eighting, CAVE, Gazelle et Takumi Corporation ont été formés avant et après la fermeture de Toaplan, tandis que d'anciens membres ont ensuite rejoint d'autres studios tels que Namco, Capcom, Square Enix et Taito.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Mehrere Entwickler wie Tamsoft, Eighting, CAVE, Gazelle und Takumi Corporation wurden vor und nach der Schließung von Toaplan gegründet, während ehemalige Mitglieder später anderen Studios wie Namco, Capcom, Square Enix und Taito beitraten.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Toaplan</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Kiyoshi Motoyoshi</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

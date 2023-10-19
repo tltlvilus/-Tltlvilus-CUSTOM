@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The 1970's saw the start of the golden age of arcade games. Coin operated arcade machines became popular featuring classics such as Pac-Man, Galaxians and Space Invaders. It also saw the arrival of the first home consoles such as the Atari 2600.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>A década de 1970 viu o início da era de ouro dos jogos de arcade. As máquinas de fliperama operadas por moedas tornaram-se populares, apresentando clássicos como Pac-Man, Galaxians e Space Invaders. Também é assim a chegada dos primeiros consoles domésticos, como o Atari 2600.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>The 1970's saw the start of the golden age of arcade games. Coin operated arcade machines became popular featuring classics such as Pac-Man, Galaxians and Space Invaders. It also saw the arrival of the first home consoles such as the Atari 2600.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>La década de 1970 vio el comienzo de la edad de oro de los juegos de arcade. Las máquinas recreativas que funcionan con monedas se hicieron populares con clásicos como Pac-Man, Galaxians y Space Invaders. También lo es la llegada de las primeras consolas domésticas como la Atari 2600.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Les années 70 ont vu le début de l'âge d'or des jeux d'arcade. Les machines d'arcade à pièces sont devenues populaires avec des classiques tels que Pac-Man, Galaxians et Space Invaders. C'est aussi le cas de l'arrivée des premières consoles de salon comme l'Atari 2600.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>In den 1970er Jahren begann das goldene Zeitalter der Arcade-Spiele. Münzbetriebene Spielautomaten wurden mit Klassikern wie Pac-Man, Galaxians und Space Invaders populär. Es sah auch die Ankunft der ersten Heimkonsolen wie dem Atari 2600.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>1970's</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>197X</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

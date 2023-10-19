@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a dedicated video game console by Nintendo, which emulates the NES. Aesthetically, the console is a miniature replica of the NES, and it includes a static library of 30 built-in games from the licensed NES library, supporting save states for all of them.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um console de videogame dedicado da Nintendo, que emula o NES. Esteticamente, o console é uma réplica em miniatura do NES e inclui uma biblioteca estática de 30 jogos internos da biblioteca NES licenciada, suportando estados salvos para todos eles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a dedicated video game console by Nintendo, which emulates the NES. Aesthetically, the console is a miniature replica of the NES, and it includes a static library of 30 built-in games from the licensed NES library, supporting save states for all of them.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una consola de videojuegos dedicada de Nintendo, que emula la NES. Estéticamente, la consola es una réplica en miniatura del NES, e incluye una biblioteca estática de 30 juegos integrados de la biblioteca NES con licencia, que admite estados de guardado para todos.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une console de jeux vidéo dédiée de Nintendo, qui émule la NES. Esthétiquement, la console est une réplique miniature de la NES, et elle comprend une bibliothèque statique de 30 jeux intégrés de la bibliothèque NES sous licence.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine dedizierte Videospielkonsole von Nintendo, die das NES emuliert. Ästhetisch ist die Konsole eine Miniaturreplik des NES und enthält eine statische Bibliothek mit 30 integrierten Spielen aus der lizenzierten NES-Bibliothek, die Speicherzustände für alle unterstützt.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>NES Classic Edition</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2016</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Nintendo</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/nes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/nes.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

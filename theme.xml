@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="TLTL-CUSTOM">
+
+<formatVersion>4</formatVersion>
+
+<include>./localization.xml</include>
+<include>./$system/custom.xml</include>
+<include>./config.xml</include>
+
+<view name="menu">
+
+	<menuText name="menutitle">
+		<fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
+		<fontSize>0.04</fontSize>
+		<glowColor>black</glowColor>
+		<glowSize>2</glowSize>
+		<color ifSubset="MainBGColor:Default">FFFFFF</color>
+		<color ifSubset="MainBGColor:Gray">333333</color>
+		<color ifSubset="MainBGColor:Red">ff0000</color>
+		<color ifSubset="MainBGColor:Pink">FF1493</color>
+		<color ifSubset="MainBGColor:Rose">FFB6C1</color>
+		<color ifSubset="MainBGColor:Green">00FF00</color>
+		<color ifSubset="MainBGColor:Lime">ADFF2F</color>
+		<color ifSubset="MainBGColor:Yellow">FFD700</color>
+		<color ifSubset="MainBGColor:Blue">1E60FF</color>
+		<color ifSubset="MainBGColor:Blue Light">87CEFA</color>
+		<color ifSubset="MainBGColor:Cyan">40E0D0</color>
+		<color ifSubset="MainBGColor:Turquoise">00FFFF</color>
+		<color ifSubset="MainBGColor:Purple">8A2BE2</color>
+		<color ifSubset="MainBGColor:Lilac">A344FF</color>
+	</menuText>
+	
+	<menuText name="menufooter">
+		<fontPath>./_inc/fonts/OpenSans-Light.ttf</fontPath>
+		<fontSize>0.023</fontSize>
+		<color>FFFFFF50</color>
+	</menuText>
+	
+    <menuText name="menutext">
+		<fontPath>./_inc/fonts/OpenSans-Light.ttf</fontPath>
+		<fontSize>0.029</fontSize>
+		<glowColor>black</glowColor>
+		<glowSize>2</glowSize>
+		<color>FFFFFF</color>
+		<separatorColor>191919</separatorColor>
+		<selectorColor ifSubset="MainBGColor:Default">333333</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Gray">ffffff</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Red">ff0000</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Pink">FF1493</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Rose">FFB6C1</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Green">00FF00</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Lime">ADFF2F</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Yellow">FFD700</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Blue">1E60FF</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Blue Light">87CEFA</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Cyan">40E0D0</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Turquoise">00FFFF</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Purple">8A2BE2</selectorColor>
+		<selectorColor ifSubset="MainBGColor:Lilac">A344FF</selectorColor>
+		<selectorColorEnd>000000</selectorColorEnd>
+		<selectedColor>FFFFFF</selectedColor>
+		<selectedColor ifSubset="MainBGColor:Gray">000000</selectedColor>
+		<selectorGradientType>vertical</selectorGradientType>
+    </menuText>
+	
+    <menuTextSmall name="menutextsmall">
+		<fontPath>./_inc/fonts/Circular Std Book.ttf</fontPath>
+		<fontSize>0.022</fontSize>
+		<glowColor>black</glowColor>
+		<glowSize>2</glowSize>
+		<color ifSubset="MainBGColor:Default">FFFFFF</color>
+		<color ifSubset="MainBGColor:Gray">333333</color>
+		<color ifSubset="MainBGColor:Red">ff0000</color>
+		<color ifSubset="MainBGColor:Pink">FF1493</color>
+		<color ifSubset="MainBGColor:Rose">FFB6C1</color>
+		<color ifSubset="MainBGColor:Green">00FF00</color>
+		<color ifSubset="MainBGColor:Lime">ADFF2F</color>
+		<color ifSubset="MainBGColor:Yellow">FFD700</color>
+		<color ifSubset="MainBGColor:Blue">1E60FF</color>
+		<color ifSubset="MainBGColor:Blue Light">87CEFA</color>
+		<color ifSubset="MainBGColor:Cyan">40E0D0</color>
+		<color ifSubset="MainBGColor:Turquoise">00FFFF</color>
+		<color ifSubset="MainBGColor:Purple">8A2BE2</color>
+		<color ifSubset="MainBGColor:Lilac">A344FF</color>
+    </menuTextSmall>
+	
+    <menuBackground name="menubg">
+		<color>0a0b0c</color>
+		<cornerSize>32 32</cornerSize>
+		<path>./_inc/frame.png</path>
+    </menuBackground>
+	
+    <menuIcons name="menuicons">
+		<iconKodi>./_inc/icons/Kodi.png</iconKodi>
+		<iconSystem>./_inc/icons/System.png</iconSystem>
+		<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
+		<iconGames>./_inc/icons/Games.png</iconGames>
+		<iconControllers>./_inc/icons/Controllers.png</iconControllers>
+		<iconUI>./_inc/icons/UI.png</iconUI>
+		<iconSound>./_inc/icons/Sound.png</iconSound>
+		<iconNetwork>./_inc/icons/Network.png</iconNetwork>
+		<iconScraper>./_inc/icons/Scraper.png</iconScraper>
+		<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
+		<iconQuit>./_inc/icons/Quit.png</iconQuit>
+		<iconRestart>./_inc/icons/Restart.png</iconRestart>
+		<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
+		<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
+		<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+		<iconEmuelec>./_inc/icons/Emuelec.png</iconEmuelec>
+	</menuIcons>
+	
+	<menuTextEdit name="menutextedit">
+		<inactive>./_inc/textinput_ninepatch.png</inactive>
+		<active>./_inc/textinput_ninepatch_active.png</active>
+	</menuTextEdit>
+
+	<helpsystem name="help">
+		<textColor>FFFFFF</textColor>
+		<pos ifSubset="Clock:Normal">0.006 0.960</pos>
+		<pos ifSubset="Clock:Small">0.0039 0.976</pos>
+		<pos ifSubset="Clock:Off">0.0039 1.976</pos>
+		<fontSize ifSubset="Clock:Small">0.02</fontSize>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+	</helpsystem>
+	
+</view>
+
+<view name="system">
+
+	<helpsystem name="help">
+		<textColor>FFFFFF</textColor>
+		<pos ifSubset="Clock:Normal">0.006 0.960</pos>
+		<pos ifSubset="Clock:Small">0.0039 0.976</pos>
+		<pos ifSubset="Clock:Off">0.0039 1.976</pos>
+		<fontSize ifSubset="Clock:Small">0.02</fontSize>
+		<glowColor>00000080</glowColor>
+		<glowSize>2</glowSize>
+	</helpsystem>
+
+</view>
+
+<view name="screen">
+
+	<!-- Clock -->
+	<text name="clock">
+		<color>ffffff</color>
+		<fontPath>./_inc/fonts/OpenSans-Semibold.ttf</fontPath>
+		<glowColor>000000</glowColor>
+		<pos ifSubset="Clock:Small">0.914 0.960</pos>
+		<pos ifSubset="Clock:Normal">0.893 0.950</pos>
+		<pos ifSubset="Clock:Off">0.0039 1.976</pos>
+		<size>0.10 0.058</size>
+		<scale ifSubset="Clock:Small">0.66</scale>
+		<scale ifSubset="Clock:Normal">1</scale>
+		<scale ifSubset="Clock:Off">0</scale>
+		<glowSize>2</glowSize>
+		<verticalAlignment>right</verticalAlignment>
+	</text>
+	
+	<!-- Controller -->
+	<controllerActivity name="controllerActivity">
+		<pos>0.03 0.025</pos>
+		<size>0.085 0.025</size>
+		<!--<horizontalAlignment>right</horizontalAlignment>-->
+		<itemSpacing>0.003</itemSpacing>
+		<imagePath>./../_inc/gamepad.svg</imagePath>
+		<gunPath>./../_inc/icons/gun.svg</gunPath>		 
+		<color>FFFFFF80</color>
+		<activityColor>A0A0FFC0</activityColor>
+		<hotkeyColor>FFA0A0C0</hotkeyColor>
+	</controllerActivity>
+	
+</view>	
+
+	<include name="basic">./views/tltl_basic.xml</include>
+	<include name="detailed">./views/tltl_detailed.xml</include>
+	<include name="grid">./views/tltl_grid.xml</include>
+	<include name="gamecarousel">./views/tltl_gamecarousel.xml</include>
+	<include name="TLTL-CUSTOM">./views/tltl_custom.xml</include>
+	<include name="TLTL-NO-VIDEO">./views/tltl_novid.xml</include>
+	<include name="TLTL-NO-FANART">./views/tltl_nofan.xml</include>
+	<include name="TLTL-CUSTOM-NO-VID/ART">./views/tltl_novidart.xml</include>
+	<include name="TLTL-COLOR">./views/tltl_color.xml</include>
+	<include name="TLTL-HCoinSpin">./views/tltl_hcoinspin.xml</include>
+	<include name="TLTL-CoinOps">./views/tltl_coinops.xml</include>
+
+</theme>

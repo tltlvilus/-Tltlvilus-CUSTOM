@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is the last generation of MSX computers that was put to market by a household electronic brand. Only Panasonic was brave enough to put faith in the standard once again, by releasing two different models. MSX Turbo R computers were produced until 1994.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É a última geração de computadores MSX que foi colocada no mercado por uma marca de eletrônicos domésticos. Apenas a Panasonic foi corajosa o suficiente para colocar fé no padrão mais uma vez, lançando dois modelos diferentes. Os computadores MSX Turbo R foram produzidos até 1994.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is the last generation of MSX computers that was put to market by a household electronic brand. Only Panasonic was brave enough to put faith in the standard once again, by releasing two different models. MSX Turbo R computers were produced until 1994.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es la última generación de ordenadores MSX lanzada al mercado por una marca de electrónica doméstica. Solo Panasonic fue lo suficientemente valiente como para volver a confiar en el estándar y lanzó dos modelos diferentes. Las computadoras MSX Turbo R se produjeron hasta 1994.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est la dernière génération d'ordinateurs MSX qui a été mise sur le marché par une marque d'électronique domestique. Seul Panasonic a eu le courage de faire à nouveau confiance à la norme, en lançant deux modèles différents. Les ordinateurs MSX Turbo R ont été produits jusqu'en 1994.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist die letzte Generation von MSX-Computern, die von einer Haushaltselektronikmarke auf den Markt gebracht wurde. Nur Panasonic war mutig genug, wieder auf den Standard zu setzen und zwei verschiedene Modelle herauszubringen. MSX Turbo R Computer wurden bis 1994 produziert.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>MSX Turbo R</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1990</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>ASCII</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.175 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.34</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>PlayStation Classic is a dedicated video game console by Sony Interactive Entertainment that emulates games originally released on its 1994 PlayStation console. It was announced in September 2018 at the TGS, and released on the 24th anniversary of the release of the original.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O PlayStation Classic é um console de videogame dedicado da Sony Interactive Entertainment que emula os jogos originalmente lançados no console PlayStation de 1994. Foi anunciado em setembro de 2018 no TGS e lançado no 24º aniversário do lançamento do original.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>PlayStation Classic is a dedicated video game console by Sony Interactive Entertainment that emulates games originally released on its 1994 PlayStation console. It was announced in September 2018 at the TGS, and released on the 24th anniversary of the release of the original.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>PlayStation Classic es una consola de videojuegos dedicada de Sony Interactive Entertainment que emula los juegos lanzados originalmente en su consola PlayStation de 1994. Se anunció en septiembre de 2018 en el TGS y se lanzó en el 24 aniversario del lanzamiento del original.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>PlayStation Classic est une console de jeux vidéo dédiée de Sony Interactive Entertainment qui émule les jeux initialement sortis sur sa console PlayStation de 1994. Il a été annoncé en septembre 2018 au TGS et publié le 24e anniversaire de la sortie de l'original.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>PlayStation Classic ist eine spezielle Videospielkonsole von Sony Interactive Entertainment, die Spiele emuliert, die ursprünglich auf der PlayStation-Konsole von 1994 veröffentlicht wurden. Es wurde im September 2018 auf der TGS angekündigt und am 24. Jahrestag der Veröffentlichung des Originals veröffentlicht.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>PlayStation Classic</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2018</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Sony Interactive Entertainment</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/psx.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/psx.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

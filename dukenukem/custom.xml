@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Duke Nukem is an American hero and worldwide cultural icon who has repeatedly saved Earth from armies of hostile robots, alien invaders, and mutant pig cops. He is the flagship character of an entire franchise named after him.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Duke Nukem é um herói americano e ícone cultural mundial que salvou repetidamente a Terra de exércitos de robôs hostis, invasores alienígenas e policiais suínos mutantes. Ele é o personagem principal de uma franquia inteira com o seu nome.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Duke Nukem is an American hero and worldwide cultural icon who has repeatedly saved Earth from armies of hostile robots, alien invaders, and mutant pig cops. He is the flagship character of an entire franchise named after him.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Duke Nukem es un héroe estadounidense que en repetidas ocasiones ha salvado la Tierra de ejércitos de robots hostiles, invasores alienígenas y policías cerdos mutantes. Es el personaje insignia de toda una franquicia que lleva su nombre.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Duke Nukem est un héros américain qui a sauvé à plusieurs reprises la Terre des armées de robots hostiles, d'envahisseurs extraterrestres et de flics cochons mutants. Il est le personnage phare de toute une franchise qui porte son nom.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Duke Nukem ist ein amerikanischer Held und eine weltweite kulturelle Ikone, der die Erde wiederholt vor Armeen feindlicher Roboter, außerirdischer Eindringlinge und mutierter Schweinepolizisten gerettet hat. Er ist das Aushängeschild einer ganzen Franchise, die nach ihm benannt ist.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Duke Nukem</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Apogee Software</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

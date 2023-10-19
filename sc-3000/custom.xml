@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O SC-3000 (Sega Computer 3000) é o primeiro e único computador a ser projetado e fabricado pela Sega. Foi lançado pela primeira vez em julho de 1983 no Japão e serve como o equivalente em computador doméstico do console de videogame SG-1000 baseado em cartucho.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>SC-3000 (Sega Computer 3000) is the first and only computer to be designed and manufactured by Sega. It was first released in July of 1983 in Japan, and serves as the home computer equivalent of the SG-1000 cartridge-based video game console.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>SC-3000 (Sega Computer 3000) es la primera y única computadora diseñada y fabricada por Sega. Fue lanzado por primera vez en julio de 1983 en Japón, y sirve como el equivalente de la computadora doméstica de la consola de videojuegos basada en cartuchos SG-1000.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>SC-3000 (Sega Computer 3000) est le premier et le seul ordinateur conçu et fabriqué par Sega. Il a été publié pour la première fois en juillet 1983 au Japon et sert d'équivalent d'ordinateur domestique à la console de jeu vidéo à base de cartouches SG-1000.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>SC-3000 (Sega Computer 3000) ist der erste und einzige Computer, der von Sega entwickelt und hergestellt wurde. Es wurde erstmals im Juli 1983 in Japan veröffentlicht und dient als Heimcomputer-Äquivalent der Kassetten-basierten Videospielkonsole SG-1000.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>SC-3000</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA Corporation</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinopstv.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinopstv.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

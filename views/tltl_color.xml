@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustomc}">
+
+	<!-- Video Frame -->
+	<image name="vdframe" extra="true">
+		<origin>0 0</origin>
+		<pos>0.0060 0</pos>
+		<size>1 1</size>
+		<path ifSubset="VideoBG:Black">./assets/vdbg/overlay1222t_black.png</path>
+		<path ifSubset="VideoBG:Filme">./assets/vdbg/overlay1222t_filme.png</path>
+		<path ifSubset="VideoBG:Gray">./assets/vdbg/overlay1222t_gray.png</path>
+		<path ifSubset="VideoBG:Gray Dark">./assets/vdbg/overlay1222t_grayd.png</path>
+		<path ifSubset="VideoBG:Gray Light">./assets/vdbg/overlay1222t_grayl.png</path>
+		<path ifSubset="VideoBG:White">./assets/vdbg/overlay1222t_white.png</path>
+		<path ifSubset="VideoBG:Red">./assets/vdbg/overlay1222t_red.png</path>
+		<path ifSubset="VideoBG:Blue">./assets/vdbg/overlay1222t_blue.png</path>
+		<path ifSubset="VideoBG:Green">./assets/vdbg/overlay1222t_green.png</path>
+		<path ifSubset="VideoBG:Yellow">./assets/vdbg/overlay1222t_yellow.png</path>
+		<path ifSubset="VideoBG:Rose">./assets/vdbg/overlay1222t_rose.png</path>
+		<path ifSubset="VideoBG:Pink">./assets/vdbg/overlay1222t_pink.png</path>
+		<path ifSubset="VideoBG:Purple">./assets/vdbg/overlay1222t_purple.png</path>
+		<path ifSubset="VideoBG:Lilac">./assets/vdbg/overlay1222t_lilac.png</path>
+		<zIndex>11</zIndex>
+	</image>
+
+	<!-- Video -->
+    <video name="md_video">
+        <pos>0.0305 0.62</pos>
+        <size>0.30 0.30</size>
+        <origin>0 0</origin>
+        <delay>0.05</delay>
+		<effect>fade</effect>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <zIndex>7</zIndex>
+	</video>
+	<image name="b_video" extra="true">
+        <pos>0.0305 0.62</pos>
+        <size>0.30 0.30</size>
+        <origin>0 0</origin>
+        <path>./assets/panels/${system.theme}.jpg</path>
+        <zIndex>7</zIndex>
+     </image>
+
+</customView>
+
+</theme>

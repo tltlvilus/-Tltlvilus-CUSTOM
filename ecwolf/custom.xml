@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>ECWolf is an advanced source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark based off of the Wolf4SDL code base. ECWolf pulls a substantial amount of code from ZDoom and aims to provide a wide array of mod editing capabilities without the need to modify the source code.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>ECWolf é um port do código-fonte de Wolfenstein 3D, Spear of Destiny e Super 3D Noah's Ark baseado no código-base de Wolf4SDL. ECWolf extrai uma quantidade substancial de código do ZDoom e visa fornecer uma ampla gama de recursos de edição de mod sem a necessidade de modificar o código-fonte.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>ECWolf is an advanced source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark based off of the Wolf4SDL code base. ECWolf pulls a substantial amount of code from ZDoom and aims to provide a wide array of mod editing capabilities without the need to modify the source code.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>ECWolf es un puerto de origen avanzado para Wolfenstein 3D, Spear of Destiny y Super 3D Noah's Ark basado en el código base Wolf4SDL. ECWolf extrae una cantidad sustancial de código de ZDoom y tiene como objetivo proporcionar una amplia gama de capacidades de edición de mods sin la necesidad de modificar el código fuente.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>ECWolf est un port source avancé pour Wolfenstein 3D, Spear of Destiny et Super 3D Noah's Ark basé sur la base de code Wolf4SDL. ECWolf extrait une quantité substantielle de code de ZDoom et vise à fournir un large éventail de capacités d'édition de mod sans avoir besoin de modifier le code source.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>ECWolf ist eine fortschrittliche Quellportierung für Wolfenstein 3D die auf der Codebasis von Wolf4SDL basiert. ECWolf bezieht eine beträchtliche Menge an Code aus ZDoom und zielt darauf ab, eine breite Palette von Mod-Bearbeitungsfunktionen bereitzustellen, ohne dass der Quellcode geändert werden muss.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>ECWolf</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2012</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Blzut3</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

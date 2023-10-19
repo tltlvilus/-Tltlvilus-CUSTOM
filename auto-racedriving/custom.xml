@@ -1,0 +1,158 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Racing is a genre of electronic games in which the player participates in racing competitions with any type of land vehicle, including motorcycles and quads. There are game alternatives with water, air and even space vehicles.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="PT">
+			<text>Corrida é um gênero de jogos eletrônicos em que o jogador participa de competições de corrida com qualquer tipo de veículo terrestre, inclusive motocicletas e quadriciclos. Existem alternativas de jogos com veículos aquáticos, aéreos e até espaciais.</text>
+		</text>		
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Racing is a genre of electronic games in which the player participates in racing competitions with any type of land vehicle, including motorcycles and quads. There are game alternatives with water, air and even space vehicles.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ES">
+			<text>Es un género de juegos electrónicos en el que el jugador participa en competencias de carreras con cualquier tipo de vehículo terrestre, incluidas motocicletas y quads. Hay alternativas de juego con vehículos acuáticos, aéreos e incluso espaciales.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="FR">
+			<text>La course est un genre de jeux électroniques dans lequel le joueur participe à des compétitions de course avec tout type de véhicule terrestre, y compris les motos et les quads. Il existe des alternatives de jeu avec des véhicules aquatiques, aériens et même spatiaux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Rennen sind ein Genre elektronischer Spiele, bei denen der Spieler mit jeder Art von Landfahrzeug, einschließlich Motorrädern und Quads, an Rennwettbewerben teilnimmt. Es gibt Spielalternativen mit Wasser-, Luft- und sogar Raumfahrzeugen.</text>
+		</text>	
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>赛车是一种电子游戏类型，玩家可以使用任何类型的陆地车辆（包括摩托车和四轮摩托车）参加赛车比赛。甚至有水上、空中甚至太空载具的游戏选择。</text>
+		</text>	
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>賽車是一種電子遊戲類型，玩家可以使用任何類型的陸地車輛（包括機車和四輪機車）參加賽車比賽。甚至有水上、空中甚至太空載具的遊戲選擇。</text>
+		</text>	
+		
+		<text name="info2" extra="true">
+			<text>Racing Games</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="PT">
+			<text>Jogos de Corrida</text>
+		</text>		
+		
+		<text name="info2" extra="true" lang="EN">
+			<text>Racing Games</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ES">
+			<text>Juegos de Carrera</text>
+		</text>
+
+		<text name="info2" extra="true" lang="FR">
+			<text>Course Automobile</text>
+		</text>		
+
+		<text name="info2" extra="true" lang="DE">
+			<text>Rennspiele</text>
+		</text>	
+		
+		<text name="info2" extra="true" lang="ZH">
+			<text>Rennspiele</text>
+		</text>	
+		
+		<text name="info2" extra="true" lang="ZH">
+			<text>Rennspiele</text>
+		</text>	
+		
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>		
+		
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>						
+		</text>
+					<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+
+			<text name="info5" extra="true" lang="ZH">
+			<text>开发者:</text>
+		</text>
+
+			<text name="info5" extra="true" lang="TW">
+			<text>開發者:</text>
+		</text>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is the series of arcade boards Cave released all its arcade games on between 2004 to 2012. First the CV1000-B was produced, featuring a Hitachi SH-3 CPU (hence why it may sometimes to be referred to as the “Cave SH-3”). In 2008, the CV1000-D was produced which featured additional RAM.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É a série de placas de arcade que Cave lançou todos os seus jogos de arcade entre 2004 e 2012. Primeiro foi produzido o CV1000-B, com um CPU Hitachi SH-3 (daí porque às vezes pode ser referido como o "Cave SH-3 "). Em 2008, o CV1000-D foi produzido com RAM adicional.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Is the series of arcade boards Cave released all its arcade games on between 2004 to 2012. First the CV1000-B was produced, featuring a Hitachi SH-3 CPU (hence why it may sometimes to be referred to as the “Cave SH-3”). In 2008, the CV1000-D was produced which featured additional RAM.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es la serie de tableros de arcade que Cave lanzó todos sus juegos de arcade entre 2004 y 2012. Primero se produjo el CV1000-B, que presentaba una CPU Hitachi SH-3 (de ahí que a veces se le llame "Cave SH-3 ”). En 2008, se produjo el CV1000-D que incluía RAM adicional.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Est-ce que la série de cartes d'arcade Cave a sorti tous ses jeux d'arcade entre 2004 et 2012. Le CV1000-B a d'abord été produit, avec un processeur Hitachi SH-3 (d'où la raison pour laquelle il peut parfois être appelé le "Cave SH-3 ”). En 2008, le CV1000-D a été produit avec de la RAM supplémentaire.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Ist die Reihe von Arcade-Boards, auf denen Cave alle seine Arcade-Spiele zwischen 2004 und 2012 veröffentlicht hat. Zuerst wurde das CV1000-B mit einer Hitachi SH-3-CPU produziert (daher wird es manchmal als „Cave SH-3“ bezeichnet “). Im Jahr 2008 wurde der CV1000-D mit zusätzlichem RAM produziert.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>Cave CV1000</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>2004</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>CAVE Interactive</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinops.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/coinops.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

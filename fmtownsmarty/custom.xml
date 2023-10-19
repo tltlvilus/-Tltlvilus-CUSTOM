@@ -1,0 +1,95 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a fifth-generation home video game console released in 1993 by Fujitsu, exclusively for the Japanese market. It is often claimed to be the first 32-bit CD-based home video game system, although it has a 16-bit data bus, just like the earlier Commodore CDTV and Sega CD.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É um console de videogame de quinta geração lançado em 1993 pela Fujitsu, exclusivamente para o mercado japonês. É considerado o primeiro videogame doméstico baseado em CD de 32 bits, embora tenha um barramento de dados de 16 bits, assim como o Commodore CDTV e Sega CD.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a fifth-generation home video game console released in 1993 by Fujitsu, exclusively for the Japanese market. It is often claimed to be the first 32-bit CD-based home video game system, although it has a 16-bit data bus, just like the earlier Commodore CDTV and Sega CD.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una videoconsola de quinta generación lanzada en 1993 por Fujitsu, exclusivamente para el mercado japonés. A menudo se afirma que es el primer sistema de videojuegos doméstico basado en CD de 32 bits, aunque tiene un bus de datos de 16 bits, al igual que los anteriores Commodore CDTV y Sega CD.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une console de jeu vidéo domestique de cinquième génération lancée en 1993 par Fujitsu. On prétend souvent qu'il s'agit du premier système de jeu vidéo domestique basé sur CD 32 bits, bien qu'il dispose d'un bus de données 16 bits, tout comme les anciens CDTV et Sega CD.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="DE">
+			<text>Ist eine Heimvideospielkonsole der fünften Generation, die 1993 von Fujitsu exklusiv für den japanischen Markt herausgebracht wurde. Es wird oft behauptet, es sei das erste 32-Bit-CD-basierte Heimvideospielsystem, obwohl es einen 16-Bit-Datenbus hat, genau wie die früheren Commodore CDTV und Sega CD.</text>
+		</text>
+
+		
+		<text name="info2" extra="true">
+			<text>FM Towns Marty</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1993</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Fujitsu</text>
+		</text>			
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>It was a video game developer and publisher based in London, UK. Since 2009 it has been part of Square Enix Europe. The inspiration for the name comes from Eidos, the name given by Aristotle to what would later be discovered as the genetic code, the building blocks of life.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Foi uma desenvolvedora de jogos eletrônicos e editora com sede em Londres no Reino Unido. Desde 2009 faz parte da Square Enix Europe. A inspiração do nome vem de Eidos, nome dado por Aristóteles ao que mais tarde viria a ser descoberto como o código genético, os blocos de construção da vida.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>It was a video game developer and publisher based in London, UK. Since 2009 it has been part of Square Enix Europe. The inspiration for the name comes from Eidos, the name given by Aristotle to what would later be discovered as the genetic code, the building blocks of life.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Fue un desarrollador y editor de videojuegos con sede en Londres, Reino Unido. Desde 2009 forma parte de Square Enix Europa. La inspiración para el nombre proviene de Eidos, el nombre dado por Aristóteles a lo que luego se descubriría como el código genético, los componentes básicos de la vida.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>C'était un développeur et éditeur de jeux vidéo basé à Londres, au Royaume-Uni. Depuis 2009, il fait partie de Square Enix Europe. L'inspiration pour le nom vient d'Eidos, le nom donné par Aristote à ce qui sera découvert plus tard comme le code génétique, les éléments constitutifs de la vie.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Es war ein Entwickler und Herausgeber von Videospielen mit Sitz in London, Großbritannien. Seit 2009 gehört es zu Square Enix Europe. Die Inspiration für den Namen kommt von Eidos, dem Namen, den Aristoteles dem gab, was später als der genetische Code entdeckt wurde, die Bausteine ​​des Lebens.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Eidos</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Mark Strachan</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

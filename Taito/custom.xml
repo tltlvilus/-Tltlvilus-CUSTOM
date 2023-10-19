@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Taito Corporation is a Japanese company that specializes in video games, toys, arcade cabinets and game centers, based in Shinjuku, Tokyo. The company was founded by Michael Kogan in 1953 as the Taito Trading Company, importing vodka, vending machines and jukeboxes into Japan.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Taito Corporation é uma empresa japonesa especializada em videogames, brinquedos, fliperamas e centros de jogos, com sede em Shinjuku, Tóquio. A empresa foi fundada por Michael Kogan em 1953 como a Taito Trading Company, importando vodka, máquinas de venda automática e jukeboxes para o Japão.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Taito Corporation is a Japanese company that specializes in video games, toys, arcade cabinets and game centers, based in Shinjuku, Tokyo. The company was founded by Michael Kogan in 1953 as the Taito Trading Company, importing vodka, vending machines and jukeboxes into Japan.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Taito Corporation es una empresa japonesa que se especializa en videojuegos, juguetes, gabinetes de juegos y centros de juegos, con sede en Shinjuku, Tokio. La empresa fue fundada por Michael Kogan en 1953 como Taito Trading Company, importando vodka, máquinas expendedoras y máquinas de discos a Japón.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>Taito Corporation est une société japonaise spécialisée dans les jeux vidéo, les jouets, les bornes d'arcade et les centres de jeux, basée à Shinjuku, Tokyo. La société a été fondée par Michael Kogan en 1953 sous le nom de Taito Trading Company, important de la vodka, des distributeurs automatiques et des juke-box au Japon.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Taito Corporation ist ein japanisches Unternehmen mit Sitz in Shinjuku, Tokio, das sich auf Videospiele, Spielwaren, Arcade-Schränke und Spielzentren spezialisiert hat. Das Unternehmen wurde 1953 von Michael Kogan als Taito Trading Company gegründet und importierte Wodka, Verkaufsautomaten und Jukeboxen nach Japan.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Taito</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1953</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Michael Kogan</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

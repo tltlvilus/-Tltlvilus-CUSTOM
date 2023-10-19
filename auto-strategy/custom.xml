@@ -1,0 +1,135 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>It is a genre where it emphasizes thinking and planning skills to achieve victory. Games emphasize strategy, tactics, and sometimes logistical challenges. Many games also offer economic challenges and exploration.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="PT">
+			<text>É um gênero onde enfatiza habilidades de pensamento e planejamento para alcançar a vitória. Os jogos enfatizam a estratégia, tática e algumas vezes desafios lógísticos. Muitos jogos também oferecem desafios econômicos e exploração.</text>
+		</text>		
+
+		<text name="info1" extra="true" lang="EN">
+			<text>It is a genre where it emphasizes thinking and planning skills to achieve victory. Games emphasize strategy, tactics, and sometimes logistical challenges. Many games also offer economic challenges and exploration.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ES">
+			<text>Es un género donde se enfatizan las habilidades de pensamiento y planificación para lograr la victoria. Los juegos enfatizan la estrategia, las tácticas y, a veces, los desafíos logísticos. Muchos juegos también ofrecen desafíos económicos y exploración.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="FR">
+			<text>C'est un genre où il met l'accent sur les capacités de réflexion et de planification pour remporter la victoire. Les jeux mettent l'accent sur la stratégie, la tactique et parfois les défis logistiques. De nombreux jeux proposent également des défis économiques et de l'exploration.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Es ist ein Genre, in dem Denk- und Planungsfähigkeiten betont werden, um den Sieg zu erringen. Spiele betonen Strategie, Taktik und manchmal logistische Herausforderungen. Viele Spiele bieten auch wirtschaftliche Herausforderungen und Erkundungen.</text>
+		</text>	
+
+		
+		<text name="info2" extra="true">
+			<text>Jogos de Estratégia</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="PT">
+			<text>Jogos de Estratégia</text>
+		</text>		
+		
+		<text name="info2" extra="true" lang="EN">
+			<text>Strategy Games</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ES">
+			<text>Juegos de Estrategia</text>
+		</text>
+
+		<text name="info2" extra="true" lang="FR">
+			<text>Jeux de Stratégie</text>
+		</text>		
+
+		<text name="info2" extra="true" lang="DE">
+			<text>Strategiespiele</text>
+		</text>	
+		
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>		
+		
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>						
+		</text>
+					<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,111 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>MSX spawned four generations: MSX, MSX2, MSX2+, and MSX TurboR. The first three were 8-bit computers based on the Z80 microprocessor, while the MSX TurboR was based on a custom 16-bit R800 microprocessor.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>MSX foi o nome dado a uma arquitetura de microcomputadores criada no Japão em 1983, que definia um padrão para os desenvolvedores de hardware. Foi desenvolvido por Kazuhiko Nishi, vice-presidente da ASCII.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>MSX spawned four generations: MSX, MSX2, MSX2+, and MSX TurboR. The first three were 8-bit computers based on the Z80 microprocessor, while the MSX TurboR was based on a custom 16-bit R800 microprocessor.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>MSX es el nombre de un estándar de microordenador doméstico de 8 bits comercializado durante los años 1980 y principio de los años 1990. Fue definido por Kazuhiko Nishi y presentado el 27 de junio de 1983 en Japón.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>MSX était un standard de micro-ordinateurs à vocation domestique (grand public) d’origine japonaise, qui date des années 1980. Contrairement à la plupart des ordinateurs de l’époque, les MSX ont été produits par divers fabricants.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>MSX hat vier Generationen hervorgebracht: MSX, MSX2, MSX2+ und MSX TurboR. Die ersten drei waren 8-Bit-Computer, die auf dem Z80-Mikroprozessor basierten, während der MSX TurboR auf einem benutzerdefinierten 16-Bit-R800-Mikroprozessor basierte.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>MSX2+</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1985</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>ASCII</text>
+		</text>
+		
+		<image name="art" extra="true" ifSubset="colorset:Full HD 1080p">
+		<path>./../assets/arts/msx2.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:HD 720p">
+		<path>./../assets/arts/720/msx2.jpg</path>
+		</image>
+	
+		<image name="art" extra="true" ifSubset="colorset:Lite 540p">
+		<path>./../assets/arts/540/msx2.jpg</path>
+		</image>
+		
+		<image name="logo, sublogo">
+		<path>./../assets/logos/msx2.png</path>
+		</image>
+		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/msx2.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/msx2.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

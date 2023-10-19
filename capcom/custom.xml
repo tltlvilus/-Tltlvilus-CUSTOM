@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a Japanese video game developer and publisher known for creating numerous multi-million selling game franchises, including Mega Man, Street Fighter, Resident Evil, Devil May Cry, Onimusha, Dino Crisis, Dead Rising, Sengoku Basara, Ghosts 'n Goblins.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É uma desenvolvedora e publicadora japonesa de jogos eletrônicos sediada em Osaka. Ela é conhecida por ter criado franquias multimilionárias, tais como Resident Evil, Street Fighter, Mega-Man, Devil May Cry, Dino Crisis e Onimusha.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a Japanese video game developer and publisher known for creating numerous multi-million selling game franchises, including Mega Man, Street Fighter, Resident Evil, Devil May Cry, Onimusha, Dino Crisis, Dead Rising, Sengoku Basara, Ghosts 'n Goblins.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es un desarrollador y editor de videojuegos japonés conocido por crear numerosas franquicias de juegos multimillonarias, incluyendo Mega Man, Street Fighter, Resident Evil, Devil May Cry, Onimusha, Monster Hunter, Breath of Fire y Ace Attorney.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est un développeur et éditeur de jeux vidéo japonais connu pour avoir créé de nombreuses franchises de jeux à plusieurs millions de ventes, notamment Mega Man, Street Fighter, Resident Evil, Devil May Cry, Onimusha, Dino Crisis, Dead Rising.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist ein japanischer Videospielentwickler und -verleger, der dafür bekannt ist, zahlreiche millionenfach verkaufte Spiele-Franchises zu entwickeln, darunter Mega Man, Street Fighter, Resident Evil, Devil May Cry, Onimusha, Dino Crisis, Dead Rising, Sengoku Basara, Ghosts 'n Kobolde.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Capcom</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1979</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Capcom Co., Ltd.</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

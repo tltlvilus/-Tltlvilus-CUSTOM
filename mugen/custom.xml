@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>M.U.G.E.N (also known as Mugen, MUGEN) is a freeware 2D fighting game engine designed by Elecbyte. Content is created by the community, and thousands of fighters, both original and from popular fiction, have been created.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>O M.U.G.E.N (também conhecido como Mugen, MUGEN) é um mecanismo de jogo de luta 2D freeware desenvolvido por Elecbyte. O conteúdo é criado pela comunidade e milhares de lutadores, originais e de ficção popular, foram criados.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>M.U.G.E.N (also known as Mugen, MUGEN) is a freeware 2D fighting game engine designed by Elecbyte. Content is created by the community, and thousands of fighters, both original and from popular fiction, have been created.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>M.U.G.E.N (también conocido como Mugen, MUGEN) es un motor gratuito de juegos de lucha en 2D diseñado por Elecbyte. El contenido es creado por la comunidad y se han creado miles de luchadores, tanto originales como de ficción popular.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>M.U.G.E.N (également connu sous le nom de Mugen, MUGEN) est un moteur de jeu de combat 2D gratuit conçu par Elecbyte. Le contenu est créé par la communauté, et des milliers de combattants, à la fois originaux et de fiction populaire, ont été créés.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>M.U.G.E.N (auch bekannt als Mugen, MUGEN) ist eine Freeware-Engine für 2D-Kampfspiele, die von Elecbyte entwickelt wurde. Inhalte werden von der Community erstellt, und Tausende von Kämpfern, sowohl original als auch aus populärer Fiktion, wurden erstellt.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>M.U.G.E.N</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1999</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Elecbyte</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

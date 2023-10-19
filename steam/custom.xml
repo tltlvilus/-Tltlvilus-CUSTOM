@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a digital software distribution platform, developed and published by Valve Corporation. Steam is widely known for its video game distribution; however, since May of 2008, Valve's software development kit has made it possible for any software to be uploaded to store.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um software de gestão de direitos digitais criado pela Valve Corporation ou Valve L.L.C., de plataformas digitais como jogos e aplicativos de programação e fornece serviços facilitados como atualização automática de jogos, e preços acessíveis aos usuários.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a digital software distribution platform, developed and published by Valve Corporation. Steam is widely known for its video game distribution; however, since May of 2008, Valve's software development kit has made it possible for any software to be uploaded to store.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una plataforma de distribución de software digital, desarrollada y publicada por Valve Corporation. Steam es ampliamente conocido por su distribución de videojuegos; sin embargo, desde mayo de 2008, el kit de desarrollo de software de Valve ha hecho posible cargar cualquier software en la tienda.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est une plate-forme de distribution de logiciels numériques, développée et publiée par Valve Corporation. Steam est largement connu pour sa distribution de jeux vidéo ; cependant, depuis mai 2008, le kit de développement logiciel de Valve permet de télécharger n'importe quel logiciel dans le magasin.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine digitale Softwareverteilungsplattform, die von der Valve Corporation entwickelt und veröffentlicht wurde. Steam ist weithin bekannt für seinen Vertrieb von Videospielen; Seit Mai 2008 ermöglicht das Software-Entwicklungskit von Valve jedoch das Hochladen beliebiger Software in den Store.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Steam</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2003</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Valve Corporation</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/windows.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/windows.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

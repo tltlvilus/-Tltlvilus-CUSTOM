@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>TIC-80 is a fantasy computer for making, playing and sharing tiny games. There are built-in tools for development: code, sprites, maps, which is enough to create a mini retro game.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>O TIC-80 é um computador de fantasia para criar, jogar e compartilhar pequenos jogos. Existem ferramentas internas para desenvolvimento: código, sprites, mapas, o suficiente para criar um mini-jogo retro.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>TIC-80 is a fantasy computer for making, playing and sharing tiny games. There are built-in tools for development: code, sprites, maps, which is enough to create a mini retro game.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>TIC-80 es una computadora de fantasía para hacer, jugar y compartir pequeños juegos. Hay herramientas integradas para el desarrollo: código, sprites, mapas, que es suficiente para crear un mini juego retro.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>TIC-80 est un ordinateur fantastique permettant de créer, de jouer et de partager de petits jeux. Il existe des outils intégrés pour le développement: code, sprites, cartes, ce qui est suffisant pour créer un mini jeu rétro.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>TIC-80 ist ein Fantasy-Computer zum Erstellen, Spielen und Teilen kleiner Spiele. Es gibt integrierte Tools für die Entwicklung: Code, Sprites, Karten, was ausreicht, um ein Mini-Retro-Spiel zu erstellen.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>TIC 80</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>TIC Team</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

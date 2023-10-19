@@ -1,0 +1,113 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Dragon Ball Z (usually abbreviated as DBZ) was an animation series produced by Toei Animation. Based on the Dragon Ball manga series written by Akira Toriyama, Dragon Ball Z corresponds to volumes 17 to 42 of the manga.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Dragon Ball Z (geralmente abreviado como DBZ) foi uma série de animação produzida pela Toei Animation. Baseada na série de mangá Dragon Ball escrita por Akira Toriyama, Dragon Ball Z corresponde aos volumes 17 ao 42 do mangá.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Dragon Ball Z (usually abbreviated as DBZ) was an animation series produced by Toei Animation. Based on the Dragon Ball manga series written by Akira Toriyama, Dragon Ball Z corresponds to volumes 17 to 42 of the manga.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Dragon Ball Z (generalmente abreviado como DBZ) fue una serie de animación producida por Toei Animation. Basado en la serie de manga Dragon Ball escrita por Akira Toriyama, Dragon Ball Z corresponde a los volúmenes 17 a 42 del manga.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Dragon Ball Z (généralement abrégé en DBZ) était une série d'animation produite par Toei Animation. Basé sur la série manga Dragon Ball écrite par Akira Toriyama, Dragon Ball Z correspond aux volumes 17 à 42 du manga.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Dragon Ball Z (normalerweise als DBZ abgekürzt) war eine von Toei Animation produzierte Animationsserie. Dragon Ball Z basiert auf der von Akira Toriyama geschriebenen Dragon Ball Manga-Serie und entspricht den Bänden 17 bis 42 des Mangas.</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>Dragon Ball Z</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Akira Toriyama</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>CREATED BY:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>CRIADO POR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>CREATED BY:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>CRIADO POR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>CRÉÉ PAR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ERSTELLT VON:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

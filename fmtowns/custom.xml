@@ -1,0 +1,86 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a Japanese variant of PC, built by Fujitsu from February 1989 to the summer of 1997. It started as a proprietary PC variant intended for multimedia applications and games, but later became more compatible with IBM PC compatibles.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>É uma variante japonesa do PC, construída pela Fujitsu de fevereiro de 1989 ao verão de 1997. Começou como uma variante de PC proprietária destinada a aplicativos de multimídia e jogos de PC.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a Japanese variant of PC, built by Fujitsu from February 1989 to the summer of 1997. It started as a proprietary PC variant intended for multimedia applications and games, but later became more compatible with IBM PC compatibles.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es una variante japonesa de PC, construida por Fujitsu desde febrero de 1989 hasta el verano de 1997. Comenzó como una variante de PC patentada destinada a aplicaciones multimedia y juegos de PC.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Il s'agit d'une variante japonaise du PC, construite par Fujitsu de février 1989 à l'été 1997. Elle a commencé comme une variante PC propriétaire destinée aux applications multimédias et aux jeux PC.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine japanische PC-Variante, die von Fujitsu von Februar 1989 bis Sommer 1997 gebaut wurde. Sie begann als proprietäre PC-Variante für Multimedia-Anwendungen und Spiele, wurde aber später besser mit IBM-PC-kompatiblen Geräten kompatibel.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>FM Towns</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1989</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Fujitsu</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.210 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.34</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.888</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

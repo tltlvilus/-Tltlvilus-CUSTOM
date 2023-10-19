@@ -1,0 +1,92 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Future Pinball is a simulator and editor, but does not emulate hardware found in physical pinball machines. Tables are designed using 3D models found within the editor, and rendered using a 3D real-time engine.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>O Future Pinball é um simulador e editor, mas não emula o hardware encontrado em máquinas físicas de pinball. As tabelas são projetadas usando modelos 3D encontrados no editor e renderizadas usando um mecanismo 3D em tempo real.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Future Pinball is a simulator and editor, but does not emulate hardware found in physical pinball machines. Tables are designed using 3D models found within the editor, and rendered using a 3D real-time engine.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Future Pinball es un simulador y editor, pero no emula el hardware que se encuentra en las máquinas físicas de pinball. Las tablas se diseñan utilizando modelos 3D que se encuentran dentro del editor y se representan utilizando un motor 3D en tiempo real.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Future Pinball est un simulateur et un éditeur, mais n'émule pas le matériel des flippers physiques. Les tableaux sont conçus à l'aide de modèles 3D trouvés dans l'éditeur et rendus à l'aide d'un moteur 3D en temps réel.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Future Pinball ist ein Simulator und Editor, emuliert jedoch keine Hardware, die in physischen Flipperautomaten zu finden ist. Tabellen werden mithilfe von 3D-Modellen entworfen, die im Editor gefunden werden, und mithilfe einer 3D-Echtzeit-Engine gerendert.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Future Pinball</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2005</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Christopher Leathley</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+				<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

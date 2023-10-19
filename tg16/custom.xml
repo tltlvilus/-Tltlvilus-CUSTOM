@@ -1,0 +1,142 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>TurboGrafx-16 (PC Engine) is a home video game console jointly developed by Hudson Soft and NEC Home Electronics, released in Japan on October 30, 1987 and in the United States on August 29, 1989.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>É um console de videogame lançado em 1987 pela NEC e Hudson Soft. Após seu lançamento no Japão e sua aceitação nesse país, foi lançado em 1988 nos Estados Unidos batizado de Turbo Grafx-16.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>TurboGrafx-16 (PC Engine) is a home video game console jointly developed by Hudson Soft and NEC Home Electronics, released in Japan on October 30, 1987 and in the United States on August 29, 1989.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>PC Engine es una videoconsola que fue lanzada primeramente en Japón por NEC el 30 de octubre de 1987. El sistema fue lanzado en el mercado norteamericano a finales de agosto de 1989 con el nombre de TurboGrafx-16.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>PC-Engine (PCエンジン, Piishii Enjin), connue sous le nom TurboGrafx-16 en Amérique du Nord, est une console de jeux vidéo 8 bits fabriquée par NEC Corporation et commercialisée à partir de 1987 au Japon.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>TurboGrafx-16 (PC Engine) ist eine von Hudson Soft und NEC Home Electronics gemeinsam entwickelte Heimvideospielkonsole, die am 30. Oktober 1987 in Japan und am 29. August 1989 in den Vereinigten Staaten veröffentlicht wurde.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>PC Engine (TurboGrafx-16) 是由Hudson软件和NEC家庭电子联合开发的家用视频游戏机，于1987年10月30日在日本发布，1989 年8月29日在美国发布。</text>
+		</text>   
+
+		<text name="info1" extra="true" lang="TW">
+			<text>PC Engine (TurboGrafx-16) 是由Hudson軟體和NEC家庭電子聯合開發的家用視頻遊戲機，於1987年10月30日在日本發布，1989 年8月29日在美國發布。</text>
+		</text>
+
+		<text name="info2" extra="true" lang="PT">
+			<text>TurboGrafx-16</text>
+		</text>
+
+				<text name="info2" extra="true">
+			<text>TurboGrafx-16</text>
+		</text>
+						<text name="info2" extra="true" lang="EN">
+			<text>TurboGrafx-16</text>
+		</text>
+						<text name="info2" extra="true" lang="ES">
+			<text>TurboGrafx-16</text>
+		</text>
+						<text name="info2" extra="true" lang="FR">
+			<text>TurboGrafx-16</text>
+		</text>
+		<text name="info2" extra="true" lang="DE">
+			<text>TurboGrafx-16</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1987</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>NEC Home Electronics</text>
+		</text>
+
+		<text name="info4" extra="true" lang="ZH">
+			<text>NEC家庭电子</text>
+		</text>
+
+		<text name="info4" extra="true" lang="TW">
+			<text>NEC家庭電子</text>
+		</text>
+
+	<image name="logo" lang="EN">
+		<path>./../assets/logos/tg16.png</path>
+	</image>
+
+		<image name="logo" lang="ES">
+		<path>./../assets/logos/tg16.png</path>
+	</image>
+
+		<image name="logo" lang="DE">
+			<path>./../assets/logos/tg16.png</path>
+		</image>
+
+				<image name="sublogo" lang="EN">
+		<path>./assets/logos/tg16.png</path>
+	</image>
+
+				<image name="sublogo" lang="ES">
+		<path>./assets/logos/tg16.png</path>
+	</image>
+
+		<image name="sublogo" lang="DE">
+			<path>./assets/logos/tg16.png</path>
+		</image>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.185 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.37</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.695</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

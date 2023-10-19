@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Philips CD-i (aka Compact Disc Interactive) is an interactive multimedia CD player developed and marketed by Royal Philips Electronics N.V., who supported it from December 1991 into the late 1990s.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Philips CD-i (abreviação de Compact Disc Interactive) é um CD player interativo multimídia desenvolvido e comercializado pela Royal Philips Electronics N.V., que o apoiou de dezembro de 1991 até o final dos anos 1990.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Philips CD-i (aka Compact Disc Interactive) is an interactive multimedia CD player developed and marketed by Royal Philips Electronics N.V., who supported it from December 1991 into the late 1990s.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Philips CD-i es un reproductor de CD multimedia interactivo desarrollado y comercializado por Royal Philips Electronics N.V., que lo apoyó desde diciembre de 1991 hasta finales de la década de 1990.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Philips CD-i (abréviation de Compact Disc Interactive) est un lecteur CD multimédia interactif développé et commercialisé par Royal Philips Electronics N.V., qui l'a pris en charge de décembre 1991 à la fin des années 1990.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Philips CD-i (alias Compact Disc Interactive) ist ein interaktiver Multimedia-CD-Player, der von Royal Philips Electronics N.V. entwickelt und vermarktet wurde und von Dezember 1991 bis in die späten 1990er Jahre unterstützt wurde.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Philips CD-i</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1991</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Philips, Sony, Magnavox</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.195 0.765</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.35</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.190 0.360</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.877</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.023 0.805</pos><size>0.110 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

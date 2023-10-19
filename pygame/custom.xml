@@ -1,0 +1,109 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Pygame is a set of Python modules designed for writing video games. Pygame adds functionality on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Pygame é um conjunto de módulos Python projetados para escrever videogames. O Pygame adiciona funcionalidade à excelente biblioteca SDL. Isso permite que você crie jogos e programas multimídia completos na linguagem python.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="EN">
+			<text>Pygame is a set of Python modules designed for writing video games. Pygame adds functionality on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Pygame es un conjunto de módulos de Python diseñados para escribir videojuegos. Pygame agrega funcionalidad además de la excelente biblioteca SDL. Esto le permite crear juegos y programas multimedia con todas las funciones en el lenguaje Python.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Pygame est un ensemble de modules Python conçus pour l'écriture de jeux vidéo. Pygame ajoute des fonctionnalités en plus de l'excellente bibliothèque SDL. Cela vous permet de créer des jeux et des programmes multimédias complets en langage python.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Pygame ist eine Reihe von Python-Modulen, die zum Schreiben von Videospielen entwickelt wurden. Pygame fügt der hervorragenden SDL-Bibliothek Funktionen hinzu. Damit können Sie Spiele und Multimedia-Programme mit vollem Funktionsumfang in der Python-Sprache erstellen.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="ZH">
+			<text>Pygame是一组专为编写视频游戏而设计的Python模块。 Pygame在出色的SDL库之上添加了功能。这使您可以使用python语言创建功能齐全的游戏和多媒体程序。</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="TW">
+			<text>Pygame是一組專為編寫視頻遊戲而設計的Python模組。 Pygame在出色的SDL庫之上添加了功能。這使您可以使用python語言創建功能齊全的遊戲和多媒體程式。</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>PyGame</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>2009</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Pygame Community</text>
+		</text>
+		
+		<text name="info4" extra="true" lang="ZH">
+			<text>Pygame社区</text>
+		</text>
+		
+				<text name="info4" extra="true" lang="TW">
+			<text>Pygame社區</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

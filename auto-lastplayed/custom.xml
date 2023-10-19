@@ -1,0 +1,171 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>The latest games played from all available systems appear here in a single list, organized in descending order. You can search for your favorite game by various criteria through the system.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Os últimos jogos jogados de todos os sistemas disponíveis aparecem aqui numa lista única, organizada por ordem decrescente. Você pode procurar o seu jogo favorito por diversos critérios através do sistema.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>The latest games played from all available systems appear here in a single list, organized in descending order. You can search for your favorite game by various criteria through the system.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Los últimos jogos jogados de todos los sistemas disponibles aparecen aquí en la lista única, organizada por orden decreciente. Puedes buscar tu juego favorito por varios criterios a través del sistema.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Les derniers jeux joués de tous les systèmes disponibles apparaissent ici dans une liste unique, organisée par ordre décroissant. Vous pouvez rechercher votre jeu préféré selon divers critères via le système.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Die zuletzt gespielten Spiele aller verfügbaren Systeme erscheinen hier in einer einzigen Liste, organisiert in absteigender Reihenfolge. Sie können Ihr Lieblingsspiel nach verschiedenen Kriterien über das System suchen.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="ZH">
+			<text>按降序排列展示最近玩过的游戏。</text>
+		</text>
+
+		<text name="info1" extra="true" lang="TW">
+			<text>按降序排列展示最近玩過的遊戲。</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Last Played</text>
+		</text>
+
+			<text name="info2" extra="true"  lang="PT">
+			<text>Últimos Jogados</text>
+		</text>
+						<text name="info2" extra="true" lang="EN">
+			<text>Last Played</text>
+		</text>
+						<text name="info2" extra="true" lang="ES">
+			<text>Última Jugada</text>
+		</text>
+						<text name="info2" extra="true" lang="FR">
+			<text>Dernièr Joué</text>
+		</text>
+		<text name="info2" extra="true" lang="DE">
+			<text>Zuletzt gespielt</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="ZH">
+			<text>最近玩过的游戏</text>
+		</text>
+		
+		<text name="info2" extra="true" lang="TW">
+			<text>最近玩的遊戲</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text></text>
+		</text>
+
+			<image name="logo" lang="EN">
+		<path>./assets/logos/auto-lastplayed-en.png</path>
+	</image>
+
+				<image name="sublogo" lang="EN">
+		<path>./assets/logos/auto-lastplayed-en.png</path>
+	</image>
+
+			<image name="logo" lang="PT">
+		<path>./assets/logos/auto-lastplayed-pt.png</path>
+	</image>
+
+				<image name="sublogo" lang="PT">
+		<path>./assets/logos/auto-lastplayed-pt.png</path>
+	</image>
+
+			<image name="logo" lang="ES">
+		<path>./assets/logos/auto-lastplayed-es.png</path>
+	</image>
+
+				<image name="sublogo" lang="ES">
+		<path>./assets/logos/auto-lastplayed-es.png</path>
+	</image>
+
+
+			<image name="logo" lang="FR">
+		<path>./assets/logos/auto-lastplayed-fr.png</path>
+	</image>
+
+				<image name="sublogo" lang="FR">
+		<path>./assets/logos/auto-lastplayed-fr.png</path>
+	</image>
+
+		<image name="logo" lang="DE">
+			<path>./assets/logos/auto-lastplayed-en.png</path>
+		</image>
+
+		<image name="sublogo" lang="DE">
+			<path>./assets/logos/auto-lastplayed-en.png</path>
+		</image>
+
+
+				<text name="info5" extra="true">
+			<text>ALEKFULL ARTFLIX</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

@@ -1,0 +1,92 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Internet is the global system of interconnected computer networks that uses the protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>Internet é o sistema global de redes de computadores interconectadas que usa o conjunto de protocolos da Internet (TCP / IP) para se comunicar entre redes e dispositivos. É uma rede que consiste em redes privadas, públicas, acadêmicas, comerciais e governamentais.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Internet is the global system of interconnected computer networks that uses the protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Internet es el sistema global de redes informáticas interconectadas que utiliza el conjunto de protocolos (TCP / IP) para comunicarse entre redes y dispositivos. Es una red de redes que consta de redes privadas, públicas, académicas, comerciales y gubernamentales.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Internet est le système mondial de réseaux informatiques interconnectés qui utilise l'ensemble de protocoles (TCP / IP) pour communiquer entre les réseaux et les appareils. Il se compose de réseaux privés, publics, universitaires, commerciaux et gouvernementaux.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Das Internet ist das globale System miteinander verbundener Computernetzwerke, das die Protokollsuite (TCP/IP) verwendet, um zwischen Netzwerken und Geräten zu kommunizieren. Es ist ein Netzwerk von Netzwerken, das aus privaten, öffentlichen, akademischen, geschäftlichen und staatlichen Netzwerken besteht.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Internet</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1965</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>
+
+		<text name="info5" extra="true">
+			<text>DEVELOPER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>DESENVOLVEDOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>DEVELOPER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>DESARROLLADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>DÉVELOPPEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>ENTWICKLER:</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

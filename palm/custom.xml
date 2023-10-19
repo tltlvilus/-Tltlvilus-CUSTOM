@@ -1,0 +1,94 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Palm, Inc. is a hardware and software manufacturing company founded in 1992. It was absorbed by U.S. Robotics Corp. 1995. In June 1997 Palm became a subsidiary of 3Com.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Palm, Inc. é uma empresa de fabricação de hardware e software fundada em 1992. Foi absorvida pela U.S. Robotics Corp. em 1995. Em junho de 1997, a Palm tornou-se uma subsidiária de 3Com.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Palm, Inc. is a hardware and software manufacturing company founded in 1992. It was absorbed by U.S. Robotics Corp. 1995. In June 1997 Palm became a subsidiary of 3Com.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Palm, Inc. es una empresa de fabricación de hardware y software fundada en 1992. Fue absorbida por U.S. Robotics Corp. 1995. En junio de 1997 Palm se convirtió en una subsidiaria de 3Com.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Palm, Inc. est une société de fabrication de matériel informatique et de logiciels fondée en 1992. Elle a été absorbée par la société américaine Robotics Corp. 1995. En juin 1997, Palm devient une filiale de 3Com.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Palm, Inc. ist ein 1992 gegründetes Unternehmen zur Herstellung von Hardware und Software. Es wurde 1995 von der U.S. Robotics Corp. übernommen. Im Juni 1997 wurde Palm eine Tochtergesellschaft von 3Com.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Palm</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Palm, Inc.</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

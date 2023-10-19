@@ -1,0 +1,114 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Is a French video game holding company headquartered in Paris. Its subsidiaries include Atari Interactive and Atari, Inc. It is the current owner of the Atari brand through Atari Interactive. In 1992, they released Alone in the Dark, a 3D horror adventure game, to international attention.</text>
+		</text>
+
+		<text name="info1" extra="true"  lang="PT">
+			<text>é uma holding francesa de videogames com sede em Paris. Suas subsidiárias incluem Atari Interactive e Atari, Inc. É a atual proprietária da marca Atari através da Atari Interactive. Em 1992, eles lançaram Alone in the Dark, um jogo de aventura de terror em 3D, para atenção internacional.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="EN">
+			<text>Is a French video game holding company headquartered in Paris. Its subsidiaries include Atari Interactive and Atari, Inc. It is the current owner of the Atari brand through Atari Interactive. In 1992, they released Alone in the Dark, a 3D horror adventure game, to international attention.</text>
+		</text>
+		
+				<text name="info1" extra="true" lang="ES">
+			<text>Es un holding francés de videojuegos con sede en París. Sus subsidiarias incluyen Atari Interactive y Atari, Inc. Es el propietario actual de la marca Atari a través de Atari Interactive. En 1992, lanzaron Alone in the Dark, un juego de aventuras de terror en 3D, que captó la atención internacional.</text>
+		</text>
+		
+		<text name="info1" extra="true" lang="FR">
+			<text>Est une holding française de jeux vidéo dont le siège est à Paris. Ses filiales comprennent Atari Interactive et Atari, Inc. Il est l'actuel propriétaire de la marque Atari via Atari Interactive. En 1992, ils ont sorti Alone in the Dark, un jeu d'aventure d'horreur en 3D, à l'attention internationale.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Ist eine französische Holdinggesellschaft für Videospiele mit Hauptsitz in Paris. Zu seinen Tochtergesellschaften gehören Atari Interactive und Atari, Inc. Es ist der derzeitige Eigentümer der Marke Atari durch Atari Interactive. 1992 veröffentlichten sie Alone in the Dark, ein 3D-Horror-Abenteuerspiel, das internationale Aufmerksamkeit erregte.</text>
+		</text>
+		
+		<text name="info2" extra="true">
+			<text>Infogrames</text>
+		</text>
+		
+		<text name="info3" extra="true">
+			<text>1983</text>
+		</text>
+		
+		<text name="info4" extra="true">
+			<text>Bruno Bonnell</text>
+		</text>	
+
+				<text name="info5" extra="true">
+			<text>FOUNDER:</text>
+		</text>
+
+				<text name="info5" extra="true"  lang="PT">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="EN">
+			<text>FOUNDER:</text>
+		</text>
+						<text name="info5" extra="true" lang="ES">
+			<text>FUNDADOR:</text>
+		</text>
+						<text name="info5" extra="true" lang="FR">
+			<text>FONDATEUR:</text>
+		</text>
+		<text name="info5" extra="true" lang="DE">
+			<text>GRÜNDER:</text>
+		</text>		
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+	
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+	
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

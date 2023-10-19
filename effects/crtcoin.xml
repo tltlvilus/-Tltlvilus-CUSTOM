@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  
+<customView name="TLTL-NO-FANART">
+ 	<!-- Video Effect -->
+	<video name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+		<path>./../effects/effect_crt.mp4</path>
+		<color>FFFFFF10</color>
+		<zIndex>10</zIndex>
+	</video>
+</customView>
+  
+<customView name="TLTL-COLOR">
+ 	<!-- Video Effect -->
+	<video name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+		<path>./../effects/effect_crt.mp4</path>
+		<color>FFFFFF10</color>
+		<zIndex>10</zIndex>
+	</video>
+</customView>
+  
+<customView name="TLTL-CUSTOM">
+ 	<!-- Video Effect -->
+	<video name="tv_effect" extra="true">
+		<pos>0.0305 0.62</pos>
+		<size>0.30 0.30</size>
+		<path>./../effects/effect_crt.mp4</path>
+		<color>FFFFFF10</color>
+		<zIndex>10</zIndex>
+	</video>
+</customView>
+
+  <customView name="TLTL-HCoinSpin">
+      <video name="tv_effect" extra="true">
+         <pos>0.106 0.30</pos>
+         <size>0.365 0.48</size>
+         <path>./../effects/effect_crt.mp4</path>
+         <color>FFFFFF10</color>
+         <zIndex>6.1</zIndex>
+	  </video>
+  </customView>
+  
+  <customView name="TLTL-CoinOps">
+      <video name="tv_effect" extra="true">
+         <pos>0.106 0.30</pos>
+         <size>0.365 0.48</size>
+         <path>./../effects/effect_crt.mp4</path>
+         <color>FFFFFF10</color>
+         <zIndex>6.1</zIndex>
+	  </video>
+  </customView>  
+  
+  
+</theme>

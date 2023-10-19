@@ -1,0 +1,93 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Mr.Boom is a core for RetroArch based on the classic Bomberman in its 8-bit phase. It has support for 8 simultaneous players and remains very fun, with the complete Bomberman experience.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Mr.Boom é um core para o RetroArch baseado no clássico Bomberman na sua fase 8-bits. Ele tem suporte para 8 jogadores simultâneos e continua muito divertido, com a experiência Bomberman completa.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Mr.Boom is a core for RetroArch based on the classic Bomberman in its 8-bit phase. It has support for 8 simultaneous players and remains very fun, with the complete Bomberman experience.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Mr.Boom es un núcleo para RetroArch basado en el clásico Bomberman en su fase de 8 bits. Tiene soporte para 8 jugadores simultáneos y sigue siendo muy divertido, con la experiencia completa de Bomberman.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Mr.Boom est un noyau pour RetroArch basé sur le Bomberman classique dans sa phase 8 bits. Il prend en charge 8 joueurs simultanés et reste très amusant, avec l'expérience complète de Bomberman.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Mr.Boom ist ein Kern für RetroArch, der auf dem klassischen Bomberman in seiner 8-Bit-Phase basiert. Es bietet Unterstützung für 8 gleichzeitige Spieler und macht mit der kompletten Bomberman-Erfahrung sehr viel Spaß.</text>
+		</text>
+				<text name="info2" extra="true">
+			<text>Mr. Boom</text>
+		</text>
+
+				<text name="info3" extra="true">
+			<text>20XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>VRemdy Software</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+		
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

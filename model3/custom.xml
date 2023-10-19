@@ -1,0 +1,85 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Sega Model 3 is an arcade card launched by Sega in 1996. It was the last product of Sega's partnership with Lockheed Martin, using the Real3D division to design the graphics processor. Among the best known games are Virtua Fighter 3 and Sega Rally 2.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Sega Model 3 é uma placa de arcade lançada pela Sega em 1996. Foi o último produto da parceria da Sega com a Lockheed Martin, usando a divisão Real3D para projetar o processador gráfico. Entre os jogos mais conhecidos encontram-se Virtua Fighter 3 e Sega Rally 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Sega Model 3 is an arcade card launched by Sega in 1996. It was the last product of Sega's partnership with Lockheed Martin, using the Real3D division to design the graphics processor. Among the best known games are Virtua Fighter 3 and Sega Rally 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Sega Model 3 es una tarjeta arcade lanzada por Sega en 1996. Fue el último producto de la asociación de Sega con Lockheed Martin. Entre los juegos más conocidos se encuentran Virtua Fighter 3, Sega Super GT, Virtua Striker 2 y Sega Rally 2.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Sega Model 3 est une carte d'arcade lancée par Sega en 1996. C'était le dernier produit du partenariat de Sega avec Lockheed Martin. Parmi les jeux les plus connus figurent Virtua Fighter 3, Sega Super GT, Virtua Striker 2 et Sega Rally 2.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Sega Model 3 ist eine Arcade-Karte, die 1996 von Sega auf den Markt gebracht wurde. Sie war das letzte Produkt der Partnerschaft von Sega mit Lockheed Martin, bei der die Real3D-Abteilung zum Design des Grafikprozessors eingesetzt wurde. Zu den bekanntesten Spielen gehören Virtua Fighter 3 und Sega Rally 2.</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Sega Model 3</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>1996</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>SEGA</text>
+		</text>
+		
+	<image name="console" aspect="true" extra="true">
+		<path>./assets/consoles/${system.theme}.png</path>
+		<pos>0.160 0.775</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 0.39</maxSize>
+		<zIndex>150</zIndex>
+		<storyboard>
+			<animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="2000" mode="linear"/>
+		</storyboard>
+	</image>
+	
+</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

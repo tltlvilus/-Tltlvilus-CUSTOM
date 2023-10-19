@@ -1,0 +1,109 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system">
+		<text name="info1" extra="true">
+			<text>Media player software is a type of application software for playing multimedia computer files like audio and video files. Media players commonly display standard media control icons known from physical devices such as tape recorders and CD players.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="PT">
+			<text>Media player é um tipo de aplicativo para reproduzir arquivos de computador multimídia, como arquivos de áudio e vídeo. Os players de mídia geralmente exibem ícones de controle de mídia padrão conhecidos de dispositivos físicos, como gravadores e CD players.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="EN">
+			<text>Media player software is a type of application software for playing multimedia computer files like audio and video files. Media players commonly display standard media control icons known from physical devices such as tape recorders and CD players.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="ES">
+			<text>Es un tipo de software de aplicación para reproducir archivos multimedia de computadora como archivos de audio y video. Los reproductores multimedia suelen mostrar iconos de control multimedia conocidos desde dispositivos físicos, como grabadoras y reproductores de CD.</text>
+		</text>
+
+				<text name="info1" extra="true" lang="FR">
+			<text>Est un type de logiciel d'application pour lire des fichiers informatiques multimédias comme des fichiers audio et vidéo. Les lecteurs multimédias affichent généralement des icônes de contrôle multimédia standard connues des périphériques physiques.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="DE">
+			<text>Media-Player-Software ist eine Art von Anwendungssoftware zum Abspielen von Multimedia-Computerdateien wie Audio- und Videodateien. Media-Player zeigen üblicherweise Standard-Mediensteuerungssymbole an, die von physischen Geräten wie Tonbandgeräten und CD-Playern bekannt sind.</text>
+		</text>
+
+		<text name="info1" extra="true" lang="ZH">
+			<text>媒体播放器软件是一种用于播放多媒体计算机文件（如音频和视频文件）的应用软件。媒体播放器通常显示从物理设备（如磁带录音机和 CD 播放器）已知的标准媒体控制图标。</text>
+		</text> 
+    
+		<text name="info1" extra="true" lang="TW">
+			<text>媒體播放器軟件是一種用於播放多媒體計算機文件（如音頻和視頻文件）的應用軟件。媒體播放器通常顯示從物理設備（如磁帶錄音機和 CD 播放器）已知的標準媒體控製圖標。</text>
+		</text>
+
+		<text name="info2" extra="true">
+			<text>Media Player</text>
+		</text>
+
+		<text name="info2" extra="true" lang="ZH">
+			<text>媒体播放器</text>
+		</text>
+
+		<text name="info2" extra="true" lang="TW">
+			<text>媒體播放器</text>
+		</text>
+
+		<text name="info3" extra="true">
+			<text>19XX</text>
+		</text>
+
+		<text name="info4" extra="true">
+			<text>Various</text>
+		</text>
+	</view>
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-VIDEO" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-NO-FANART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-FANART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-CUSTOM-NO-VID/ART" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-NO-VIDEO/ART">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+<customView name="TLTL-COLOR" inherits="gamecarousel" tinyScreen="false" displayName="TLTL-COLOR">
+<image name="md_thumbnail"><pos>0.54 0.5</pos><size>0.160 0.000</size><zIndex>36</zIndex></image>
+</customView>
+
+	
+<customView name="TLTL-HCoinSpin">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.80</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+
+
+	
+<customView name="TLTL-CoinOps">
+<image name="md_thumbnail" extra="true"><pos>0.088 0.89</pos><size>0.10 0</size><zIndex>36</zIndex></image>
+      <image name="art3" extra="true">
+         <path>./../assets/coinops/default.png</path>
+         <zIndex>7</zIndex>
+      </image>
+	
+</customView>
+<view name="gamecarousel">
+<image name="logo">
+<path>./assets/logos/${system.theme}.png</path>
+<path>./assets/logos/${system.theme}.svg</path>
+<pos>0.122 0.035</pos>
+<size>0.20 0</size>
+<alignment>center</alignment>
+<zIndex>150</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+<image name="console" aspect="true" extra="true"><path>./assets/consoles/${system.theme}.png</path><pos>0.325 0.875</pos><origin>0.5 0.5</origin><maxSize>0.20 .20</maxSize><zIndex>150</zIndex><storyboard><animation property="opacity" from="0" to="0" begin="0" duration="1" mode="linear"/><animation property="opacity" from="0" to="1" begin="0" duration="300" mode="linear"/></storyboard></image></view>
+
+<customView name="TLTL-CoinOps" inherits="grid" tinyScreen="false" displayName="${hcoinopsdViewName}">
+<image name="md_thumbnail" extra="true"><pos>0.0360 0.785</pos><size>0.090 0.000</size><origin>0 0</origin><zIndex>111</zIndex></image>
+</customView>
+
+</theme>

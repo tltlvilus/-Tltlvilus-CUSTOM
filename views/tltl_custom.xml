@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+<customView name="TLTL-CUSTOM" inherits="gamecarousel" tinyScreen="false" displayName="${tltlcustom}">
+
+	<!-- Video Frame -->
+	<image name="vdframe" extra="true">
+		<origin>0 0</origin>
+		<pos>0.0060 0</pos>
+		<size>1 1</size>
+		<path ifSubset="VideoBG:Black">./assets/vdbg/overlay1222t_black.png</path>
+		<path ifSubset="VideoBG:Filme">./assets/vdbg/overlay1222t_filme.png</path>
+		<path ifSubset="VideoBG:Gray">./assets/vdbg/overlay1222t_gray.png</path>
+		<path ifSubset="VideoBG:Gray Dark">./assets/vdbg/overlay1222t_grayd.png</path>
+		<path ifSubset="VideoBG:Gray Light">./assets/vdbg/overlay1222t_grayl.png</path>
+		<path ifSubset="VideoBG:White">./assets/vdbg/overlay1222t_white.png</path>
+		<path ifSubset="VideoBG:Red">./assets/vdbg/overlay1222t_red.png</path>
+		<path ifSubset="VideoBG:Blue">./assets/vdbg/overlay1222t_blue.png</path>
+		<path ifSubset="VideoBG:Green">./assets/vdbg/overlay1222t_green.png</path>
+		<path ifSubset="VideoBG:Yellow">./assets/vdbg/overlay1222t_yellow.png</path>
+		<path ifSubset="VideoBG:Rose">./assets/vdbg/overlay1222t_rose.png</path>
+		<path ifSubset="VideoBG:Pink">./assets/vdbg/overlay1222t_pink.png</path>
+		<path ifSubset="VideoBG:Purple">./assets/vdbg/overlay1222t_purple.png</path>
+		<path ifSubset="VideoBG:Lilac">./assets/vdbg/overlay1222t_lilac.png</path>
+		<zIndex>11</zIndex>
+	</image>
+	
+	<!-- Fan Art -->
+	<image name="md_fanart">
+		<linearSmooth>true</linearSmooth>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<origin ifSubset="WheelBG:None">0 0</origin>
+		<origin ifSubset="WheelBG:Transparency">0 0</origin>
+		<origin ifSubset="WheelBG:Transparency Detail">0 0</origin>
+		<origin ifSubset="WheelBG:Transparency White Detail">0 0</origin>
+		<origin ifSubset="WheelBG:Black">0.15 0</origin>
+		<origin ifSubset="WheelBG:White">0.15 0</origin>
+		<origin ifSubset="WheelBG:Gray">0.15 0</origin>
+		<origin ifSubset="WheelBG:Gray Dark">0.15 0</origin>
+		<origin ifSubset="WheelBG:Gray Light">0.15 0</origin>
+		<origin ifSubset="WheelBG:Gray Dark With White">0.15 0</origin>
+		<origin ifSubset="WheelBG:Red">0.15 0</origin>
+		<origin ifSubset="WheelBG:Green">0.15 0</origin>
+		<origin ifSubset="WheelBG:Blue">0.15 0</origin>
+		<origin ifSubset="WheelBG:Yellow">0.15 0</origin>
+		<origin ifSubset="WheelBG:Rose">0.15 0</origin>
+		<origin ifSubset="WheelBG:Pink">0.15 0</origin>
+		<origin ifSubset="WheelBG:Purple">0.15 0</origin>
+		<origin ifSubset="WheelBG:Lilac">0.15 0</origin>
+		<origin ifSubset="WheelBG:Black with Vignette">0.15 0</origin>
+		<origin ifSubset="WheelBG:White with Vignette">0.15 0</origin>
+		<origin ifSubset="WheelBG:Star">0.15 0</origin>
+		<origin ifSubset="WheelBG:Dark">0 0</origin>
+		<origin ifSubset="WheelBG:Light">0 0</origin>
+		<imageSource>fanart</imageSource>
+		<zIndex>1</zIndex>
+		<storyboard>
+			<animation property="y" from="0" to="0" begin="200" duration="1500" mode="linear" autoreverse="true" repeat="forever"/>
+			<animation property="scale" from="1" to="1.1" begin="200" duration="25000" mode="linear" autoreverse="true" repeat="forever"/>
+        </storyboard>
+	</image>
+	
+	<!-- Video -->
+    <video name="md_video" extra="true">
+        <pos>0.0305 0.620</pos>
+        <size>0.300 0.300</size>
+        <origin>0 0</origin>
+        <delay>0.05</delay>
+		<effect>fade</effect>
+		<default>true</default>	
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <zIndex>9</zIndex>
+	</video>
+	<image name="b_video" extra="true">
+        <pos>0.0305 0.620</pos>
+        <size>0.300 0.300</size>
+        <origin>0 0</origin>
+        <path>./assets/panels/${system.theme}.jpg</path>
+        <zIndex>8</zIndex>
+     </image>
+
+	<!-- Wallpaper Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+       <size>1 1</size>
+       <origin>0 0</origin>
+      <path>./effects/scanlines2x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+	
+
+</customView>
+
+</theme>
