@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 
@@ -6,11 +6,76 @@
 		<image name="crt" extra="true">
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<path>./scanlines3x.png</path>
+			<path>./effects/scanlines3x.png</path>
 			<color>FFFFFF60</color>
 			<tile>true</tile>
 			<zIndex>2</zIndex>
 		</image>
 	</view>
-  
+
+<customView name="TLTL-CUSTOM">
+	<!-- Gamelist Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <path>./effects/scanlines3x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+</customView>
+
+<customView name="TLTL-COLOR">
+	<!-- Gamelist Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <path>./effects/scanlines3x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+</customView>
+
+<customView name="TLTL-NO-FANART">
+	<!-- Gamelist Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <path>./effects/scanlines3x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+</customView>
+
+<customView name="TLTL-HCoinSpin">
+	<!-- Gamelist Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <path>./effects/scanlines3x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+</customView>
+
+<customView name="TLTL-CoinOps">
+	<!-- Gamelist Effect -->
+	<image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <origin>0 0</origin>
+      <path>./effects/scanlines3x.png</path>
+      <color>FFFFFF60</color>
+      <tile>true</tile>
+	  <zIndex>4</zIndex>
+    </image>
+</customView>
+
 </theme>
