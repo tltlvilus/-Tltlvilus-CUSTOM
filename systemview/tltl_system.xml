@@ -29,7 +29,9 @@
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
-		 <path ifSubset="colorsetsystem:Gray Dark">./../assets/overlay_cinza_escuro.png</path>
+		 <path ifSubset="colorsetsystem:Dark Gray">./../assets/overlay_cinza_escuro.png</path>
+		 <path ifSubset="colorsetsystem:Clean">./../assets/overlay_branco_clean.png</path>
+		 <path ifSubset="colorsetsystem:Clean Black">./../assets/overlay_preto_clean.png</path>
 		 <path ifSubset="colorsetsystem:Gray">./../assets/overlay_cinza.png</path>
 		 <path ifSubset="colorsetsystem:White">./../assets/overlay_branco.png</path>
 		 <path ifSubset="colorsetsystem:Black">./../assets/overlay_preto.png</path>
@@ -51,7 +53,7 @@
 		<origin>0 0</origin>
         <pos>0.0253 0.0259</pos>
         <size>0.195 0.140</size>
-		<path ifSubset="logotheme:Gray Dark">./../assets/logohue_cinza_escuro.png</path>
+		<path ifSubset="logotheme:Dark Gray">./../assets/logohue_cinza_escuro.png</path>
 		<path ifSubset="logotheme:Gray">./../assets/logohue_cinza.png</path>
 		<path ifSubset="logotheme:White">./../assets/logohue_branco.png</path>
 		<path ifSubset="logotheme:Black">./../assets/logohue_preto.png</path>
@@ -65,7 +67,7 @@
 		<path ifSubset="logotheme:Green">./../assets/logohue_verde.png</path>
 		<path ifSubset="logotheme:Yellow">./../assets/logohue_amarelo.png</path>
 		<path ifSubset="logotheme:Orange">./../assets/logohue_laranja.png</path>
-		<path ifSubset="logotheme:None"></path>
+		<path ifSubset="logotheme:Clean"></path>
 		<zIndex>41</zIndex>
 	</image>
 	
@@ -208,6 +210,7 @@
 	<text name="playbutton" extra="true">
 		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
 		<color ifSubset="colorsetsystem:Dark Gray">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Clean Black">FFFFFF</color>
 		<color ifSubset="colorsetsystem:Gray">FFFFFF</color>
 		<color ifSubset="colorsetsystem:Black">FFFFFF</color>
 		<color ifSubset="colorsetsystem:Purple">FFFFFF</color>
@@ -221,6 +224,7 @@
 		<color ifSubset="colorsetsystem:Yellow">FFFFFF</color>
 		<color ifSubset="colorsetsystem:Orange">FFFFFF</color>
 		<color ifSubset="colorsetsystem:White">000000</color>
+		<color ifSubset="colorsetsystem:Clean">000000</color>
 		<alignment>center</alignment>
 	    <fontSize>0.0155</fontSize>
 		<size>0.36 0</size>
