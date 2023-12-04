@@ -9,7 +9,7 @@ This started as a modification from Artflix for a personal use.
   
 You can find a potential demonstration on my channel https://www.youtube.com/@tltlvilus
 
-[![Watch the video](https://img.youtube.com/vi/COQOkOa9AaI/maxresdefault.jpg)](https://youtu.be/COQOkOa9AaI)
+[![Watch the video](https://iili.io/JIJ04YQ.png)](https://youtu.be/COQOkOa9AaI)
 
 Retrobat forum topic https://retrobat.forumgaming.fr/t1622-my-custom-theme
 
