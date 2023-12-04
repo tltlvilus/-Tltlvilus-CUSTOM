@@ -25,6 +25,7 @@
 		<subset.systemview>System View</subset.systemview>
 		<subset.MainBGColor>Background Color</subset.MainBGColor> 
 		<subset.shader>System Shaders</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.animcarousel>Carousel Animated Logo</subset.animcarousel> 
 		<subset.bganim>Game List Background Animation</subset.bganim>
 		<subset.syscarousel>System Carousel</subset.syscarousel>  
@@ -104,6 +105,7 @@
 		<hueturquoise>Turquesa</hueturquoise>
 		<huepurple>Roxo</huepurple>
 		<huelilac>Lilas</huelilac>
+		<hueorange>Laranja</hueorange>
 		<icondef>Ícones Padrão</icondef>
 		<hspinadefViewName>TLTL Vertical TV</hspinadefViewName>
 		<hcoinopsdViewName>TLTL Vertical TV Detalhado</hcoinopsdViewName>
@@ -133,7 +135,8 @@
 		<subset.systemview>Vistas de Sistemas</subset.systemview>
 		<subset.colorset>Imagens de Fundo</subset.colorset>
 		<subset.iconset>Ícones do Menu</subset.iconset>
-		<subset.shader>Shaders do Tema</subset.shader>
+		<subset.shader>Filtros do Tema</subset.shader>
+		<subset.shadergl>Filtros da Lista de Jogos</subset.shadergl>
 		<subset.music>Músicas dos Sistemas</subset.music>
 		<subset.bganim>Animação na imagem de fundo dos jogos</subset.bganim>
 		<subset.wheelanim>Animação nos logos dos jogos</subset.wheelanim>
@@ -156,7 +159,7 @@
 		<subset.showfrontend>Exibir ícones da frontend na vista Cobalto</subset.showfrontend>
 		<forcebatocera>Exibir apenas Batocera</forcebatocera> 	
 		<subset.MainBGColor>Cor do Fundo</subset.MainBGColor>
-		<subset.tveffect>Efeito da Tela</subset.tveffect>
+		<subset.tveffect>Filtros do Vídeo</subset.tveffect>
 		<subset.CoinOpsDefault>Fundo Padrão CoinOps</subset.CoinOpsDefault>
 		<subset.syscarousel>Carrossel da Seleção de Sistemas</subset.syscarousel>
 		<subset.sysname>Nomes dos Sistemas na Seleção de Sistemas</subset.sysname>
@@ -278,6 +281,7 @@
 		<subset.colorset>Images darriere-plan</subset.colorset>
 		<subset.iconset>Icones de Menu</subset.iconset>
 		<subset.shader>Shaders de Theme</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.music>System Music</subset.music>
 		<theme.mostplayed>Les plus joués :</theme.mostplayed>
 		<subset.animcarousel>Logos animés de carrousel</subset.animcarousel>
@@ -380,6 +384,7 @@
 		<subset.colorset>Imagenes de Fondo</subset.colorset>
 		<subset.iconset>Iconos de Menu</subset.iconset>
 		<subset.shader>Shaders de Tema</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.music>Musica del Sistemas</subset.music>
 		<theme.mostplayed>Más jugado:</theme.mostplayed>
 		<subset.animcarousel>Logotipos animados de carrusel</subset.animcarousel>
@@ -482,6 +487,7 @@
 		<subset.colorset>Hintergrundbilder</subset.colorset>
 		<subset.iconset>Menüsymbole</subset.iconset>
 		<subset.shader>Design-Shader</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.music>Systemmusik</subset.music>
 		<theme.mostplayed>Meistgespielt:</theme.mostplayed>
 		<subset.animcarousel>Karussell-animierte Logos</subset.animcarousel>
@@ -563,6 +569,7 @@
 		<subset.colorset>背景图片</subset.colorset>
 		<subset.iconset>菜单图标</subset.iconset>
 		<subset.shader>主题着色器</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.music>系统音乐</subset.music>
 		<theme.mostplayed>游玩次数最多：</theme.mostplayed>
 		<GamesNumber>游戏</GamesNumber>
@@ -644,6 +651,7 @@
 		<subset.colorset>背景圖片</subset.colorset>
 		<subset.iconset>菜單圖標</subset.iconset>
 		<subset.shader>主題着色器</subset.shader>
+		<subset.shadergl>Gamelist Shaders</subset.shadergl>
 		<subset.music>系統音樂</subset.music>
 		<theme.mostplayed>游玩次數最多：</theme.mostplayed>
 		<GamesNumber>遊戲</GamesNumber>
