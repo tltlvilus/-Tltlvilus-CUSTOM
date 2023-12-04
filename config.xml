@@ -8,6 +8,36 @@
 	<include subset="colorset" name="HD 720p">./colorsets/hd.xml</include>
 	<include subset="colorset" name="Lite 540p">./colorsets/lite.xml</include>
 	
+	<include subset="colorsetsystem" name="Dark Gray" displayName="${huegrayd}"></include>
+	<include subset="colorsetsystem" name="Gray" displayName="${huegray}"></include>
+	<include subset="colorsetsystem" name="White" displayName="${white}"></include>
+	<include subset="colorsetsystem" name="Black" displayName="${black}"></include>
+	<include subset="colorsetsystem" name="Purple" displayName="${huepurple}"></include>
+	<include subset="colorsetsystem" name="Lilac" displayName="${huelilac}"></include>
+	<include subset="colorsetsystem" name="Blue" displayName="${hueblue}"></include>
+	<include subset="colorsetsystem" name="Light Blue" displayName="${huebluel}"></include>
+	<include subset="colorsetsystem" name="Red" displayName="${huered}"></include>
+	<include subset="colorsetsystem" name="Rose" displayName="${huerose}"></include>
+	<include subset="colorsetsystem" name="Pink" displayName="${huepink}"></include>
+	<include subset="colorsetsystem" name="Green" displayName="${huegreen}"></include>
+	<include subset="colorsetsystem" name="Yellow" displayName="${hueyellow}"></include>
+	<include subset="colorsetsystem" name="Orange" displayName="${hueorange}"></include>
+	
+	<include subset="logotheme" name="Dark Gray" displayName="${huegrayd}"></include>
+	<include subset="logotheme" name="Gray" displayName="${huegray}"></include>
+	<include subset="logotheme" name="White" displayName="${white}"></include>
+	<include subset="logotheme" name="Black" displayName="${black}"></include>
+	<include subset="logotheme" name="Purple" displayName="${huepurple}"></include>
+	<include subset="logotheme" name="Lilac" displayName="${huelilac}"></include>
+	<include subset="logotheme" name="Blue" displayName="${hueblue}"></include>
+	<include subset="logotheme" name="Light Blue" displayName="${huebluel}"></include>
+	<include subset="logotheme" name="Red" displayName="${huered}"></include>
+	<include subset="logotheme" name="Rose" displayName="${huerose}"></include>
+	<include subset="logotheme" name="Pink" displayName="${huepink}"></include>
+	<include subset="logotheme" name="Green" displayName="${huegreen}"></include>
+	<include subset="logotheme" name="Yellow" displayName="${hueyellow}"></include>
+	<include subset="logotheme" name="Orange" displayName="${hueorange}"></include>
+	
 	<include subset="iconset" name="standard icons" displayName="${icondef}">./iconsets/default.xml</include>
 	<include subset="iconset" name="SNES">./iconsets/snes.xml</include>
 	<include subset="iconset" name="SNES ALT">./iconsets/snesalt.xml</include>
