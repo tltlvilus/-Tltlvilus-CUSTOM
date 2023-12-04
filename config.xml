@@ -22,6 +22,8 @@
 	<include subset="colorsetsystem" name="Green" displayName="${huegreen}"></include>
 	<include subset="colorsetsystem" name="Yellow" displayName="${hueyellow}"></include>
 	<include subset="colorsetsystem" name="Orange" displayName="${hueorange}"></include>
+	<include subset="colorsetsystem" name="Clean Black"></include>
+	<include subset="colorsetsystem" name="Clean"></include>
 	
 	<include subset="logotheme" name="Dark Gray" displayName="${huegrayd}"></include>
 	<include subset="logotheme" name="Gray" displayName="${huegray}"></include>
