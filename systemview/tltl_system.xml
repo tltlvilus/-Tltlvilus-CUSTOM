@@ -29,10 +29,46 @@
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
-         <path>./../assets/overlay1222.png</path>
+		 <path ifSubset="colorsetsystem:Gray Dark">./../assets/overlay_cinza_escuro.png</path>
+		 <path ifSubset="colorsetsystem:Gray">./../assets/overlay_cinza.png</path>
+		 <path ifSubset="colorsetsystem:White">./../assets/overlay_branco.png</path>
+		 <path ifSubset="colorsetsystem:Black">./../assets/overlay_preto.png</path>
+		 <path ifSubset="colorsetsystem:Purple">./../assets/overlay_roxo.png</path>
+		 <path ifSubset="colorsetsystem:Lilac">./../assets/overlay_lilas.png</path>
+		 <path ifSubset="colorsetsystem:Blue">./../assets/overlay_azul.png</path>
+		 <path ifSubset="colorsetsystem:Light Blue">./../assets/overlay_azul_claro.png</path>
+		 <path ifSubset="colorsetsystem:Red">./../assets/overlay_vermelho.png</path>
+		 <path ifSubset="colorsetsystem:Rose">./../assets/overlay_rosa.png</path>
+		 <path ifSubset="colorsetsystem:Pink">./../assets/overlay_pink.png</path>
+		 <path ifSubset="colorsetsystem:Green">./../assets/overlay_verde.png</path>
+		 <path ifSubset="colorsetsystem:Yellow">./../assets/overlay_amarelo.png</path>
+		 <path ifSubset="colorsetsystem:Orange">./../assets/overlay_laranja.png</path>
+         <!-- <path>./../assets/overlay1222.png</path> -->
          <zIndex>41</zIndex>
     </image>
-
+	
+	<image name="logotheme" extra="true">
+		<origin>0 0</origin>
+        <pos>0.0253 0.0259</pos>
+        <size>0.195 0.140</size>
+		<path ifSubset="logotheme:Gray Dark">./../assets/logohue_cinza_escuro.png</path>
+		<path ifSubset="logotheme:Gray">./../assets/logohue_cinza.png</path>
+		<path ifSubset="logotheme:White">./../assets/logohue_branco.png</path>
+		<path ifSubset="logotheme:Black">./../assets/logohue_preto.png</path>
+		<path ifSubset="logotheme:Purple">./../assets/logohue_roxo.png</path>
+		<path ifSubset="logotheme:Lilac">./../assets/logohue_lilas.png</path>
+		<path ifSubset="logotheme:Blue">./../assets/logohue_azul.png</path>
+		<path ifSubset="logotheme:Light Blue">./../assets/logohue_azul_claro.png</path>
+		<path ifSubset="logotheme:Red">./../assets/logohue_vermelho.png</path>
+		<path ifSubset="logotheme:Rose">./../assets/logohue_rosa.png</path>
+		<path ifSubset="logotheme:Pink">./../assets/logohue_pink.png</path>
+		<path ifSubset="logotheme:Green">./../assets/logohue_verde.png</path>
+		<path ifSubset="logotheme:Yellow">./../assets/logohue_amarelo.png</path>
+		<path ifSubset="logotheme:Orange">./../assets/logohue_laranja.png</path>
+		<path ifSubset="logotheme:None"></path>
+		<zIndex>41</zIndex>
+	</image>
+	
 	<video name="md_video" extra="true" ifSubset="randomvid:yes">
 		<path>{random}</path>
 		<pos>0.025 0.62</pos>
@@ -63,10 +99,10 @@
 		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
 		<color>FFFFFF</color>
 		<alignment>left</alignment>
- 		<fontSize>0.09</fontSize>
-		<lineSpacing>1</lineSpacing>
+ 		<fontSize>0.080</fontSize>
+		<lineSpacing>0.8</lineSpacing>
 		<size>0.36 0.35</size>
-		<pos>0.025 0.1</pos>
+		<pos>0.024 0.093</pos>
 		<glowColor>00000090</glowColor>
 		<glowOffset>2</glowOffset>
 		<glowSize>4</glowSize>
@@ -81,7 +117,7 @@
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.35 0</size>
-		<pos>0.025 0.378</pos>
+		<pos>0.025 0.379</pos>
 		<glowColor>00000080</glowColor>
 		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
@@ -171,11 +207,24 @@
 
 	<text name="playbutton" extra="true">
 		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
-		<color>FFFFFF</color>
+		<color ifSubset="colorsetsystem:Dark Gray">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Gray">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Black">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Purple">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Lilac">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Blue">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Light Blue">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Red">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Rose">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Pink">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Green">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Yellow">FFFFFF</color>
+		<color ifSubset="colorsetsystem:Orange">FFFFFF</color>
+		<color ifSubset="colorsetsystem:White">000000</color>
 		<alignment>center</alignment>
-	     <fontSize>0.0142</fontSize>
-		<size>0.35 0</size>
-		<pos>-0.113 0.5315</pos>
+	    <fontSize>0.0155</fontSize>
+		<size>0.36 0</size>
+		<pos>-0.1160 0.5304</pos>
 		<glowColor>00000020</glowColor>
 		<glowSize>1.8</glowSize>
 		<zIndex>42</zIndex>
