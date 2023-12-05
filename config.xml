@@ -25,9 +25,9 @@
 	<include subset="colorsetsystem" name="Clean Black"></include>
 	<include subset="colorsetsystem" name="Clean"></include>
 	
-	<include subset="logotheme" name="Dark Gray" displayName="${huegrayd}"></include>
-	<include subset="logotheme" name="Gray" displayName="${huegray}"></include>
 	<include subset="logotheme" name="White" displayName="${white}"></include>
+	<include subset="logotheme" name="Gray" displayName="${huegray}"></include>
+	<include subset="logotheme" name="Dark Gray" displayName="${huegrayd}"></include>
 	<include subset="logotheme" name="Black" displayName="${black}"></include>
 	<include subset="logotheme" name="Purple" displayName="${huepurple}"></include>
 	<include subset="logotheme" name="Lilac" displayName="${huelilac}"></include>
@@ -150,6 +150,23 @@
 	<include subset="WheelBG" name="Star" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
 	<include subset="WheelBG" name="Dark" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
 	<include subset="WheelBG" name="Light" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
+	
+	<include subset="colorsetglist" name="Dark Gray" displayName="${huegrayd}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Gray" displayName="${huegray}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="White" displayName="${white}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Black" displayName="${Black}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Purple" displayName="${huepurple}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Lilac" displayName="${huelilac}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Blue" displayName="${hueblue}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Light Blue" displayName="${huebluel}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Red" displayName="${huered}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Rose" displayName="${huerose}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Pink" displayName="${huepink}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Green" displayName="${huegreen}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Yellow" displayName="${hueyellow}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Orange" displayName="${hueorange}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Clean Black" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
+	<include subset="colorsetglist" name="Clean" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART,TLTL-NO-VIDEO,TLTL-CUSTOM-NO-VID/ART"/>
 
 	<include subset="VideoBG" name="Filme" displayName="${filme}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
 	<include subset="VideoBG" name="Black" displayName="${black}" appliesTo="TLTL-CUSTOM,TLTL-COLOR,TLTL-NO-FANART"/>
