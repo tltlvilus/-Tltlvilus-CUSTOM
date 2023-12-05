@@ -38,6 +38,7 @@
 		<off>Off</off> <clocksmall>Small</clocksmall> <clockoff>Off</clockoff>
 		<filme>Film Frame</filme> <scrtfs2>CRT Full Screen 2x</scrtfs2> 
 		<subset.WheelBG>Carousel Wheel Color</subset.WheelBG>
+		<subset.colorsetglist>Gamelist Color</subset.colorsetglist>
 		<subset.langui>Language UI Optimization</subset.langui>
 	</variables>
 
@@ -171,6 +172,7 @@
 		<subset.Clock>Menu de Ajuda e Relógio</subset.Clock>
 		<subset.VideoBG>Cor do Quadro do Vídeo</subset.VideoBG>
 		<subset.WheelBG>Cor do Fundo do Carrossel</subset.WheelBG>
+		<subset.colorsetglist>Cor da Lista de Jogos</subset.colorsetglist>
 		<tltlcustom>TLTL CUSTOM</tltlcustom>
 		<tltlcustomnv>TLTL NO VIDEO</tltlcustomnv>
 		<tltlcustomnf>TLTL NO FANART</tltlcustomnf>
