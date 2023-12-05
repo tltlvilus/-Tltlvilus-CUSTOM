@@ -92,6 +92,7 @@
 		<size>0.35 0.100</size>
 		<pos>0.025 0.405</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
 	 </text>
@@ -136,8 +137,9 @@
 		<size ifSubset="langui:English">0.35 0</size>
 		<size ifSubset="langui:Português Brasileiro">0.35 0</size>
 		<pos ifSubset="langui:English">0.178 0.380</pos>
-		<pos ifSubset="langui:Português Brasileiro">0.152 0.379</pos>
+		<pos ifSubset="langui:Português Brasileiro">0.152 0.380</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
       </text>
@@ -165,7 +167,8 @@
          <fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
 	     <fontSize>0.0380</fontSize>
 		 <glowColor>00000080</glowColor>
-		 <glowSize>2</glowSize>
+		<glowOffset>2</glowOffset>
+		<glowSize>2</glowSize>
 	     <color>FFFFFF</color>
     </text>
 	
@@ -189,8 +192,9 @@
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.35 0</size>
-		<pos>0.065 0.379</pos>
+		<pos>0.0635 0.379</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
       </text>
