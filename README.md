@@ -9,6 +9,10 @@ This started as a modification from Artflix for a personal use.
   
 You can find a potential demonstration on my channel https://www.youtube.com/@tltlvilus
 
+- Change Log 1.1
+- Added System and Gamelist new color options (buttom and theme logo)
+- Minor bug fixes
+  
 [![Watch the video](https://iili.io/JIJ04YQ.png)](https://youtu.be/COQOkOa9AaI)
 
 Retrobat forum topic https://retrobat.forumgaming.fr/t1622-my-custom-theme
