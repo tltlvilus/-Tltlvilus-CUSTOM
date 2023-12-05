@@ -74,6 +74,7 @@
 		<size>0.355 0.100</size>
 		<pos>0.025 0.405</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
 	</text>
@@ -103,15 +104,30 @@
 		<text>PLAY NOW</text>
 	</text>
 	<text name="playbutton" extra="true">
-		<fontPath>./_inc/fonts/Circular Std Black.ttf</fontPath>
-		<color>FFFFFF</color>
+		<fontPath>./../_inc/fonts/Circular Std Black.ttf</fontPath>
+		<color ifSubset="colorsetglist:Dark Gray">FFFFFF</color>
+		<color ifSubset="colorsetglist:Clean Black">FFFFFF</color>
+		<color ifSubset="colorsetglist:Gray">FFFFFF</color>
+		<color ifSubset="colorsetglist:Black">FFFFFF</color>
+		<color ifSubset="colorsetglist:Purple">FFFFFF</color>
+		<color ifSubset="colorsetglist:Lilac">FFFFFF</color>
+		<color ifSubset="colorsetglist:Blue">FFFFFF</color>
+		<color ifSubset="colorsetglist:Light Blue">FFFFFF</color>
+		<color ifSubset="colorsetglist:Red">FFFFFF</color>
+		<color ifSubset="colorsetglist:Rose">FFFFFF</color>
+		<color ifSubset="colorsetglist:Pink">FFFFFF</color>
+		<color ifSubset="colorsetglist:Green">FFFFFF</color>
+		<color ifSubset="colorsetglist:Yellow">FFFFFF</color>
+		<color ifSubset="colorsetglist:Orange">FFFFFF</color>
+		<color ifSubset="colorsetglist:White">000000</color>
+		<color ifSubset="colorsetglist:Clean">000000</color>
 		<alignment>center</alignment>
-		<fontSize>0.0142</fontSize>
-		<size>0.35 0</size>
-		<pos>-0.113 0.5315</pos>
-		<glowColor>00000080</glowColor>
-		<glowSize>0.8</glowSize>
-		<zIndex>260</zIndex>
+	    <fontSize>0.0155</fontSize>
+		<size>0.36 0</size>
+		<pos>-0.1160 0.5304</pos>
+		<glowColor>00000020</glowColor>
+		<glowSize>1.8</glowSize>
+		<zIndex>42</zIndex>
 	</text>
 
 	<!-- Release Date -->
@@ -122,21 +138,37 @@
 		<fontSize>0.023</fontSize>
 		<lineSpacing>1</lineSpacing>
 		<size>0.04 0.03</size>
-		<pos>0.025 0.374</pos>
+		<pos>0.025 0.3745</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
 		<format>%Y</format>
 	</datetime>
 	
 	<!-- Art -->
-	<image name="artflix" extra="true">
-		<origin>0 0</origin>
-		<pos>0 0</pos>
-		<size>1 1</size>
-		<path>./assets/overlay1222t90.png</path>
-		<zIndex>5</zIndex>
-	</image>
+	<image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <path ifSubset="colorsetglist:Dark Gray">./../assets/overlay_cinza_escuro.png</path>
+		 <path ifSubset="colorsetglist:Clean">./../assets/overlay_branco_clean.png</path>
+		 <path ifSubset="colorsetglist:Clean Black">./../assets/overlay_preto_clean.png</path>
+		 <path ifSubset="colorsetglist:Gray">./../assets/overlay_cinza.png</path>
+		 <path ifSubset="colorsetglist:White">./../assets/overlay_branco.png</path>
+		 <path ifSubset="colorsetglist:Black">./../assets/overlay_preto.png</path>
+		 <path ifSubset="colorsetglist:Purple">./../assets/overlay_roxo.png</path>
+		 <path ifSubset="colorsetglist:Lilac">./../assets/overlay_lilas.png</path>
+		 <path ifSubset="colorsetglist:Blue">./../assets/overlay_azul.png</path>
+		 <path ifSubset="colorsetglist:Light Blue">./../assets/overlay_azul_claro.png</path>
+		 <path ifSubset="colorsetglist:Red">./../assets/overlay_vermelho.png</path>
+		 <path ifSubset="colorsetglist:Rose">./../assets/overlay_rosa.png</path>
+		 <path ifSubset="colorsetglist:Pink">./../assets/overlay_pink.png</path>
+		 <path ifSubset="colorsetglist:Green">./../assets/overlay_verde.png</path>
+		 <path ifSubset="colorsetglist:Yellow">./../assets/overlay_amarelo.png</path>
+		 <path ifSubset="colorsetglist:Orange">./../assets/overlay_laranja.png</path>
+         <zIndex>5</zIndex>
+    </image>
 
 	<!-- Genre -->
 	<text name="md_genre">
@@ -162,6 +194,7 @@
 		<size>0.35 0</size>
 		<pos>0.065 0.379</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
 		<forceUppercase>true</forceUppercase>
@@ -177,6 +210,7 @@
 		<pos ifSubset="langui:English">0.145 0.380</pos>
 		<pos ifSubset="langui:Português Brasileiro">0.193 0.380</pos>
 		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
 		<glowSize>2</glowSize>
 		<zIndex>42</zIndex>
 	</text>
@@ -213,7 +247,9 @@
 		<size>0.075 0.05</size>
 		<color>dddddd</color>
 		<fontSize>0.06</fontSize>
-		<glowColor>00000040</glowColor>
+		<glowColor>00000080</glowColor>
+		<glowOffset>2</glowOffset>
+		<glowSize>2</glowSize>
 		<fontPath>./_inc/fonts/playerst.otf</fontPath>
 		<zIndex>150</zIndex>
 	</text>
